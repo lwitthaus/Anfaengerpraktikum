@@ -1,6 +1,6 @@
 \section{Theorie}
 \subsection{Güteziffer}
-Unter Aufwand von Arbeit, wird entgegen dem natürlichen Wärmefluss, Wärmetransportiert.
+Unter Aufwand von Arbeit, wird entgegen dem natürlichen Wärmefluss, Wärme transportiert.
 Das Verhältnis zwischen transportierter Wärmemenge und Arbeit wird als Güteziffer $\nu$
 bezeichnet. Aus dem ersten Hauptsatz der Thermodynamik folgt:
 \begin{equation}
@@ -38,12 +38,22 @@ mechanische Arbeit direkt in Wärmenenergie umwandelt, da dort höchstens
 gelten kann. \\
 Um die reale Güteziffer zu bestimmen wird die Wärmekapazität des Wassers $c_1m_w$ in Reservoir 1 benötigt,
 sowie die Wärmekapazität $c_km_k$ des Eimers und der Kupferschlange. Aus einer Messreihe mit der Temperatur
-$T_1$ als Funktion der Zeit $t$ lässt sich die Güteziffer mit der Gleichung
+$T_1$ als Funktion der Zeit $t$ folgt für die gewonnene Wärmemenge pro Zeit:
 \begin{equation}
   \frac{\Delta Q_1}{\Delta t} = (m_1 c_w+ c_k m_k) \frac{\Delta T_2}{\Delta t}
 \end{equation}
-berechnen.
+Für die Güteziffer gilt:
+\begin{equation}
+  \nu = \frac{\Delta Q_1}{\Delta t N}
+\end{equation}
+N ist hierbei die über das Zeitinervall $\Delta t$ gemittelte Leistungsaufnahme des Kompressors.
+
 \subsection{Kompressorleistung}
+Der Kompressor verringert das Volumen des Gases von $V_a$ zu $V_b$. Dabei leistet
+er die Arbeit $A_m$. Diese ist definiert durch
+\begin{equation}
+  A_m = - \int_{V_a}^{V_b} f(x) \, \mathrm{d}x
+\end{equation}
 
 \label{sec:Theorie}
 
