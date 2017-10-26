@@ -319,9 +319,6 @@ INPUT c:/texlive/2017/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
 INPUT c:/texlive/2017/texmf-dist/tex/latex/microtype/mt-LatinModernRoman.cfg
 INPUT c:/texlive/2017/texmf-dist/tex/latex/microtype/mt-LatinModernRoman.cfg
 OUTPUT build/main.bcf
-INPUT build/main.bbl
-INPUT build/main.bbl
-INPUT build/main.bbl
 INPUT c:/texlive/2017/texmf-dist/tex/latex/hyperref/nameref.sty
 INPUT c:/texlive/2017/texmf-dist/tex/latex/hyperref/nameref.sty
 INPUT c:/texlive/2017/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
@@ -376,12 +373,6 @@ INPUT ./content/zielsetzung.tex
 INPUT ./content/zielsetzung.tex
 INPUT ./content/theorie.tex
 INPUT ./content/theorie.tex
-INPUT ./content/aufbau.tex
-INPUT ./content/aufbau.tex
-INPUT ./Waermepumpe.PNG
-INPUT Waermepumpe.PNG
-INPUT ./content/durchfuehrung.tex
-INPUT ./content/durchfuehrung.tex
 INPUT ./content/auswertung.tex
 INPUT ./content/auswertung.tex
 INPUT build/plot.pdf
