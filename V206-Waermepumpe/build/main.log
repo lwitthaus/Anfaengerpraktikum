@@ -1,4 +1,4 @@
-This is LuaTeX, Version 1.0.4 (TeX Live 2017/W32TeX)  (format=lualatex 2017.9.24)  26 OCT 2017 14:29
+This is LuaTeX, Version 1.0.4 (TeX Live 2017/W32TeX)  (format=lualatex 2017.9.24)  26 OCT 2017 14:53
  restricted system commands enabled.
 **main.tex
 (./main.tex
@@ -22,7 +22,7 @@ Inserting `luaotfload.aux.patch_cambria_domh' at position 2 in `luaotfload.patch
 Inserting `luaotfload.aux.fixup_fontdata' at position 1 in `luaotfload.patch_font_unsafe'.
 Inserting `luaotfload.aux.set_capheight' at position 3 in `luaotfload.patch_font'.
 Inserting `luaotfload.rewrite_fontname' at position 4 in `luaotfload.patch_font'.
-luaotfload | main : initialization completed in 0.222 seconds
+luaotfload | main : initialization completed in 0.218 seconds
 Babel <3.13> and hyphenation patterns for 1 language(s) loaded.
 (./header.tex (c:/texlive/2017/texmf-dist/tex/latex/koma-script/scrartcl.cls
 Document Class: scrartcl 2017/09/07 v3.24 KOMA-Script document class (article)
@@ -2086,13 +2086,13 @@ Here is how much of LuaTeX's memory you used:
    6 hlist, 2 vlist, 2 rule, 2 glue, 1 kern, 27 attribute, 76 glue_spec, 27 attribute_list, 1 write nodes
    avail lists: 2:252,3:88,4:23,5:173,6:1990,7:371,8:38,9:163,10:7,11:270
  43515 multiletter control sequences out of 65536+600000
- 97 fonts using 24448303 bytes
+ 97 fonts using 24448171 bytes
  61i,7n,104p,8833b,2952s stack positions out of 5000i,500n,10000p,200000b,100000s
 <c:/texlive/2017/texmf-dist/fonts/opentype/public/lm/lmroman10-italic.otf><c:/texlive/2017/texmf-dist/fonts/opentype/public/lm/lmroman10-bold.otf><c:/texlive/2017/texmf-dist/fonts/opentype/public/lm-math/latinmodern-math.otf><c:/texlive/2017/texmf-dist/fonts/opentype/public/lm-math/latinmodern-math.otf><c:/texlive/2017/texmf-dist/fonts/opentype/public/lm-math/latinmodern-math.otf><c:/texlive/2017/texmf-dist/fonts/opentype/public/lm/lmroman10-regular.otf><c:/texlive/2017/texmf-dist/fonts/opentype/public/lm/lmroman12-regular.otf><c:/texlive/2017/texmf-dist/fonts/opentype/public/lm/lmsans10-bold.otf><c:/texlive/2017/texmf-dist/fonts/opentype/public/lm/lmroman12-bold.otf>
-Output written on main.pdf (6 pages, 84107 bytes).
+Output written on main.pdf (6 pages, 73949 bytes).
 
-PDF statistics: 195 PDF objects out of 1000 (max. 8388607)
- 145 compressed objects within 2 object streams
+PDF statistics: 174 PDF objects out of 1000 (max. 8388607)
+ 133 compressed objects within 2 object streams
  30 named destinations out of 1000 (max. 131072)
  73 words of extra memory for PDF output out of 10000 (max. 100000000)
 
