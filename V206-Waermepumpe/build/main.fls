@@ -373,6 +373,12 @@ INPUT ./content/zielsetzung.tex
 INPUT ./content/zielsetzung.tex
 INPUT ./content/theorie.tex
 INPUT ./content/theorie.tex
+INPUT ./content/aufbau.tex
+INPUT ./content/aufbau.tex
+INPUT ./Waermepumpe.PNG
+INPUT Waermepumpe.PNG
+INPUT ./content/durchfuehrung.tex
+INPUT ./content/durchfuehrung.tex
 INPUT ./content/auswertung.tex
 INPUT ./content/auswertung.tex
 INPUT build/plot.pdf
