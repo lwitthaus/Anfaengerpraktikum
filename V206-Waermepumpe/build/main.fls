@@ -386,6 +386,11 @@ INPUT ./content/auswertung.tex
 INPUT ./content/auswertung.tex
 INPUT ./build/Temperaturen.pdf
 INPUT build/Temperaturen.pdf
+INPUT c:/texlive/2017/texmf-dist/fonts/tfm/public/cm/cmmi12.tfm
+INPUT c:/texlive/2017/texmf-dist/fonts/tfm/public/cm/cmss12.tfm
+INPUT c:/texlive/2017/texmf-dist/fonts/tfm/public/cm/cmtt12.tfm
+INPUT c:/texlive/2017/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam10.tfm
+INPUT c:/texlive/2017/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm10.tfm
 INPUT ./content/diskussion.tex
 INPUT ./content/diskussion.tex
 INPUT build/main.aux
