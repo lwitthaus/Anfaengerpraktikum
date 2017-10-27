@@ -57,9 +57,43 @@ Die Temperaturen $T_1$ und $T_2$ werden in einem Zeitraum von 30 Minuten gemesse
 
 \subsection{Aufgabenteil b}
 Für die Regressionskurve wird die Funktion $T(t) = At^2 + Bt + C$ verwendet. Die
-Parameter A, B, C und deren jeweilige Fehler betragen:
+Parameter A, B, C und deren jeweilige Fehler für $T_2$ betragen:
 \begin{align}
-  A &= (3.67 \pm 0.15) * 10^{-6} \frac{K}{s^2} \\
-  B &= (-1.61 \pm 0.03) * 10^{-2} \frac{K}{s}  \\
-  C &= (23.00 \pm 0.11) * K
+  A &= (3.67 \pm 0.15) \cdot 10^{-6} \frac{K}{s^2} \\
+  B &= (-1.61 \pm 0.03) \cdot 10^{-2} \frac{K}{s}  \\
+  C &= (23.00 \pm 0.11) \cdot K
 \end{align}
+Für $T_1$ ergeben sich folgende Parameter:
+\begin{align}
+  A &= (-3.87 \pm 0.13) \cdot 10^{-6} \frac{K}{s^2} \\
+  B &= (2.28 \pm 0.02)  \cdot 10^{-2} \frac{K}{s}  \\
+  C &= (21.13 \pm 0.07 )\cdot K
+\end{align}
+\subsection{Aufgabenteil c}
+Die Differentialquotienten der Temperaturen $T_1$ und $T_2$ werden für vier verschieden
+Zeiten berechnet. Die vier Messzeiten sind 600, 900, 1200 und 1500 Sekunden. Der
+Differentialquotient ist
+\begin{equation}
+  \frac{\symup{d}T}{\symup{d}t} = 2At + B .
+\end{equation}
+\begin{table}
+  \centering
+  \caption{Gemessene und berechnete Werte}
+  \label{tab:Parameter}
+  \begin{tabular}{c c c c c}
+    \toprule
+    $t/$s & $T_1/$K & $\frac{\symup{d}T_1}{\symup{d}t}/(\frac{\symup{K}}{\symup{s}})$ & $T_2/$K & $\frac{\symup{d}T_2}{\symup{d}t}/(\frac{\symup{K}}{\symup{s}})$  \\
+
+    600 & 306.6 & $0.01816 \pm 0.00020$ & 287.8 & $-0.01170 \pm 0.00030$ \\
+    900 & 311.8 & $0.01583 \pm 0.00020$ & 284.5 & $-0.00949 \pm 0.00030$ \\
+    1200 & 316.0 & $0.01351 \pm 0.00020$ & 282.0 & $-0.00729 \pm 0.00030$ \\
+    1500 & 319.8 & $0.01119 \pm 0.00020$ & 280.1 & $-0.00509 \pm 0.00030$ \\
+   \bottomrule
+ \end{tabular}
+\end{table}
+%\begin{figure}
+%  \centering
+%  \includegraphics{plot.pdf}
+%  \caption{Plot.}
+%  \label{fig:plot}
+%\end{figure}
