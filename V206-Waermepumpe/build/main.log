@@ -1,4 +1,4 @@
-This is LuaTeX, Version 1.0.4 (TeX Live 2017/W32TeX)  (format=lualatex 2017.9.7)  26 OCT 2017 21:28
+This is LuaTeX, Version 1.0.4 (TeX Live 2017/W32TeX)  (format=lualatex 2017.9.7)  27 OCT 2017 10:07
  restricted system commands enabled.
 **main.tex
 (./main.tex
@@ -22,7 +22,7 @@ Inserting `luaotfload.aux.patch_cambria_domh' at position 2 in `luaotfload.patch
 Inserting `luaotfload.aux.fixup_fontdata' at position 1 in `luaotfload.patch_font_unsafe'.
 Inserting `luaotfload.aux.set_capheight' at position 3 in `luaotfload.patch_font'.
 Inserting `luaotfload.rewrite_fontname' at position 4 in `luaotfload.patch_font'.
-luaotfload | main : initialization completed in 0.211 seconds
+luaotfload | main : initialization completed in 0.231 seconds
 Babel <3.12> and hyphenation patterns for 1 language(s) loaded.
 (./header.tex (c:/texlive/2017/texmf-dist/tex/latex/koma-script/scrartcl.cls
 Document Class: scrartcl 2017/04/13 v3.23 KOMA-Script document class (article)
@@ -2046,17 +2046,17 @@ Language ngerman already loaded; id is 8)
  [2
 
 ] (./content/zielsetzung.tex) (./content/theorie.tex [3]) (./content/aufbau.tex
-<Waermepumpe.PNG, id=56, pagebox=cropbox, 432.4155pt x 370.38374pt>
+<Waermepumpe.PNG, id=58, pagebox=cropbox, 432.4155pt x 370.38374pt>
 File: Waermepumpe.PNG Graphic file (type png)
 <use Waermepumpe.PNG>
 Package luatex.def Info: Waermepumpe.PNG  used on input line 5. on input line 5.
 Package luatex.def Info: Requested size: 265.74591pt x 227.62204pt on input line 5.
  [4]) (./content/durchfuehrung.tex) (./content/auswertung.tex [5<./Waermepumpe.PNG>]
-<plot.pdf, id=77, pagebox=cropbox, 417.7206pt x 258.0039pt>
+<plot.pdf, id=79, pagebox=cropbox, 417.7206pt x 258.0039pt>
 File: plot.pdf Graphic file (type pdf)
 <use plot.pdf>
-Package luatex.def Info: plot.pdf  used on input line 62. on input line 62.
-Package luatex.def Info: Requested size: 417.71957pt x 258.00327pt on input line 62.
+Package luatex.def Info: plot.pdf  used on input line 63. on input line 63.
+Package luatex.def Info: Requested size: 417.71957pt x 258.00327pt on input line 63.
 ) (./content/diskussion.tex [6] [7])
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 26.
  [8<build/plot.pdf>]
@@ -2066,9 +2066,9 @@ Language ngerman already loaded; id is 8)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 26.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 26.
 Package rerunfilecheck Info: File `main.aux' has not changed.
-(rerunfilecheck)             Checksum: 99C688B4C2FFBD2239AD817667A78C6F;6125.
+(rerunfilecheck)             Checksum: F2CE8C8814C7D3B66394EE2F300A60E0;6512.
 Package rerunfilecheck Info: File `main.toc' has not changed.
-(rerunfilecheck)             Checksum: 2F756B196B8C6C7B0207643AFE92B03A;854.
+(rerunfilecheck)             Checksum: 4BDAD0854164D449AF8329B390088EE0;933.
 
 
 LaTeX Warning: There were multiply-defined labels.
@@ -2079,19 +2079,19 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 )
 
 Here is how much of LuaTeX's memory you used:
- 40579 strings out of 494472
+ 40581 strings out of 494472
  100000,1648299 words of node,token memory allocated
  671 words of node memory still in use:
    7 hlist, 2 vlist, 2 rule, 2 glue, 1 kern, 27 attribute, 76 glue_spec, 27 attribute_list, 1 write nodes
-   avail lists: 2:1350,3:88,4:23,5:173,6:2439,7:1694,8:75,9:442,10:7,11:270
- 43492 multiletter control sequences out of 65536+600000
- 97 fonts using 24448435 bytes
+   avail lists: 2:1366,3:88,4:23,5:173,6:2459,7:1705,8:76,9:443,10:7,11:270
+ 43493 multiletter control sequences out of 65536+600000
+ 97 fonts using 24448303 bytes
  61i,12n,104p,8833b,2952s stack positions out of 5000i,500n,10000p,200000b,100000s
 <c:/texlive/2017/texmf-dist/fonts/opentype/public/lm/lmroman10-italic.otf><c:/texlive/2017/texmf-dist/fonts/opentype/public/lm/lmroman10-bold.otf><c:/texlive/2017/texmf-dist/fonts/opentype/public/lm-math/latinmodern-math.otf><c:/texlive/2017/texmf-dist/fonts/opentype/public/lm-math/latinmodern-math.otf><c:/texlive/2017/texmf-dist/fonts/opentype/public/lm-math/latinmodern-math.otf><c:/texlive/2017/texmf-dist/fonts/opentype/public/lm/lmroman10-regular.otf><c:/texlive/2017/texmf-dist/fonts/opentype/public/lm/lmroman12-regular.otf><c:/texlive/2017/texmf-dist/fonts/opentype/public/lm/lmsans10-bold.otf><c:/texlive/2017/texmf-dist/fonts/opentype/public/lm/lmroman12-bold.otf>
-Output written on main.pdf (8 pages, 80207 bytes).
+Output written on main.pdf (8 pages, 80149 bytes).
 
-PDF statistics: 191 PDF objects out of 1000 (max. 8388607)
- 148 compressed objects within 2 object streams
- 37 named destinations out of 1000 (max. 131072)
- 81 words of extra memory for PDF output out of 10000 (max. 100000000)
+PDF statistics: 196 PDF objects out of 1000 (max. 8388607)
+ 153 compressed objects within 2 object streams
+ 38 named destinations out of 1000 (max. 131072)
+ 89 words of extra memory for PDF output out of 10000 (max. 100000000)
 
