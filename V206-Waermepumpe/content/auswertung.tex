@@ -48,7 +48,12 @@ benötigt werden. Test
 \subsection{Aufgabenteil a}
 Die Temperaturen $T_1$ und $T_2$ werden in einem Zeitraum von 30 Minuten gemessen und in einem Diagramm dargestellt.
 
-%Hier das Diagamm einfügen
+\begin{figure}[H]
+  \centering
+  \includegraphics{build/Temperaturen.pdf}
+  \caption{Temperaturen.}
+  \label{fig:Temperaturen}
+\end{figure}
 
 \subsection{Aufgabenteil b}
 Für die Regressionskurve wird die Funktion $T(t) = At^2 + Bt + C$ verwendet. Die
@@ -58,9 +63,3 @@ Parameter A, B, C und deren jeweilige Fehler betragen:
   B &= (-1.61 \pm 0.03) * 10^{-2} \frac{K}{s}  \\
   C &= (23.00 \pm 0.11) * K
 \end{align}
-\begin{figure}
-  \centering
-  \includegraphics{plot.pdf}
-  \caption{Plot.}
-  \label{fig:plot}
-\end{figure}
