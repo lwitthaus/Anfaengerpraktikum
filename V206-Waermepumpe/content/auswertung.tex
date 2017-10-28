@@ -75,7 +75,7 @@ Differentialquotient ist
 \begin{equation}
   \frac{\symup{d}T}{\symup{d}t} = 2At + B .
 \end{equation}
-Somit ergeben sich folgende Werte.
+Somit ergeben sich folgende Werte:
 \begin{table}
   \centering
   \caption{Gemessene und berechnete Werte}
@@ -91,9 +91,13 @@ Somit ergeben sich folgende Werte.
    \bottomrule
  \end{tabular}
 \end{table}
-Die Standardabweichungen werden hier mit der Gaußschen Fehlerfortpflanzung berechnet:
+
+Die Standardabweichungen werden hier mit der Gaußschen Fehlerfortpflanzung berechnet: \\
 \begin{equation}
-  %Formel
+  \sigma_f = \sqrt{
+    \sum\limits_{i = 1}^N
+      \left( \frac{\partial f}{\partial x_i} \sigma_i \right)^{\!\! 2}
+    }
 \end{equation}
 \subsection{Berechnung der Güteziffern}
 Die Güteziffer $\nu$ wird für die berechneten Differentialquotionenten mit zugehörigem Fehler mit Gleichung (9) bestimmt.
@@ -124,11 +128,14 @@ komprimiert. Beides kann in der Realität nicht vollständig umgesetzt werden. A
 geht über die Zeit wärme verloren, was ebenfalls nicht den idealen Vorraussetzungen entspricht.
 \subsection{Bestimmung des Massendurchsatzes}
 Der Massendurchsatz lässt sich mit den Gleichungen (14) und (15) bestimmen. Zunächst
-wird die entnommene Wärmemenge mit Gleichung (14) bestimmt und es ergeben sich
-folgende Werte:
+wird die Verdampfungswärme ermittelt. Dafür trägt man den natürlichen Logarithmus von
+$\frac{p_b}{p_0}$ als Funktion von $\frac{1}{T}$ auf. Die Steigung der sich ergebenden
+Geraden ist die Verdampfungswärme $L$.
 \begin{figure}[H]
   \centering
   \includegraphics{build/Verdampfungswaerme.pdf}
   \caption{ln(pb/pa) gegen 1/T.}
   \label{fig:Verdampfungswaerme}
 \end{figure}
+Die Verdampfungswärme beträgt dann $(-15513.4058 \pm 903.7570)$ $\frac{\symup{Js}}{\symup{molK}}$.
+Für $m_kc_k$ wird $750 \frac{\symup{J}}{K}$ verwendet und $m_1c_w$ beträgt \SI{16720}{\joule\per\kelvin}.
