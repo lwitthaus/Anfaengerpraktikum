@@ -9,7 +9,7 @@ benötigt werden. Test
   \label{tab:Werte}
   \begin{tabular}{c c c c c c c c}
     \toprule
-    $t/$s & $p_a/$Pa & $p_b/$Pa & $T_1/$K & $T_2/$K & $P$/W & $1/T_1/(\symup{\frac{1}{K}})$ & $\ln(\frac{p_b}{p_0})$ \\
+    $t/$s & $T_1/$K & $T_2/$K & $p_a/$Pa & $p_b/$Pa & $P$/W & $1/T_1/(\symup{\frac{1}{K}})$ & $\ln(\frac{p_b}{p_0})$ \\
     \midrule
       60  &  295.5 &  295.4 & 460000  &  660000 & 120 & 0.0034 & 1.8586 \\
      120  &  296.8 &  294.8 & 460000  &  660000 & 125 & 0.0034 & 1.8739 \\
@@ -123,7 +123,9 @@ voraus, dass der Prozess reversibel ist und, dass der Kompressor adiabatisch
 komprimiert. Beides kann in der Realität nicht vollständig umgesetzt werden. Außerdem
 geht über die Zeit wärme verloren, was ebenfalls nicht den idealen Vorraussetzungen entspricht.
 \subsection{Bestimmung des Massendurchsatzes}
-
+Der Massendurchsatz lässt sich mit den Gleichungen (14) und (15) bestimmen. Zunächst
+wird die entnommene Wärmemenge mit Gleichung (14) bestimmt und es ergeben sich
+folgende Werte:
 \begin{figure}[H]
   \centering
   \includegraphics{build/Verdampfungswaerme.pdf}
