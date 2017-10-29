@@ -4,7 +4,7 @@ from scipy.optimize import curve_fit
 
 t, T, ln = np.genfromtxt('Verdampfungswaerme.txt', unpack=True)
 
-plt.plot(T, ln, 'k.', label='ln($p_b$/$p_a$)', Markersize=4)
+plt.plot(T, ln, 'k.', label='ln($p_b$/$p_0$)', Markersize=4)
 
 def f(x, a, b):
    return a * x + b
@@ -15,8 +15,8 @@ plt.plot(x_plot, f(x_plot, *params), 'k-', label='Fit', linewidth=0.5)
 plt.title('Verdampfungswärme')
 plt.legend()
 plt.grid()
-plt.xlabel('1/T [1/K]')
-plt.ylabel('ln($p_b$/$p_a$)')
+plt.xlabel('1/$T_1$ [1/K]')
+plt.ylabel('ln($p_b$/$p_0$)')
 print(params)
 print(np.sqrt(np.diag(covariance_matrix)))
 
