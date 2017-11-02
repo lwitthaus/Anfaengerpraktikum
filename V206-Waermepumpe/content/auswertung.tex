@@ -1,5 +1,6 @@
 \section{Auswertung}
 \label{sec:Auswertung}
+
 Die gemessenen Werte werden in einer Tabelle dargestellt. Zusätzlich werden weitere
 daraus folgende Größen in diese Tabelle eingetragen, welche für spätere Rechnungen
 benötigt werden.
@@ -44,6 +45,13 @@ benötigt werden.
     \bottomrule
   \end{tabular}
 \end{table}
+
+\subsection{Verwendete Software}
+Im Folgenden werden alle Graphen mithilfe der Python-Pakete "matplotlib" \cite{matplotlib},
+"numpy" \cite{numpy} und "scipy" \cite{scipy} erstellt. letzteres dient dabei
+speziell für Regressionskurven. \\
+Fehlerrechnungen werden mit dem Paket "uncertainties" \cite{uncertainties} durchgeführt.
+
 \subsection{Erstellung der Temperaturen und Regressionskurven}
 Die Temperaturen $T_1$ und $T_2$ werden in einem Zeitraum von 30 Minuten gemessen und in einem Diagramm dargestellt.
 
@@ -92,13 +100,15 @@ Somit ergeben sich folgende Werte:
  \end{tabular}
 \end{table}
 
-Die Standardabweichungen werden hier mit der Gaußschen Fehlerfortpflanzung berechnet: \\
-\begin{equation}
-  \sigma_f = \sqrt{
-    \sum\limits_{i = 1}^N
-      \left( \frac{\partial f}{\partial x_i} \sigma_i \right)^{\!\! 2}
-    }
-\end{equation}
+%Die Standardabweichungen werden hier mit dem Python-Package "Uncertainties" \cite{uncertainties} berechnet,
+%welches die Gaußsche Fehlerfortpflanzung  \\
+%\begin{equation}
+%  \sigma_f = \sqrt{
+%    \sum\limits_{i = 1}^N
+%      \left( \frac{\partial f}{\partial x_i} \sigma_i \right)^{\!\! 2}
+%    }
+%\end{equation}
+%nutzt.
 \subsection{Berechnung der Güteziffern}
 Die Güteziffer $\nu$ wird für die berechneten Differentialquotionenten mit zugehörigem Fehler mit Gleichung (9) bestimmt.
 Dabei beträgt die Wärmekapazität des Wassers 4,18 $\frac{J}{gK}$. \cite{sample1}
@@ -131,7 +141,7 @@ geht über die Zeit wärme verloren, was ebenfalls nicht den idealen Vorraussetz
 Der Massendurchsatz lässt sich mit den Gleichungen (10) und (11) bestimmen. Zunächst
 wird die Verdampfungswärme ermittelt. Dafür trägt man den natürlichen Logarithmus von
 $\frac{p_b}{p_0}$ als Funktion von $\frac{1}{T_1}$ auf. Die Steigung der sich ergebenden
-Geraden ist die Verdampfungswärme $L$.
+Geraden ist die Verdampfungswärme $L$. \cite{sample2}
 \begin{figure}[H]
   \centering
   \includegraphics{build/Verdampfungswaerme.pdf}
