@@ -1,21 +1,23 @@
 import matplotlib.pyplot as plt
 import numpy as np
+from scipy.optimize import curve_fit
 
-x = np.linspace(0, 10, 1000)
-y = x ** np.sin(x)
+n, a, t = np.genfromtxt('daten.txt', unpack=True)
 
-plt.subplot(1, 2, 1)
-plt.plot(x, y, label='Kurve')
-plt.xlabel(r'$\alpha \:/\: \si{\ohm}$')
-plt.ylabel(r'$y \:/\: \si{\micro\joule}$')
-plt.legend(loc='best')
+def f(x, a, b):
+   return a * x + b
 
-plt.subplot(1, 2, 2)
-plt.plot(x, y, label='Kurve')
-plt.xlabel(r'$\alpha \:/\: \si{\ohm}$')
-plt.ylabel(r'$y \:/\: \si{\micro\joule}$')
-plt.legend(loc='best')
+x_plot = np.linspace(40,270)
+params, covariance_matrix = curve_fit(f, a**2, t**2)
+plt.plot(x_plot, f(x_plot, *params), 'k-', label='Fit Schwingdauer', linewidth=0.5)
+print(params)
+print(np.sqrt(np.diag(covariance_matrix)))
 
-# in matplotlibrc leider (noch) nicht möglich
-plt.tight_layout(pad=0, h_pad=1.08, w_pad=1.08)
+plt.plot(a**2,t**2, 'r.', label='Schwingdauer', Markersize=4)
+plt.title('Verhältnis Abstand zu Schwingdauer')
+plt.legend()
+plt.grid()
+plt.xlabel('$a^2$ / $cm^2$')
+plt.ylabel('$t^2$ / $s^2$')
+
 plt.savefig('build/plot.pdf')
