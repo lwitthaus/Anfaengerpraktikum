@@ -196,9 +196,27 @@ Als Mittelwerte ergeben sich:
 \end{equation}
 Das Trägheitsmoment der Puppe in Pose 1 lässt sich mit der Gleichung
 \begin{equation}
-  I_{P_1} = I_K + I_R + 2*(I_A + m_A(R_R + R_A)^2) + 2(I_B + m_B R_B^2)
+  I_{P_1} = I_K + I_R + 2(I_A + m_A(R_R + R_A)^2) + 2(I_B + m_B R_B^2)
 \end{equation}
-berechnen. $I_K$ ist das Trägheitsmoment des Kopfes, $m_A= 0.020$kg die Masse des Kopfes,
-$I_R = $ das Trägheitsmoment des Rumpfes,
-$R_R$ der Radius des Rumpfes, $R_A = 0.0083$ der radius des Armes, $I_B = 8.67 \cdot 10^{-7} \symup{kgm^2}$ das Trägheitsmoment des Beines,
+berechnen. $I_K = 0.0000043 \symup{kgm^2}$ ist das Trägheitsmoment des Kopfes,
+$m_A= 0.020$kg die Masse des Armes,
+$I_A= 6.89 \cdot 10^{-7}\symup{kgm^2}$  das Trägheitsmoment des Armes, $I_R = 0.0000127 \symup{kgm^2}$ das Trägheitsmoment des Rumpfes,
+$R_R = 0.0188$m der Radius des Rumpfes, $R_A = 0.0083$ der radius des Armes, $I_B = 8.67 \cdot 10^{-7} \symup{kgm^2}$ das Trägheitsmoment des Beines,
 $m_B = 0.024$kg die Masse des Beines und $R_B = 0.0085$m der Radius des Beines ist.
+Die Masse wird aus der Dichte des Holzes und aus dem Volumen des Armes ermittelt.
+Mit diesen Werten folgt für das Trägheitsmoment der Puppe in Pose 1:
+\begin{equation}
+I_{P_1} = 1.894 \cdot 10^{-4} \symup{kgm^2}
+\end{equation}
+Die Abweichung des berechneten Wertes von dem Theoriewert beträgt $28.5\%$
+Für das Trägheitsmoment der Puppe in Pose 2 gilt:
+\begin{equation}
+  I_{P_2} = I_K + I_R + 2(I_A + m_A(R_R + \frac{h_A}{2})^2) + 2(I_B + m_B R_B^2)
+\end{equation}
+$I_A$ ist nun das Trägheitsmoment eines Zylinder des Drehachse durch den Zylindermantel
+verläuft und $h_A= 0.0138$m die Höhe des Zylinders.
+Das Trägheitsmoment $I_{P_2}$ beträgt:
+\begin{equation}
+  I_{P_2} = 1.2787 \cdot 10^{-4} \symup{kgm^2}
+\end{equation}
+Die Abweichung des berechneten Wertes von dem Theoriewert beträgt $46.2 \%$.
