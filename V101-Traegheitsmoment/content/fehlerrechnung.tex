@@ -16,3 +16,9 @@ Fehlerfortpflanzung berechnet:
        \left( \frac{\partial f}{\partial x_i} \sigma_i \right)^{\!\! 2}
      }
 \end{equation}
+Der Fehler der Steigung $m$ und des Achsenabschnittes $b$ einer linearen Regression
+wird wie folgt berechnet:
+\begin{align}
+  \sigma_m &= \frac{\overline{xy}-\bar{x}\cdot\bar{y}}{\bar{x^2}-\bar{x}^2} \\
+  \sigma_b &= \frac{\bar{x^2}\bar{y}-\overline{xy}\bar{x}}{\bar{x^2}-\bar{x}^2}
+\end{align}
