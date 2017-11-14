@@ -9,12 +9,12 @@ def f(x, a, b, c):
 
 x_plot = np.linspace(0,2000)
 params, covariance_matrix = curve_fit(f, n*60, T1)
-plt.plot(x_plot, f(x_plot, *params), 'r-', label='Fit T1', linewidth=0.5)
+plt.plot(x_plot, f(x_plot, *params), 'r-', label='Anpassungsfunktion T1', linewidth=0.5)
 print(params)
 print(np.sqrt(np.diag(covariance_matrix)))
 
 params, covariance_matrix = curve_fit(f, n*60, T2)
-plt.plot(x_plot, f(x_plot, *params), 'b-', label='Fit T2', linewidth=0.5)
+plt.plot(x_plot, f(x_plot, *params), 'b-', label='Anpassungsfunktion T2', linewidth=0.5)
 
 plt.plot(n*60,T1, 'r.', label='T1', Markersize=4)
 plt.plot(n*60,T2, 'b.', label='T2', Markersize=4)
