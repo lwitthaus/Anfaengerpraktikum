@@ -1,18 +1,20 @@
 [0] Config.pm:354> INFO - This is Biber 2.7
 [0] Config.pm:357> INFO - Logfile is 'build\main.blg'
-[52] biber-MSWIN32:303> INFO - === 
-[89] Biber.pm:359> INFO - Reading 'build\main.bcf'
-[213] Biber.pm:835> INFO - Found 7 citekeys in bib section 0
-[228] Biber.pm:3670> INFO - Processing section 0
-[252] Biber.pm:3840> INFO - Looking for bibtex format file 'lit.bib' for section 0
-[256] bibtex.pm:1435> INFO - Decoding LaTeX character macros into UTF-8
-[261] bibtex.pm:1292> INFO - Found BibTeX data source 'lit.bib'
-[267] Biber.pm:3840> INFO - Looking for bibtex format file 'programme.bib' for section 0
-[272] bibtex.pm:1435> INFO - Decoding LaTeX character macros into UTF-8
-[274] bibtex.pm:1292> INFO - Found BibTeX data source 'programme.bib'
-[305] UCollate.pm:68> INFO - Overriding locale 'de-DE' defaults 'variable = shifted' with 'variable = non-ignorable'
-[305] UCollate.pm:68> INFO - Overriding locale 'de-DE' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[305] Biber.pm:3499> INFO - Sorting list 'nty/global/' of type 'entry' with scheme 'nty' and locale 'de-DE'
-[305] Biber.pm:3505> INFO - No sort tailoring available for locale 'de-DE'
-[313] bbl.pm:608> INFO - Writing 'build\main.bbl' with encoding 'UTF-8'
-[314] bbl.pm:712> INFO - Output to build\main.bbl
+[35] biber-MSWIN32:303> INFO - === 
+[60] Biber.pm:359> INFO - Reading 'build\main.bcf'
+[158] Biber.pm:835> INFO - Found 8 citekeys in bib section 0
+[173] Biber.pm:3670> INFO - Processing section 0
+[191] Biber.pm:3840> INFO - Looking for bibtex format file 'lit.bib' for section 0
+[194] bibtex.pm:1435> INFO - Decoding LaTeX character macros into UTF-8
+[198] bibtex.pm:1292> INFO - Found BibTeX data source 'lit.bib'
+[213] Utils.pm:164> WARN - BibTeX subsystem: C:\msys64\tmp\C4LfcerDkk\lit.bib_12528.utf8, line 21, warning: undefined macro "http://www.chemie.de/lexikon/Dichlordifluormethan.html"
+[214] Biber.pm:3840> INFO - Looking for bibtex format file 'programme.bib' for section 0
+[218] bibtex.pm:1435> INFO - Decoding LaTeX character macros into UTF-8
+[220] bibtex.pm:1292> INFO - Found BibTeX data source 'programme.bib'
+[246] UCollate.pm:68> INFO - Overriding locale 'de-DE' defaults 'variable = shifted' with 'variable = non-ignorable'
+[247] UCollate.pm:68> INFO - Overriding locale 'de-DE' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[247] Biber.pm:3499> INFO - Sorting list 'nty/global/' of type 'entry' with scheme 'nty' and locale 'de-DE'
+[247] Biber.pm:3505> INFO - No sort tailoring available for locale 'de-DE'
+[254] bbl.pm:608> INFO - Writing 'build\main.bbl' with encoding 'UTF-8'
+[256] bbl.pm:712> INFO - Output to build\main.bbl
+[257] Biber.pm:109> INFO - WARNINGS: 1
