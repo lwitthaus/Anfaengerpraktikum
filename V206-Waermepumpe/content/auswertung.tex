@@ -100,15 +100,14 @@ Somit ergeben sich folgende Werte:
  \end{tabular}
 \end{table}
 
-Die Standardabweichungen werden hier mit dem Python-Package "Uncertainties" \cite{uncertainties} berechnet,
-welches die Gaußsche Fehlerfortpflanzung  \\
+Die Standardabweichungen werden hier mit der Gaußschen Fehlerfortpflanzung berechnet: \\
 \begin{equation}
   \sigma_f = \sqrt{
-    \sum\limits_{i = 1}^N
-      \left( \frac{\partial f}{\partial x_i} \sigma_i \right)^{\!\! 2}
+      \left( \frac{\partial \left(\frac{\symup{d}T}{\symup{d}t}\right)}{\partial A} \sigma_A \right)^{\!\! 2} +
+      \left( \frac{\partial \left(\frac{\symup{d}T}{\symup{d}t}\right)}{\partial B} \sigma_B \right)^{\!\! 2}
     }
 \end{equation}
-nutzt. 
+
 \subsection{Berechnung der Güteziffern}
 Die Güteziffer $\nu$ wird für die berechneten Differentialquotionenten mit zugehörigem Fehler mit Gleichung (9) bestimmt.
 Dabei beträgt die Wärmekapazität des Wassers 4,18 $\frac{J}{gK}$ \cite{sample1}.
