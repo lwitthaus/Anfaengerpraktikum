@@ -10,38 +10,39 @@ benötigt werden.
   \label{tab:Werte}
   \begin{tabular}{c c c c c c c c}
     \toprule
-    $t/$s & $T_1/$K & $T_2/$K & $p_a/$Pa & $p_b/$Pa & $P$/W & $1/T_1/\left(\symup{\frac{1}{K}}\right)$ & $\ln\left(\frac{p_b}{p_0}\right)$ \\
+    $t/$s & $T_1/$K & $T_2/$K & $p_a/(10^{5}\symup{Pa})$ & $p_b/(10^{5}\symup{Pa})$ &
+    $P$/W & $1/T_1/\left(10^{-3}\symup{\frac{1}{K}}\right)$ & $\ln\left(\frac{p_b}{p_0}\right)$ \\
     \midrule
-      60  &  295.5 &  295.4 & 460000  &  660000 & 120 & 0.0034 & 1.8586 \\
-     120  &  296.8 &  294.8 & 460000  &  660000 & 125 & 0.0034 & 1.8739 \\
-     180  &  297.9 &  293.8 & 480000  &  700000 & 127 & 0.0034 & 1.8739 \\
-     240  &  299.2 &  292.5 & 480000  &  710000 & 129 & 0.0034 & 1.9327 \\
-     300  &  300.5 &  291.5 & 480000  &  740000 & 129 & 0.0033 & 1.9469 \\
-     360  &  301.8 &  290.6 & 470000  &  770000 & 128 & 0.0033 & 1.9883 \\
-     420  &  303.0 &  289.8 & 400000  &  790000 & 125 & 0.0033 & 2.0281 \\
-     480  &  304.3 &  289.0 & 450000  &  800000 & 125 & 0.0033 & 2.0537 \\
-     540  &  305.4 &  288.3 & 440000  &  840000 & 125 & 0.0033 & 2.0663 \\
-     600  &  306.6 &  287.8 & 440000  &  860000 & 125 & 0.0033 & 2.1151 \\
-     660  &  307.8 &  287.0 & 420000  &  880000 & 125 & 0.0033 & 2.1386 \\
-     720  &  308.8 &  286.3 & 420000  &  900000 & 125 & 0.0032 & 2.1616 \\
-     780  &  309.8 &  285.8 & 410000  &  910000 & 125 & 0.0032 & 2.1841 \\
-     840  &  310.8 &  285.1 & 410000  &  940000 & 125 & 0.0032 & 2.1951 \\
-     900  &  311.8 &  284.5 & 400000  &  960000 & 125 & 0.0032 & 2.2275 \\
-     960  &  312.6 &  283.9 & 400000  &  990000 & 125 & 0.0032 & 2.2486 \\
-    1020  &  313.5 &  283.4 & 390000  & 1000000 & 125 & 0.0032 & 2.2794 \\
-    1080  &  314.4 &  282.9 & 390000  &  910000 & 125 & 0.0032 & 2.2894 \\
-    1140  &  315.2 &  282.4 & 380000  & 1040000 & 125 & 0.0032 & 2.3319 \\
-    1200  &  316.0 &  282.0 & 380000  & 1080000 & 125 & 0.0032 & 2.3286 \\
-    1260  &  316.8 &  281.9 & 380000  & 1080000 & 125 & 0.0032 & 2.3664 \\
-    1320  &  317.6 &  281.1 & 380000  & 1100000 & 125 & 0.0032 & 2.3664 \\
-    1380  &  318.3 &  280.8 & 380000  & 1100000 & 125 & 0.0031 & 2.3847 \\
-    1440  &  319.0 &  280.5 & 370000  & 1120000 & 125 & 0.0031 & 2.3847 \\
-    1500  &  319.8 &  280.1 & 370000  & 1150000 & 125 & 0.0031 & 2.4028 \\
-    1560  &  320.3 &  279.8 & 370000  & 1160000 & 125 & 0.0031 & 2.4292 \\
-    1620  &  321.0 &  279.5 & 370000  & 1190000 & 125 & 0.0031 & 2.4378 \\
-    1680  &  321.6 &  279.3 & 360000  & 1200000 & 125 & 0.0031 & 2.4634 \\
-    1740  &  322.2 &  279.0 & 360000  & 1200000 & 125 & 0.0031 & 2.4717 \\
-    1800  &  322.8 &  278.8 & 360000  & 1210000 & 125 & 0.0031 & 2.4800 \\
+      60  &  295.5 &  295.4 & 4.6  &  6.6 & 120 & 3.4 & 1.8586 \\
+     120  &  296.8 &  294.8 & 4.6  &  6.6 & 125 & 3.4 & 1.8739 \\
+     180  &  297.9 &  293.8 & 4.8  &  7.0 & 127 & 3.4 & 1.8739 \\
+     240  &  299.2 &  292.5 & 4.8  &  7.1 & 129 & 3.4 & 1.9327 \\
+     300  &  300.5 &  291.5 & 4.8  &  7.4 & 129 & 3.3 & 1.9469 \\
+     360  &  301.8 &  290.6 & 4.7  &  7.7 & 128 & 3.3 & 1.9883 \\
+     420  &  303.0 &  289.8 & 4.0  &  7.9 & 125 & 3.3 & 2.0281 \\
+     480  &  304.3 &  289.0 & 4.5  &  8.0 & 125 & 3.3 & 2.0537 \\
+     540  &  305.4 &  288.3 & 4.4  &  8.4 & 125 & 3.3 & 2.0663 \\
+     600  &  306.6 &  287.8 & 4.4  &  8.6 & 125 & 3.3 & 2.1151 \\
+     660  &  307.8 &  287.0 & 4.2  &  8.8 & 125 & 3.3 & 2.1386 \\
+     720  &  308.8 &  286.3 & 4.2  &  9.0 & 125 & 3.2 & 2.1616 \\
+     780  &  309.8 &  285.8 & 4.1  &  9.1 & 125 & 3.2 & 2.1841 \\
+     840  &  310.8 &  285.1 & 4.1  &  9.4 & 125 & 3.2 & 2.1951 \\
+     900  &  311.8 &  284.5 & 4.0  &  9.6 & 125 & 3.2 & 2.2275 \\
+     960  &  312.6 &  283.9 & 4.0  &  9.9 & 125 & 3.2 & 2.2486 \\
+    1020  &  313.5 &  283.4 & 3.9  & 10.0 & 125 & 3.2 & 2.2794 \\
+    1080  &  314.4 &  282.9 & 3.9  &  9.1 & 125 & 3.2 & 2.2894 \\
+    1140  &  315.2 &  282.4 & 3.8  & 10.4 & 125 & 3.2 & 2.3319 \\
+    1200  &  316.0 &  282.0 & 3.8  & 10.8 & 125 & 3.2 & 2.3286 \\
+    1260  &  316.8 &  281.9 & 3.8  & 10.8 & 125 & 3.2 & 2.3664 \\
+    1320  &  317.6 &  281.1 & 3.8  & 11.0 & 125 & 3.2 & 2.3664 \\
+    1380  &  318.3 &  280.8 & 3.8  & 11.0 & 125 & 3.1 & 2.3847 \\
+    1440  &  319.0 &  280.5 & 3.7  & 11.2 & 125 & 3.1 & 2.3847 \\
+    1500  &  319.8 &  280.1 & 3.7  & 11.5 & 125 & 3.1 & 2.4028 \\
+    1560  &  320.3 &  279.8 & 3.7  & 11.6 & 125 & 3.1 & 2.4292 \\
+    1620  &  321.0 &  279.5 & 3.7  & 11.9 & 125 & 3.1 & 2.4378 \\
+    1680  &  321.6 &  279.3 & 3.6  & 12.0 & 125 & 3.1 & 2.4634 \\
+    1740  &  322.2 &  279.0 & 3.6  & 12.0 & 125 & 3.1 & 2.4717 \\
+    1800  &  322.8 &  278.8 & 3.6  & 12.1 & 125 & 3.1 & 2.4800 \\
     \bottomrule
   \end{tabular}
 \end{table}
@@ -66,15 +67,15 @@ Die Temperaturen $T_1$ und $T_2$ werden in einem Zeitraum von 30 Minuten gemesse
 Für die Regressionskurve wird die Funktion $T(t) = At^2 + Bt + C$ verwendet. Die
 Parameter A, B, C und deren jeweilige Fehler für $T_2$ betragen:
 \begin{align*}
-  A &= (3.67 \pm 0.15) \cdot 10^{-6} \frac{\symup{K}}{\symup{s^2}} \\
-  B &= (-1.61 \pm 0.03) \cdot 10^{-2} \frac{\symup{K}}{\symup{s}}  \\
-  C &= (296.15 \pm 0.11) \cdot  \symup{K}
+  A_2 &= (3.67 \pm 0.15) \cdot 10^{-6} \frac{\symup{K}}{\symup{s^2}} \\
+  B_2 &= (-1.61 \pm 0.03) \cdot 10^{-2} \frac{\symup{K}}{\symup{s}}  \\
+  C_2 &= (296.15 \pm 0.11) \cdot  \symup{K}
 \end{align*}
 Für $T_1$ ergeben sich folgende Parameter:
 \begin{align*}
-  A &= (-3.87 \pm 0.13) \cdot 10^{-6} \frac{\symup{K}}{\symup{s^2}} \\
-  B &= (2.28 \pm 0.02)  \cdot 10^{-2} \frac{\symup{K}}{\symup{s}}  \\
-  C &= (294.26 \pm 0.10 )\cdot \symup{K}
+  A_1 &= (-3.87 \pm 0.13) \cdot 10^{-6} \frac{\symup{K}}{\symup{s^2}} \\
+  B_1 &= (2.28 \pm 0.02)  \cdot 10^{-2} \frac{\symup{K}}{\symup{s}}  \\
+  C_1 &= (294.26 \pm 0.10 )\cdot \symup{K}
 \end{align*}
 \subsection{Bestimung von vier Differentialquotienten von $T_1$}
 Die Differentialquotienten der Temperaturen $T_1$ und $T_2$ werden für vier verschieden
@@ -102,19 +103,16 @@ Somit ergeben sich folgende Werte:
 
 Die Standardabweichungen werden hier mit der Gaußschen Fehlerfortpflanzung berechnet: \\
 \begin{equation}
-  \sigma_f = \sqrt{
-      \left( \frac{\partial \left(\frac{\symup{d}T}{\symup{d}t}\right)}{\partial A} \sigma_A \right)^{\!\! 2} +
-      \left( \frac{\partial \left(\frac{\symup{d}T}{\symup{d}t}\right)}{\partial B} \sigma_B \right)^{\!\! 2}
+  \sigma_T = \sqrt{
+      \left( \frac{\partial(2A_1t + B_1)}{\partial A_1} \sigma_{A_1} \right)^{\!\! 2} +
+      \left( \frac{\partial \left( 2A_1t + B_1 \right)}{\partial B_1} \sigma_{B_1} \right)^{\!\! 2}
     }
 \end{equation}
 
 \subsection{Berechnung der Güteziffern}
 Die Güteziffer $\nu$ wird für die berechneten Differentialquotionenten mit zugehörigem Fehler mit Gleichung (9) bestimmt.
 Dabei beträgt die Wärmekapazität des Wassers 4,18 $\frac{J}{gK}$ \cite{sample1}.
-Die idealen Güteziffern werden mit der Formel
-\begin{equation}
-  \nu_{ideal} = \frac{T_1}{T_1-T_2}
-\end{equation}
+Die idealen Güteziffern werden mit Gleichung (6)
 ermittelt. Es ergeben sich folgende Werte:
 \begin{table}
   \centering
@@ -131,6 +129,15 @@ ermittelt. Es ergeben sich folgende Werte:
     \bottomrule
   \end{tabular}
 \end{table}
+
+Der Fehler wird wie folgt berechnet:
+\begin{equation}
+  \sigma_G = \frac{1}{N}(m_1c_w + c_km_k)\sqrt{
+      \left( \frac{\partial(2A_2t + B_2)}{\partial A_2} \sigma_{A_2} \right)^{\!\! 2} +
+      \left( \frac{\partial \left( 2A_2t + B_2 \right)}{\partial B_2} \sigma_{B_2} \right)^{\!\! 2}
+    }
+\end{equation}
+
 
 Es wird eine deutliche Abweichung erkennbar. Die ideale Güteziffern setzen
 voraus, dass der Prozess reversibel ist und, dass der Kompressor adiabatisch
@@ -149,37 +156,47 @@ Geraden ist die Verdampfungswärme $L$ \cite{sample2}.
 \end{figure}
 Die Gerade kann durch die Gleichung
 \begin{equation}
-  y = (-1865 \pm 108)x + (8.22 \pm 0.35)
+  y = ax + b = (-1865 \pm 108)x + (8.22 \pm 0.35)
 \end{equation}
 beschrieben werden.
 Die Verdampfungswärme beträgt dann $L = (-15513 \pm 903)$J.
 Für $m_kc_k$ wird $750 \frac{\symup{J}}{\symup{K}}$ verwendet und $m_1c_w$ beträgt \SI{16720}{\joule\per\kelvin}.
-Es ergeben sich folgende Massendurchsätze mit zugehöriger Abweichung:
+Es ergeben sich folgende Massendurchsätze mit zugehörigem Fehler:
 \begin{table}[H]
   \centering
   \caption{Massendurchsätze}
   \label{tab:Massendurchsätze}
-  \begin{tabular}{c c}
+  \begin{tabular}{c c c}
     \toprule
-    $\frac{\Delta m}{\Delta t}/\frac{\symup{g}}{\symup{s}}$ & Fehler \\
+    $t/$s &$\frac{\Delta m}{\Delta t}/\frac{\symup{g}}{\symup{s}}$ & Fehler \\
     \midrule
-    -1.70 & 0.10 \\
-    -1.38 & 0.09 \\
-    -1.05 & 0.08 \\
-    -0.74 & 0.06 \\
+      600 & -1.70 & 0.10 \\
+      900 & -1.38 & 0.09 \\
+     1200 & -1.05 & 0.08 \\
+     1500 & -0.74 & 0.06 \\
     \bottomrule
   \end{tabular}
 \end{table}
+
+Der Fehler wird wie folgt berechnet:
+\begin{equation}
+  \sigma_m = (m_2c_w + c_km_k)\sqrt{
+      \left( \frac{\partial \left(\frac{2A_2t + B_2}{a}\right)}{\partial A_2} \sigma_{A_2} \right)^{\!\! 2} +
+      \left( \frac{\partial \left(\frac{2A_2t + B_2}{a}\right)}{\partial B_2} \sigma_{B_2} \right)^{\!\! 2} +
+      \left( \frac{\partial \left(\frac{2A_2t + B_2}{a}\right)}{\partial a} \sigma_{a} \right)^{\!\! 2}
+    }
+\end{equation}
+
 Um den Massendurchsatz in $\frac{\symup{g}}{\symup{s}}$ zu erhalten muss er noch
 mit der Molaren Masse von Dichlordiflourmethan multipliziert werden.
 Diese beträgt $120.9\frac{\symup{g}}{\symup{mol}}$.
 \subsection{Bestimmung der mechanischen Kompressorleistung}
 Die mechanische Kompressorleistung $N_{mech}$ lässt sich mit Gleichung (15) berechnen. Die dafür
 benötigten Größen werden der Anleitung[1] entnommen und betragen:
-\begin{align}
+\begin{align*}
   \rho = \SI{5.51}{\kilo\gram\per\cubic\meter} \\
   \kappa = 1.14
-\end{align}
+\end{align*}
 Um die Dichte den vorhandenen Bedingungen anzupassen wird die ideale Gasgleichung
 verwendet. Es gilt:
 \begin{equation}
@@ -192,12 +209,18 @@ Für die Kompressorleistung und dessen Fehler folgt:
   \label{tab:Mechanische Kompressorleistung}
   \begin{tabular}{c c c c}
     \toprule
-    t / s  &$\rho/\frac{\symup{g}}{\symup{m^3}}$ & $N_{mech}/$W & Fehler \\
+    t / s  &$\rho/\left(10^{4}\frac{\symup{g}}{\symup{m^3}}\right)$ & $N_{mech}/$W & Fehler \\
     \midrule
-     600 & 23094.1369 & -19.9 & 1.2 \\
-     900 & 20994.6699 & -21.3 & 1.4 \\
-    1200 & 19944.9364 & -19.7 & 1.4 \\
-    1500 & 19420.0696 & -15.0 & 1.3 \\
+     600 & 2.31 & -19.9 & 1.2 \\
+     900 & 2.10 & -21.3 & 1.4 \\
+    1200 & 1.99 & -19.7 & 1.4 \\
+    1500 & 1.94 & -15.0 & 1.3 \\
     \bottomrule
   \end{tabular}
 \end{table}
+
+Der Fehler der Kompressorleistung wird wie folgt berechnet:
+\begin{equation}
+  \sigma_N = \frac{1}{\kappa -1} \left(p_b \sqrt[\kappa]{\frac{p_a}{p_b}}-p_a\right)\frac{1}{\rho} \sigma_m
+\end{equation}
+$\sigma_m$ ist der Fehler des Massendurchsatzes.
