@@ -1,5 +1,7 @@
 \section{Auswertung}
 \label{sec:Auswertung}
+Die gemessenen Durchbiegungen und deren Orte werden in in Tabelle 1 dargestellt. Zudem wird
+das Polynom angegeben, welches für die lineare Regression benötigt wird.
 
 \begin{table}[H]
   \centering
@@ -36,9 +38,31 @@
   \end{tabular}
 \end{table}
 
-\begin{figure}
+Die Länge des eingespannten Stabes beträgt $L = 0.5 \symup{m}$. Die Masse des
+Gewichtes beträgt $m = 533.8$g.
+Die Durchbiegung wird gegen das Polynom $\left(Lx^2 -\frac{x^3}{3}\right)$ aufgetragen. Eine
+lineare Regression wird durchgeführt.
+
+\begin{figure}[H]
   \centering
-  \includegraphics{plot.pdf}
-  \caption{Plot.}
-  \label{fig:plot}
+  \includegraphics{build/plot.pdf}
+  \caption{Ausgleichsgerade zur Bestimmung des Elastizitätsmodul}
+  \label{fig:Elastizitätsmodul}
 \end{figure}
+
+Die Gerade wird durch die Gleichung $y = ax + b$ beschrieben. Die Parameter betragen:
+\begin{align*}
+  a &= 0.059 \pm 0.001 \\
+  b &= 0.22  \pm 0.05
+\end{align*}
+
+Mit der Steigung $a$ und Gleichung (10) folgt für das Elastizitätsmodultizität:
+\begin{equation}
+  E = \frac{mg}{2I \cdot a}
+\end{equation}
+
+Das Flächenträgheitsmoment eines zylinderförmigen Stabes mit dem Radius
+$r = $ beträgt:
+\begin{equation}
+  I_{Kreis} = \frac{\pi r^4}{4} =
+\end{equation}

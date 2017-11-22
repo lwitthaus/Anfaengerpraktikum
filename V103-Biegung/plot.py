@@ -1,21 +1,22 @@
 import matplotlib.pyplot as plt
 import numpy as np
+from scipy.optimize import curve_fit
 
-x = np.linspace(0, 10, 1000)
-y = x ** np.sin(x)
+D, P = np.genfromtxt('daten1.txt', unpack=True)
 
-plt.subplot(1, 2, 1)
-plt.plot(x, y, label='Kurve')
-plt.xlabel(r'$\alpha \:/\: \si{\ohm}$')
-plt.ylabel(r'$y \:/\: \si{\micro\joule}$')
-plt.legend(loc='best')
+def f(x, c, b):
+   return c * x + b
 
-plt.subplot(1, 2, 2)
-plt.plot(x, y, label='Kurve')
-plt.xlabel(r'$\alpha \:/\: \si{\ohm}$')
-plt.ylabel(r'$y \:/\: \si{\micro\joule}$')
-plt.legend(loc='best')
-
-# in matplotlibrc leider (noch) nicht möglich
-plt.tight_layout(pad=0, h_pad=1.08, w_pad=1.08)
+x_plot = np.linspace(0,80)
+params, covariance_matrix = curve_fit(f, P, D)
+plt.plot(x_plot, f(x_plot, *params), 'k-', label='Anpassungsfunktion', linewidth=0.5)
+print(params)
+print(np.sqrt(np.diag(covariance_matrix)))
+plt.gcf().subplots_adjust(bottom=0.18)
+plt.plot(P ,D, 'r.', label='Schwingdauer', Markersize=4)
+plt.title('Verhältnis Auslenkung zu Polynom')
+plt.legend()
+plt.grid()
+plt.xlabel(r'$(Lx^2 -\frac{x^3}{3})$ / $m$')
+plt.ylabel(r'$D(x)$ / $m$')
 plt.savefig('build/plot.pdf')
