@@ -34,7 +34,7 @@ das Polynom angegeben, welches für die lineare Regression benötigt wird.
   \label{tab:Parameter}
   \begin{tabular}{c c c}
     \toprule
-    $x/\left(10^{-3}\symup{m}\right)$ & $D_R(x)/\left(10^{-3}\symup{m}\right)$ & $\left(Lx^2 -\frac{x^3}{3}\right)/\left(10^{-3}\symup{m}\right)$\\
+    $x/\left(10^{-3}\symup{m}\right)$ & $D_R(x)/\left(10^{-3}\symup{m}\right)$ & $\left(Lx^2 -\frac{x^3}{3}\right)/\left(10^{-3}\symup{m^3}\right)$\\
     \midrule
      40 & 0.1 &  0.8 \\
      60 & 0.2 &  1.7 \\
@@ -124,7 +124,7 @@ das Polynom angegeben, welches für die lineare Regression benötigt wird.
   \label{tab:quadratischer Stab}
   \begin{tabular}{c c c}
     \toprule
-    $x/\left(10^{-3}\symup{m}\right)$ & $D_Q(x)/\left(10^{-3}\symup{m}\right)$ & $\left(Lx^2 -\frac{x^3}{3}\right)/\left(10^{-3}\symup{m}\right)$\\
+    $x/\left(10^{-3}\symup{m}\right)$ & $D_Q(x)/\left(10^{-3}\symup{m}\right)$ & $\left(Lx^2 -\frac{x^3}{3}\right)/\left(10^{-3}\symup{m^3}\right)$\\
     \midrule
      40 & 0.1 &  0.8 \\
      60 & 0.3 &  1.7 \\
@@ -168,9 +168,9 @@ Die Gerade wird durch die Gleichung $y = cx + d$ beschrieben. Die Parameter betr
 
 
 Mit der Steigung $c$ und Gleichung (10) folgt für den Elastizitätsmodul:
-%\begin{equation}
-%  E = \SI{6.9(0.1)e10}{\kilo\gram\per\second\squared\square\meter}
-%\end{equation}
+\begin{equation}
+  E = \SI{6.9(1)e10}{\kilo\gram\per\second\squared\square\meter}
+\end{equation}
 
 Das Flächenträgheitsmoment $I_Q$ eines quaderförmigen Stabes mit der Kantenlänge
 $k = 1$cm beträgt:
