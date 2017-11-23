@@ -97,10 +97,10 @@ Für den Elastizitätsmodul folgt:
 \end{align*}
 Der Fehler von $E$ wird mit Gleichung (20) berechnet.
 
-Die Länge des Stabes beträgt $L = 0.55$m und die Masse des Stabes beträgt $m = 0.036$kg.
+Die Länge des Stabes beträgt $L = 0.55$m und die Masse des Stabes beträgt $m = 0.3604$kg.
 Daraus folgt für die Dichte:
 \begin{equation}
-  \rho = \frac{m}{V} = 83339 \symup{\frac{kg}{m^3}}
+  \rho = \frac{m}{V} = 8343 \symup{\frac{kg}{m^3}}
 \end{equation}
 
 Dieser Wert stimmt mit dem Literaturwert von Messing, $\rho =8100\symup{\frac{kg}{m^3}}\: \text{bis}\:\: 8700\symup{\frac{kg}{m^3}}$ \cite{sample2},
@@ -266,7 +266,31 @@ erwarteten Bereich des Theoriewertes für Messing.
 
 Die Messwerte für die andere Seite des Stabes werden in Tabelle 4 angegeben.
 
+\begin{table}[H]
+  \centering
+  \caption{Gemessene Durchbiegung und Auslenkungen des beidseitig eingespannten Stabes}
+  \label{tab:beidseitig}
+  \begin{tabular}{c c c}
+    \toprule
+    $x/\left(10^{-3}\symup{m}\right)$ & $D_{B2}(x)/\left(10^{-3}\symup{m}\right)$ & $\left(4x^3-12Lx^2 + 9L^2x-L^3\right)/\symup{(10^{-3}m^3)}$ \\
+    \midrule
+    320 & 3.0 & 164.2 \\
+    340 & 2.9 & 157.8 \\
+    360 & 2.6 & 149.4 \\
+    380 & 2.3 & 139.1 \\
+    400 & 2.5 & 127.2 \\
+    420 & 2.2 & 113.8 \\
+    440 & 1.9 & 99.0 \\
+    460 & 1.6 & 83.2 \\
+    480 & 1.0 & 66.5 \\
+    500 & 0.9 & 49.1 \\
+    520 & 0.6 & 31.1 \\
+    540 & 0.4 & 12.9 \\
+    \bottomrule
+  \end{tabular}
+\end{table}
 
+Eine lineare Regression wird für $x>L/2$ durchgeführt.
 
 \begin{figure}[H]
   \centering
