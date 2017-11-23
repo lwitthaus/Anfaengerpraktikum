@@ -1,6 +1,31 @@
 \section{Auswertung}
 \label{sec:Auswertung}
-Die gemessenen Durchbiegungen und deren Orte werden in in Tabelle 1 dargestellt. Zudem wird
+\subsection{Fehlerrechnung}
+Der Mittelwert eines Datensatzes mit $N$ Werten ist definiert durch:
+\begin{equation}
+  \bar{x} = \frac{1}{N} \sum_{i=1}^N x_i
+\end{equation}
+Die Standardabweichung eines Datensatzes von seinem Mittelwert durch:
+\begin{equation}
+  \sigma = \sqrt{\frac{1}{N(N-1)} \sum_{i=1}^N (x_i - \bar{x})}
+\end{equation}
+Pflanzen sich Unsicherheiten fort, wird der Fehler mit der gaußschen
+Fehlerfortpflanzung berechnet:
+\begin{equation}
+  \sigma_f = \sqrt{
+      \sum\limits_{i = 1}^N
+       \left( \frac{\partial f}{\partial x_i} \sigma_i \right)^{\!\! 2}
+     }
+\end{equation}
+Der Fehler der Steigung $m$ und des Achsenabschnittes $b$ einer linearen Regression
+wird wie folgt berechnet:
+\begin{align}
+  \sigma_m &= \frac{\overline{xy}-\bar{x}\cdot\bar{y}}{\bar{x^2}-\bar{x}^2} \\
+  \sigma_b &= \frac{\bar{x^2}\bar{y}-\overline{xy}\bar{x}}{\bar{x^2}-\bar{x}^2}
+\end{align}
+
+\subsection{Einseitig eingespannter, runder Stab}
+Die gemessenen Durchbiegungen $D_R$ und deren Orte werden in in Tabelle 1 dargestellt. Zudem wird
 das Polynom angegeben, welches für die lineare Regression benötigt wird.
 
 \begin{table}[H]
@@ -9,7 +34,7 @@ das Polynom angegeben, welches für die lineare Regression benötigt wird.
   \label{tab:Parameter}
   \begin{tabular}{c c c}
     \toprule
-    $x/\left(10^{-3}\symup{m}\right)$ & $D(x)/\left(10^{-3}\symup{m}\right)$ & $\left(Lx^2 -\frac{x^3}{3}\right)/\left(10^{-3}\symup{m}\right)$\\
+    $x/\left(10^{-3}\symup{m}\right)$ & $D_R(x)/\left(10^{-3}\symup{m}\right)$ & $\left(Lx^2 -\frac{x^3}{3}\right)/\left(10^{-3}\symup{m}\right)$\\
     \midrule
      40 & 0.1 &  0.8 \\
      60 & 0.2 &  1.7 \\
@@ -56,13 +81,99 @@ Die Gerade wird durch die Gleichung $y = ax + b$ beschrieben. Die Parameter betr
   b &= 0.22  \pm 0.05
 \end{align*}
 
-Mit der Steigung $a$ und Gleichung (10) folgt für das Elastizitätsmodultizität:
+Mit der Steigung $a$ und Gleichung (10) folgt für den Elastizitätsmodul:
 \begin{equation}
   E = \frac{mg}{2I \cdot a}
 \end{equation}
 
 Das Flächenträgheitsmoment eines zylinderförmigen Stabes mit dem Radius
-$r = $ beträgt:
+$r = 0.5$cm beträgt:
 \begin{equation}
-  I_{Kreis} = \frac{\pi r^4}{4} =
+  I_{Kreis} = \frac{\pi r^4}{4} = 4.909 \cdot 10^{-10} \symup{m^4} .
+\end{equation}
+Für den Elastizitätsmodul folgt:
+\begin{align*}
+  E = \SI{9.0(2)e10}{\kilo\gram\per\second\squared\square\meter}
+\end{align*}
+Der Fehler von $E$ wird mit Gleichung (20) berechnet.
+
+Die Länge des Stabes beträgt $L = 0.55$m und die Masse des Stabes beträgt $m = 0.036$kg.
+Daraus folgt für die Dichte:
+\begin{equation}
+  \rho = \frac{m}{V} = 83339 \symup{\frac{kg}{m^3}}
+\end{equation}
+
+Dieser Wert stimmt mit dem Literaturwert von Messing, $\rho =8100\symup{\frac{kg}{m^3}}\: \text{bis}\:\: 8700\symup{\frac{kg}{m^3}}$,
+über ein.
+Der Literaturwert des Elastizitätsmodul von Messing beträgt:
+\begin{align*}
+  E = \SI{7.8e10}{\kilo\gram\per\second\squared\square\meter} \:\: \text{bis} \:\:
+  \SI{13.0e10}{\kilo\gram\per\second\squared\square\meter} .
+\end{align*}
+
+Der aus dem Versuch berechnete Elastizitätsmoduls liegt in dem erwarteten Bereich des Theoriewertes.
+Die Legierung des Stabes ist Messing.
+
+\subsection{Einseitig eingespannter, quadratischer Stab}
+Die gemessenen Durchbiegungen $D_Q$ und deren Orte werden in in Tabelle 2 dargestellt. Zudem wird
+das Polynom angegeben, welches für die lineare Regression benötigt wird.
+
+\begin{table}[H]
+  \centering
+  \caption{Gemessene Kräfte und Auslenkungen des quadratischen Stabes}
+  \label{tab:quadratischer Stab}
+  \begin{tabular}{c c c}
+    \toprule
+    $x/\left(10^{-3}\symup{m}\right)$ & $D_Q(x)/\left(10^{-3}\symup{m}\right)$ & $\left(Lx^2 -\frac{x^3}{3}\right)/\left(10^{-3}\symup{m}\right)$\\
+    \midrule
+     40 & 0.1 &  0.8 \\
+     60 & 0.3 &  1.7 \\
+     80 & 0.4 &  3.0 \\
+    100 & 0.4 &  4.7 \\
+    120 & 0.5 &  6.6 \\
+    140 & 0.7 &  8.9 \\
+    160 & 0.8 & 11.4 \\
+    180 & 0.8 & 14.3 \\
+    200 & 0.9 & 17.3 \\
+    220 & 1.0 & 20.7 \\
+    240 & 1.2 & 24.2 \\
+    260 & 1.4 & 27.9 \\
+    280 & 1.7 & 31.9 \\
+    300 & 1.9 & 36.0 \\
+    320 & 2.0 & 40.3 \\
+    340 & 2.1 & 44.7 \\
+    360 & 2.5 & 49.2 \\
+    380 & 2.8 & 53.9 \\
+    400 & 2.9 & 58.7 \\
+    420 & 3.0 & 63.5 \\
+    440 & 3.2 & 68.4 \\
+    460 & 3.6 & 73.4 \\
+    480 & 3.8 & 78.3 \\
+    \bottomrule
+  \end{tabular}
+\end{table}
+
+\begin{figure}[H]
+  \centering
+  \includegraphics{build/plot2.pdf}
+  \caption{Ausgleichsgerade zur Bestimmung des Elastizitätsmodul des quadratischen Stabes}
+  \label{fig:Elastizitätsmodul des quadratischen Stabes}
+\end{figure}
+
+Die Gerade wird durch die Gleichung $y = cx + d$ beschrieben. Die Parameter betragen:
+\begin{align*}
+  c &= 0.0458 \pm 0.0007 \\
+  d &= 0.18  \pm 0.03
+\end{align*}
+
+
+Mit der Steigung $c$ und Gleichung (10) folgt für den Elastizitätsmodul:
+%\begin{equation}
+%  E = \SI{6.9(0.1)e10}{\kilo\gram\per\second\squared\square\meter}
+%\end{equation}
+
+Das Flächenträgheitsmoment $I_Q$ eines quaderförmigen Stabes mit der Kantenlänge
+$k = 1$cm beträgt:
+\begin{equation}
+  I_Q = \frac{k^4}{12} = 8.333 \cdot 10^{-10} \symup{m^4}
 \end{equation}
