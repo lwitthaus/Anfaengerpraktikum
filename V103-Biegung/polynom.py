@@ -9,6 +9,10 @@ from uncertainties.umath import *
 #print('----------------------------')
 #quadratischer Stab einseitig
 
-#runder Stab beidseitig
-n, x, D = np.genfromtxt('beidseitig1.txt', unpack=True)
-print((3*0.554**2*x*10**(-2) - 4*(x*10**(-2))**3)*10**3)
+#runder Stab beidseitig1
+#n, x, D = np.genfromtxt('beidseitig1.txt', unpack=True)
+#print((3*0.554**2*x*10**(-2) - 4*(x*10**(-2))**3)*10**3)
+
+#runder Stab beidseitig2
+n, x, D = np.genfromtxt('beidseitig2.txt', unpack=True)
+print((4*(x*10**(-2))**3 - 12*0.554*(x*10**(-2))**2 + 9*0.554**2*x*10**(-2) - 0.554**3)*10**3)
