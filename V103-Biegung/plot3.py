@@ -4,7 +4,7 @@ from scipy.optimize import curve_fit
 
 n, x, D = np.genfromtxt('beidseitig1.txt', unpack=True)
 y = 3*0.554**2*x*10**(-2) - 4*(x*10**(-2))**3
-plt.plot(y*10**3, D*10, 'r.', label='Messwerte', Markersize=4)
+plt.plot(y*10**3, D*10, 'r.', label='Biegung an Stelle x', Markersize=4)
 
 def f(x, a, b):
    return a * x + b

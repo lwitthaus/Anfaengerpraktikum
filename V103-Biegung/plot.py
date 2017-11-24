@@ -13,7 +13,7 @@ plt.plot(x_plot, f(x_plot, *params), 'k-', label='Anpassungsfunktion', linewidth
 print(params)
 print(np.sqrt(np.diag(covariance_matrix)))
 plt.gcf().subplots_adjust(bottom=0.18)
-plt.plot(P ,D, 'r.', label='Schwingdauer', Markersize=4)
+plt.plot(P ,D, 'r.', label='Biegung an Stelle x', Markersize=4)
 plt.title('Verhältnis Auslenkung zu Polynom')
 plt.legend()
 plt.grid()
