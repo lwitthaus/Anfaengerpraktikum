@@ -16,8 +16,8 @@ plt.plot(x_plot*10**3, f(x_plot, *params)*10**3, 'k-', label='Anpassungsfunktion
 plt.title('Verhältnis Auslenkung zu Polynom des runden Stabes (x > L/2)')
 plt.legend()
 plt.grid()
-plt.xlabel('$(4x^3 - 12Lx^2 + 9L^2x - L^3)$ / $10^{-3} m^3$')
-plt.ylabel('$D_{B2}$(x) / $10^{-3} m')
+plt.xlabel('$(4x^3 - 12Lx^2 + 9L^2x - L^3)$ / $(10^{-3} m^3)$')
+plt.ylabel('$D_{B}$(x) / $(10^{-3} m)')
 print(params)
 print(np.sqrt(np.diag(covariance_matrix)))
 
