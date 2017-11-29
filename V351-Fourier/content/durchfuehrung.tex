@@ -1,2 +1,33 @@
 \section{Durchführung}
 \label{sec:Durchführung}
+
+\subsection{Fourierreihen}
+Zur Vorbereitung werden die Fourierkomponenten von drei Funktionen bestimmt, wobei
+die Rechteckspannung, die Sägezahnspannung und die Dreiecksspannung gewählt werden. Die Funktion werden als ungerade oder
+gerade definiert um die Fourierkomponenten möglichst einfach darstellen zu können.
+Es ergeben sich folgende Fourierkomponenten:
+\begin{align}
+  a_n &= 0 \:\: &b_n = \frac{4A}{\pi n}  \:\:\:\:\: &\text{Rechteckspannung} \\
+  a_n &= 0 \:\: &b_n = \frac{m_S}{\pi n}   \:\:\:\:\: &\text{Sägezahnspannung} \\
+  b_n &= 0 \:\: &a_n = \frac{m_D}{\pi^2 n^2} \:   &\text{Dreiecksspannung}
+\end{align}
+$A$ ist die Amplitude der Rechteckspannung und $m_S$ die Steigung der Flanken der Sägezahnspannung.
+$m_D$ ist die Steigung der Flanke der Dreieckspannung.
+
+
+\subsection{Fourier-Analyse}
+Ein Funktionsgenerator wird an das Oszilloskop angeschlossen, welches eine Fourier-Tranformation
+durchführt. Der Funktionsgenerator generiert die Rechtecksspannung, Sägezahnspannung und die
+Dreiecksspannung. Die auf dem Bildschirm angezeigten Peaks werden gemessen, sowie die
+Frequenzen.
+
+\subsection{Fourier-Synthese}
+Ein Signalgenerator wird an das Oszilloskop angeschlossen, so dass die Grundschwingung und eine
+beliebige Oberschwingung auf dem Bildschirm angezeigt wird. Abhängig von der
+darzustellenden Funktion werden die einzelnen Oberschwingungen auf die Grundschwingung addiert.
+Bei der Rechteckspannung ist jede Fourierkomponente $b_n$ mit geradem $n$ Null, weshalb nur jede zweite
+Oberschwingung auf die Grundschwinung addiert wird. Dies gilt ebenso für die Dreiecksspannung.
+Die Frequenzen der Oberschwinungen werden so eingestellt, dass die auf dem Bildschirm angezeigte
+Funktion die theoretisch zu erwartende Funktion bestmöglichst approximiert. Die
+Amplituden der nten-Oberschwingung der Rechteckspannung und der Sägezahnspannung ist dabei die Amplitude der Grundschwinung dividiert durch $n$.
+Bei der Dreieckspannung wird mit $n^2$ dividiert.
