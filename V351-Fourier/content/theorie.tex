@@ -21,7 +21,7 @@ gleichmäßig, so stellt sie eine periodische Funktion $f(t)$ dar. Für die Koef
   b_n &= \frac{2}{T} \int_{0}^{T} f(t) \cdot \symup{sin}\left(\frac{2\pi n}{T}t\right) \, \symup{d}t
 \end{align}
 
-Für eine Grundfrequenz $\nu_1 = \frac{2\pi}{T}$ treten in der Fourierreihe nur ganzzahlige Vielfache dieser
+Für eine Grundfrequenz $\nu_1 = \frac{2\pi}{T}$ treten in der Fourierreihe nur ganzzahlige vielfache dieser
 Frequenz auf. Diese werden als Oberschwingungen bezeichnet
 
 Wird die Amplitude der Schwingungen gegen ihre Frequenz aufgetragen, ergibt sich ein
@@ -36,21 +36,21 @@ Linienspektrum wie in Abbildung 1.
 
 $n$ geht für $\nu \to \infty$ gegen Null.
 Hat die Funktion $f(t)$ Sprungstellen $t_0$ kann die Fourierreihe $f$ dort nicht approximieren. Es kommt zu einer
-Abweichung, welche auch für größere $n$ nicht kleiner wird. Dies ist das Gibbsche Phänomen.
+Abweichung, welche auch für größere $n$ nicht kleiner wird. Dies ist das Gibbs'sche Phänomen.
 
-\subsection{Fourier-Tranformation}
-Die Fourier-Tranformation tranformiert eine zeitabhängige Funktion $f(t)$ in dessen Frequenzspektrum $g(\nu)$. Es gilt:
+\subsection{Fourier-Transformation}
+Die Fourier-Transformation transformiert eine zeitabhängige Funktion $f(t)$ in dessen Frequenzspektrum $g(\nu)$. Es gilt:
 \begin{equation}
   g(\nu) = \int_{-\infty}^{\infty} f(t) e^{i\nu t} \, \symup{d}t
 \end{equation}
 
-Periodische Funktion weisen ein Linienspektrum wie in Abbildung 1 auf. Nicht-periodische Funktion haben ein
-kontinuirliches Frequenzspektrum. Für das Umkehren einer Fourier-Tranformation gilt:
+Periodische Funktion weisen ein Linienspektrum wie in Abbildung 1 auf. Nicht-periodische Funktionen haben ein
+kontinuierliches Frequenzspektrum. Für das Umkehren einer Fourier-Transformation gilt:
 
 \begin{equation}
   f(t) = \frac{1}{2\pi} \int_{-\infty}^{\infty} g(\nu) e^{-i\nu t} \, \symup{d}t .
 \end{equation}
 
 Das Integrieren über einen unendlich großen Zeitraum ist praktisch nicht umsetzbar, wodurch die
-Periodizität von $f$ aufgehoben ist. Daraus folgt ein kontinuirliches Linienspektrum für $f$.
+Periodizität von $f$ aufgehoben ist. Daraus folgt ein kontinuierliches Linienspektrum für $f$.
 Es werden deshalb Nebenmaxima neben den Hauptmaxima auftreten.

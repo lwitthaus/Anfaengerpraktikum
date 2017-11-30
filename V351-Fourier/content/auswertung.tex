@@ -4,9 +4,9 @@
 \subsection{Fourier-Analyse}
 
 Die gemessenen Amplituden der drei Spannungen $U_R$ (Rechteck), $U_S$ (Sägezahn) und $U_D$ (Dreieck), werden in den Tabellen 1,2 und 3 dargestellt.
-Die Quotienten $\frac{U_n}{U_1}$ werden ebenfalls in den tabellen dargestellt, da diese für
+Die Quotienten $\frac{U_n}{U_1}$ werden ebenfalls in den Tabellen dargestellt, da diese für
 spätere Rechnungen nötig sind.
- Die Frequenz des Funktionsgenerators beträgt bei allen Messungen $1$kHz.
+Die Frequenz des Funktionsgenerators beträgt bei allen Messungen $1$kHz.
 
 \begin{table}[H]
   \centering
@@ -44,6 +44,12 @@ Die Gerade wird durch die Gleichung $y = m_1x + b_1$ beschrieben. Die Parameter 
   b_1 &= -0.16 \pm 0.10
 \end{align*}
 
+Der Fehler der Steigung $m_1$ und des Achsenabschnittes $b_1$ einer linearen Regression
+wird wie folgt berechnet:
+\begin{align}
+  \sigma_m &= \frac{\overline{xy}-\bar{x}\cdot\bar{y}}{\bar{x^2}-\bar{x}^2} \\
+  \sigma_b &= \frac{\bar{x^2}\bar{y}-\overline{xy}\bar{x}}{\bar{x^2}-\bar{x}^2}
+\end{align}
 Der Theoriewert beträgt $m_1=-1$. Die relative Abweichung des berechneten Wertes von dem Theoriewert beträgt 32.0\%.
 
 \begin{figure}
@@ -55,10 +61,11 @@ Der Theoriewert beträgt $m_1=-1$. Die relative Abweichung des berechneten Werte
 
 Die Gerade wird durch die Gleichung $y = m_2x + b_2$ beschrieben. Die Parameter betragen:
 \begin{align*}
-  m_1 &= -1.17 \pm 0.03 \\
-  b_1 &= 0.02 \pm 0.04
+  m_2 &= -1.17 \pm 0.03 \\
+  b_2 &= 0.02 \pm 0.04
 \end{align*}
 
+Die Fehler können mit Gleichung (11) und (12) berechnet werden.
 Der Theoriewert beträgt $m_2=-1$. Die relative Abweichung des berechneten Wertes von dem Theoriewert beträgt 17.0\%.
 
 \begin{figure}[H]
@@ -68,18 +75,19 @@ Der Theoriewert beträgt $m_2=-1$. Die relative Abweichung des berechneten Werte
   \label{fig:dreieck}
 \end{figure}
 
-Die letzten beiden Messwerte werden, wegen zu kleiner Amplitude, nicht in dem Plot berücksichtig.
-Die Gerade wird durch die Gleichung $y = m_2x + b_2$ beschrieben. Die Parameter betragen:
+Die letzten beiden Messwerte werden, wegen zu kleiner Amplitude, nicht in dem Plot berücksichtigt.
+Die Gerade wird durch die Gleichung $y = m_3x + b_3$ beschrieben. Die Parameter betragen:
 \begin{align*}
-  m_1 &= -2.45 \pm 0.21 \\
-  b_1 &= 0.32 \pm 0.29
+  m_3 &= -2.45 \pm 0.21 \\
+  b_3 &= 0.32 \pm 0.29
 \end{align*}
 
+Die Fehler können mit Gleichung (11) und (12) berechnet werden.
 Der Theoriewert beträgt $m_3=-2$. Die relative Abweichung des berechneten Wertes von dem Theoriewert beträgt 22.5\%.
 
 \subsection{Fourier-Synthese}
 
-Abbildung 5,6 und 7 stellen die synthetisierten Funktionen dar.
+Abbildung 5, 6 und 7 stellen die synthetisierten Funktionen dar.
 \pagebreak
 
 Die Rechteckspannung werden aus den nach Gleichung (8) errechneten Oberschwingungen zusammengesetzt.
