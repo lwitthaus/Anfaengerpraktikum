@@ -2,7 +2,7 @@ import matplotlib.pyplot as plt
 import numpy as np
 from scipy.optimize import curve_fit
 
-n, U = np.genfromtxt('rechteck.txt', unpack=True)
+n, U = np.genfromtxt('saegezahn.txt', unpack=True)
 
 def f(x, c, b):
    return c * x + b
@@ -14,12 +14,12 @@ print(params)
 print(np.sqrt(np.diag(covariance_matrix)))
 plt.gcf().subplots_adjust(bottom=0.18)
 plt.plot(n , np.log(U), 'r.', label='Messwerte', Markersize=4)
-plt.title('Lineare Regression der Rechteckschwingung')
+plt.title('Lineare Regression der Sägezahnschwingung')
 plt.legend()
 plt.grid()
-plt.xlabel(r'$\ln{n}$')
+plt.xlabel(r'$\ln{(n)}$')
 plt.ylabel(r'$\ln { \left( \frac{U_n}{U_1} \right)}$')
 #plt.xscale('log')
 #plt.yscale('log')
 plt.tight_layout()
-plt.savefig('build/plot1.pdf')
+plt.savefig('build/plot2.pdf')

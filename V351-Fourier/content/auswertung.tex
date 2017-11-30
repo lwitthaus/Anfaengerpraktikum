@@ -3,7 +3,7 @@
 
 \subsection{Fourier-Analyse}
 
-Die gemessenen Amplituden der drei Spannungen werden in den Tabellen 1,2 und 3 dargestellt.
+Die gemessenen Amplituden der drei Spannungen $U_R$ (Rechteck), $U_S$ (Sägezahn) und $U_D$ (Dreieck), werden in den Tabellen 1,2 und 3 dargestellt.
 Die Quotienten $\frac{U_n}{U_1}$ werden ebenfalls in den tabellen dargestellt, da diese für
 spätere Rechnungen nötig sind.
  Die Frequenz des Funktionsgenerators beträgt bei allen Messungen $1$kHz.
@@ -12,7 +12,7 @@ spätere Rechnungen nötig sind.
   \centering
   \caption{Amplituden und Frequenzen der Rechteckspannung}
   \label{tab:Rechteckspannung}
-  \begin{tabular}{c c c c c c}
+  \begin{tabular}{c c | c c | c c}
     \toprule
     $U_R/V$ & $\frac{U_n}{U_1}$ & $U_S/V$ & $\frac{U_n}{U_1}$ & $U_D/V$ & $\frac{U_n}{U_1}$ \\
     \midrule
@@ -29,9 +29,58 @@ spätere Rechnungen nötig sind.
   \end{tabular}
 \end{table}
 
+Der Logarithmus von $\left( \frac{U_n}{U_1}\right)$ der drei Spannungen wird gegen $n$ aufgetragen.
+
 \begin{figure}
   \centering
-  \includegraphics{plot.pdf}
-  \caption{Plot.}
-  \label{fig:plot}
+  \includegraphics{plot1.pdf}
+  \caption{Lineare Regression der Rechteckschwingung}
+  \label{fig:rechteck}
+\end{figure}
+
+Die Gerade wird durch die Gleichung $y = m_1x + b_1$ beschrieben. Die Parameter betragen:
+\begin{align*}
+  m_1 &= -1.32 \pm 0.07 \\
+  b_1 &= -0.16 \pm 0.10
+\end{align*}
+
+\begin{figure}
+  \centering
+  \includegraphics{plot2.pdf}
+  \caption{Lineare Regression der Sägezahnschwingung}
+  \label{fig:saegezahn}
+\end{figure}
+
+Die Gerade wird durch die Gleichung $y = m_2x + b_2$ beschrieben. Die Parameter betragen:
+\begin{align*}
+  m_1 &= -1.17 \pm 0.03 \\
+  b_1 &= 0.02 \pm 0.04
+\end{align*}
+
+
+
+\subsection{Fourier-Synthese}
+Abbildung 5,6 und 7 stellen die synthetisierten Funktionen dar.
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[height=5cm]{rechteck.PNG}
+  \caption{Synthetisierte Rechteckschwingung}
+  \label{fig:rechteck}
+\end{figure}
+
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[height=5cm]{saegezahn.PNG}
+  \caption{Synthetisierte Sägezahnschwingung}
+  \label{fig:saegezahn}
+\end{figure}
+
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[height=5cm]{dreieck.PNG}
+  \caption{Synthetisierte Dreieckschwingung}
+  \label{fig:dreieck}
 \end{figure}
