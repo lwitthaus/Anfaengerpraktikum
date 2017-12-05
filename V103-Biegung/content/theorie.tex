@@ -39,7 +39,7 @@ in Ruhe von dem Punkt nach einer Verformung, wie Abbildung 2 zeigt. Die
 gestrichelte Linie beschreibt die neutrale Faser, eine Fläche, welche sich durch die Verformung nicht ändert.
 Die oberen Schichten werden gestreckt und die unteren gestaucht. Die Kraft $F$
 übt im Abstand $L _ x$ ein Drehmoment $M_F$ auf den Querschnitt $Q$ aus. Verformt sich
-der Probenlkörper, entstehen im innern, Normalspannungen, welche der Verformung
+der Probenkörper, entstehen im Innern, Normalspannungen, welche der Verformung
 entgegen wirken. Im Gleichgewichtszustand stellt sich eine endliche Durchbiegung ein.
 Die Zug- und Druckspannung, die an dem Querschnitt angreifen bewirken ein Drehmoment $M_{\sigma}$.
 Dieses lässt sich durch Integration über $Q$ berechnen.
@@ -70,35 +70,34 @@ Mit Gleichung (2) und Gleichung (3) folgt:
   \int_Q y \sigma(y) \symup{d}q = F(L - x)
 \end{equation}
 
-$\sigma (y)$ lässt sich mit dem HooK'schen Gesetz berechnen.
-Für ein kurzes Stabstück $\Delta x$ gilt im Abstand y von der neutralen Faser:
+%$\sigma (y)$ lässt sich mit dem HooK'schen Gesetz berechnen.
+%Für ein kurzes Stabstück $\Delta x$ gilt im Abstand y von der neutralen Faser:
+%\begin{equation}
+%  \sigma (y) = E \frac{\delta x}{\Delta x}
+%\end{equation}
+%$\delta x$ ist die Längenänderung von $\Delta x$ in Folge einer Verformung.
+%
+%\begin{figure}[H]
+%  \centering
+%  \includegraphics[height=5cm]{deltax.PNG}
+%  \caption{Geometrische Beziehung zwischen $\delta x$, $\Delta\varphi$ und $R$. \cite{sample}}
+%  \label{fig:deltax}
+%\end{figure}
+%
+%In Abbildung 4 ist erkennbar, dass für $\delta x$ gilt:
+%
+%\begin{equation}
+%  \delta x = y \Delta \varphi = y \frac{\Delta x}{R}
+%\end{equation}
+%
+%$R$ ist der Krümmungsradius an der Stelle $x$. Für Gleichung (6) folgt:
+%
+%\begin{equation}
+%  \sigma (y) = E \frac{y}{R}
+%\end{equation}
+Durch weitere geometrische Überlegungen folgt für kleine Krümmungen:
 \begin{equation}
-  \sigma (y) = E \frac{\delta x}{\Delta x}
-\end{equation}
-$\delta x$ ist die Längenänderung von $\Delta x$ in Folge einer Verformung.
-
-\begin{figure}[H]
-  \centering
-  \includegraphics[height=5cm]{deltax.PNG}
-  \caption{Geometrische Beziehung zwischen $\delta x$, $\Delta\varphi$ und $R$. \cite{sample}}
-  \label{fig:deltax}
-\end{figure}
-
-In Abbildung 4 ist erkennbar, dass für $\delta x$ gilt:
-
-\begin{equation}
-  \delta x = y \Delta \varphi = y \frac{\Delta x}{R}
-\end{equation}
-
-$R$ ist der Krümmungsradius an der Stelle $x$. Für Gleichung (6) folgt:
-
-\begin{equation}
-  \sigma (y) = E \frac{y}{R}
-\end{equation}
-
-Ist $\left(\frac{\symup{d} D}{\symup{d} x}\right)^2 << 1$ gilt für kleine Krümmungen:
-\begin{equation}
-  \frac{1}{R} \approx \frac{\symup{d}^2 D}{\symup{d} x^2}
+  E\frac{y}{\sigma(y)} \approx \frac{\symup{d}^2 D}{\symup{d} x^2}
 \end{equation}
 
 %Für Gleichung (8) folgt daraus:
@@ -116,12 +115,12 @@ Für die Durchbiegung folgt daraus:
   D(x) = \frac{F_g}{2EI} \left(Lx^2 - \frac{x^3}{3} \right)
 \end{equation}
 
-Für $0 \leq x \leq L$.$F_G$ ist die Gewichtskraft. I ist das Flächenträgheitsmoment und ist definert durch:
+Für $0 \leq x \leq L$. $F_G$ ist die Gewichtskraft. I ist das Flächenträgheitsmoment und ist definert durch:
 \begin{equation}
   I = \int_Q y^2 \symup{d}q(y)
 \end{equation}
 
-Die Inegrationskonstanten in Gleichung (11) verschwinden, da an der Einspannstelle
+Die Integrationskonstanten in Gleichung (11) verschwinden, da an der Einspannstelle
 die Auslenkung und die Durchbiegung Null ist.
 
 \subsection{Durchbiegung eines zweiseitig eingespannten Stabes}
