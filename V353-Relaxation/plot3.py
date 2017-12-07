@@ -9,4 +9,5 @@ plt.polar(phi/360*np.pi, A/3.6, 'rx', label='Messwerte', Markersize=3)
 plt.polar(a, np.cos(a), 'k-', label='Theoriekurve', linewidth=1)
 plt.title('Polarplot')
 plt.legend()
+plt.tight_layout
 plt.savefig('build/plot3.pdf')
