@@ -124,9 +124,22 @@ Regression durchgeführt.
 \end{figure}
 
 Bei einer Rechteckspannung ergibt sich eine Dreieckspannung als integrierte Spannung.
-Die steigende Flanke der Dreieckspannung ist dort, wo die Rechteckspannung einen positiven Wert hat.
-Die fallende Flanke der Dreieckspannung ist dort, wo die Rechteckspannung einen negativen Wert hat.
-Die Maxima und Minima der Dreieckspannung sind dort, wo die Rechteckspannung eine Sprungstelle hat.
+
+\begin{equation*}
+  f(x) =
+  \begin{cases}
+    a & \text 0 < x < b \\
+    -a & \text b < x < 2b \\
+  \end{cases}
+\end{equation*}
+Integriert:
+\begin{equation*}
+  F(x) =
+  \begin{cases}
+    a \cdot x & \text 0 < x < b \\
+    -a \cdot x & \text b < x < 2b \\
+  \end{cases}
+\end{equation*}
 
 \begin{figure}[H]
   \centering
@@ -136,6 +149,13 @@ Die Maxima und Minima der Dreieckspannung sind dort, wo die Rechteckspannung ein
 \end{figure}
 
 Bei einer Sinusspannung ergibt sich eine Cosinusspannung als integrierte Spannung.
+\begin{equation*}
+  f(x) = a \cdot sin(x)
+\end{equation*}
+Integriert:
+\begin{equation*}
+  F(x) = -a \cdot cos(x)
+\end{equation*}
 
 \begin{figure}[H]
   \centering
@@ -144,4 +164,19 @@ Bei einer Sinusspannung ergibt sich eine Cosinusspannung als integrierte Spannun
   \label{fig:Dreieckspannung}
 \end{figure}
 
-Bei einer Dreieckspannung ergibt sich eine Cosinusspannung als integrierte Spannung.
+Bei einer Dreieckspannung ergibt sich eine quadratische Funktion als integrierte Spannung.
+\begin{equation*}
+  f(x) =
+  \begin{cases}
+    a \cdot x & \text 0 < x < b \\
+    -a \cdot x & \text b < x < 2b \\
+  \end{cases}
+\end{equation*}
+Integriert:
+\begin{equation*}
+  F(x) =
+  \begin{cases}
+    \frac{a}{2} \cdot x^2 & \text 0 < x < b \\
+    -\frac{a}{2} \cdot x^2 & \text b < x < 2b \\
+  \end{cases}
+\end{equation*}
