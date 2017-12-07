@@ -103,7 +103,7 @@ Abstand der Nulldurchgänge $a$ tabelliert. Die Generatorspannung beträgt $U_0 
   \end{tabular}
 \end{table}
 
-Die Spannungsamplitude $\frac{A}{U_0}$ wird gegen $\ln{\omega}$ aufgetragen. Es wird eine lineare
+Die Spannungsamplitude $\frac{A}{U_0}$ wird gegen $\ln{\omega}$ aufgetragen. Es wird eine nicht lineare
 Regression durchgeführt.
 
 \begin{figure}[H]
@@ -115,6 +115,23 @@ Regression durchgeführt.
 
 Als Ausgleichsfunktion wird $f(\omega) = \frac{1}{\sqrt{1 + c^2 \omega^2}}$, welche auf Gleichung (13)
 zurückzuführen ist.
+Der Parameter $c$ beträgt:
+\begin{align*}
+  c = RC = \SI{-9.2(1)e-3}{\second}.
+\end{align*}
+
+Die Zeitkonstante wird nun mithilfe der Phasenverschiebung bestimmt. Die Phasenverschiebung wird gegen
+den Logarithmus der Frequenz aufgetragen. Eine nicht lineare Regression wird gemäß der Gleichung (11) durchgeführt.
+Die Ausgleichsfunktion lautet $f(\varphi) = \arctan(d\varphi)$. Das Minuszeichen in der Funktion wird
+weggelassen, da das Oszilloskop den Betrag der Phasenverschiebung anzeigt.
+
+\begin{figure}[H]
+  \centering
+  \includegraphics{plot4.pdf}
+  \caption{Phasenverschiebung in Abhängkeit der Frequenz}
+  \label{fig:phasenverschiebung}
+\end{figure}
+
 
 \subsection{Nutzung des RC-Kreises als Integrator}
 
