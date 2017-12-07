@@ -70,11 +70,9 @@ Der Logarithmus von $\frac{U}{U_0}$ wird gegen die Zeit aufgetragen und es wird 
 
 Die Gerade kann durch die Gleichung $y = -\frac{1}{m}x + b$ beschrieben werden. Für die Parameter ergeben sich:
 \begin{align*}
-  -\frac{1}{m} = &RC = (1.08 \pm 0.04) \, \symup{s} \\
+  -\frac{1}{m} = &RC = (1.08 \pm 0.04) \, \cdot 10^{-3} \symup{s} \\
   &b = (0.28 \pm 0.11)
 \end{align*}
-
-Der Fehler der Parameter wird mit Gleichung (18) und (19) berechnet.
 
 \subsection{Bestimmung der Zeitkonstante mit frequenzabhängiger Amplitude und Phasenverschiebung}
 
@@ -113,16 +111,16 @@ Regression durchgeführt.
   \label{fig:amplitude}
 \end{figure}
 
-Als Ausgleichsfunktion wird $f(\omega) = \frac{1}{\sqrt{1 + c^2 \omega^2}}$, welche auf Gleichung (13)
+Als Ausgleichsfunktion wird $f(\omega) = \frac{1}{\sqrt{1 + c^2 \omega^2}}$ verwendet, welche auf Gleichung (13)
 zurückzuführen ist.
 Der Parameter $c$ beträgt:
 \begin{align*}
-  c = RC = \SI{-9.2(1)e-3}{\second}.
+  c = RC = \SI{9.2(1)e-3}{\second}.
 \end{align*}
 
 Die Zeitkonstante wird nun mithilfe der Phasenverschiebung bestimmt. Die Phasenverschiebung wird gegen
 den Logarithmus der Frequenz aufgetragen. Eine nicht lineare Regression wird gemäß der Gleichung (11) durchgeführt.
-Die Ausgleichsfunktion lautet $f(\varphi) = \arctan(d\varphi)$. Das Minuszeichen in der Funktion wird
+Die Ausgleichsfunktion lautet $f(\varphi) = \arctan(d \cdot \varphi)$. Das Minuszeichen in der Funktion wird
 weggelassen, da das Oszilloskop den Betrag der Phasenverschiebung anzeigt.
 
 \begin{figure}[H]
@@ -132,6 +130,10 @@ weggelassen, da das Oszilloskop den Betrag der Phasenverschiebung anzeigt.
   \label{fig:phasenverschiebung}
 \end{figure}
 
+Der Parameter $d$ beträgt:
+\begin{align*}
+  d = RC = \SI{8.1(4)e-3}{\second}
+\end{align*}
 
 Die Spannungsamplitude $\frac{A}{U_0}$ wird gegen $\varphi$ in einem Polarplot aufgetragen.
 
