@@ -9,10 +9,17 @@ T= 1/(2*np.pi * y)
 L = ufloat(10.11*10**(-3), 0.03*10**(-3))
 #effektiv Widerstandes
 
-R = 4 * np.pi * y * L
-print(R)
+#R = 4 * np.pi * y * L
+#print(R)
 
 
 r = ufloat(48.1, 0.1)
 G = 50
-print(r + G)
+#print(r + G)
+
+
+#Güte
+R2 = ufloat(509.5, 0.5)
+C = ufloat(2.098*10**(-9), 0.006*10**(-9))
+q = 1/(2*np.pi*34000*R2*C)
+print(q)
