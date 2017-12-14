@@ -1,9 +1,122 @@
 \section{Auswertung}
 \label{sec:Auswertung}
 
-\begin{figure}
+Die Bauteile des RLC-Kreises haben folgende Werte:
+\begin{align*}
+  L &= \SI{10.11(3)}{\milli\henry} \\
+  C &= \SI{2.098(6)}{\nano\farad} \\
+  R_1 &= \SI{48.1(1)}{\ohm} \\
+  R_2 &= \SI{509.5(5)}{\ohm}
+\end{align*}
+
+\subsection{Berechnung des Dämpfungswiderstandes}
+
+Die gemessenen Spannungsamplituden $U_C$ in Abhängigkeit von der Zeit $t$ wird in Tabelle 1 dargestellt.
+
+\begin{table}[H]
+  \centering
+  \caption{Gemessene Spannungen in Abhängigkeit von der Zeit}
+  \label{tab:Spannungsamplitude}
+  \begin{tabular}{c c}
+    \toprule
+    $t/$s & $U_C/$V \\
+    \midrule
+    29.00 & 0.69 \\
+    58.00 & 0.58 \\
+    88.00 & 0.50 \\
+    117.0 & 0.42 \\
+    147.0 & 0.34 \\
+    176.0 & 0.28 \\
+    205.0 & 0.24 \\
+    235.0 & 0.20 \\
+    264.0 & 0.17 \\
+    294.0 & 0.14 \\
+    323.0 & 0.12 \\
+    353.0 & 0.10 \\
+    \bottomrule
+  \end{tabular}
+\end{table}
+
+Die Messwerte und die Regression werden in Abbildung 5 dargestellt. Die Ausgleichsfunktion ist $Ae^{-2\pi \mu t}$.
+
+\begin{figure}[H]
   \centering
   \includegraphics{plot.pdf}
-  \caption{Plot.}
+  \caption{Spannungsamplituden und Einhüllende}
   \label{fig:plot}
 \end{figure}
+
+Die Parameter betragen:
+\begin{align*}
+  A &= (0.827 \pm 0.007)V \\
+  \mu &= (954 \pm 10)\frac{1}{s}
+\end{align*}
+
+Die Parameter und deren Fehler werden mit Python berechnet.
+Die Abklingzeit $T_{ex}$ wird mit Gleichung (6) berechnet und der effektive Dämpfungswiderstand $R_{eff}$ mit
+der Gleichung (4).
+\begin{align*}
+T_{ex} &= \SI{1.67(2)e4}{\second} \\
+R_{eff} &= \SI{121(1)}{\ohm}
+\end{align*}
+
+Der in der Schaltung eingebaute Widerstand beträgt $R = \SI{48.1(1)}{\ohm}$. Zusätzlich wird der
+Generatorinnenwiderstand $R_G = 50 \Omega$ dazu gerechnet. Der theoretische Widerstand beträgt $R_t = \SI{98.1(1)}{\ohm}$
+Die relative Abweichung des berechneten Wertes zu dem Theoriewert beträgt $18.9\%$.
+
+
+Der theoretische Wert des Widerstandes für den aperiodischen Grenzfall wird mit der Bedingung
+$R_{ap} =\sqrt{\frac{4L}{C}}$ bestimmt. Der Theoriewert beträgt:
+\begin{equation*}
+  R_{ap,t} = \SI{4390(9)}{\ohm}
+\end{equation*}
+
+Der aus dem Versuch berechnete Wert beträgt:
+\begin{equation*}
+  R_{ap,e} = 3100 \symup{\Omega}
+\end{equation*}
+
+Die absolute Abweichung der beiden Werte beträgt $(1290 \pm 9) \symup{\Omega}$.
+Diese Diskrepanz ist durch die nicht beachteten Widerstände von Spule, Kondensator und Kabeln zu erklären. Zusätzlich
+kann bei der Messung nicht genau festgestellt werden, wann genau der Fall des aperiodischen Grenzfalles eintritt.
+
+
+\subsection{Bestimmung der Güte und der Breite der Schwingung}
+
+In Tabelle 2 werden die gemessenen Spannungen sowie der Abstand der Nulldurchgänge $a$ zu den jeweiligen
+Frequenzen dargestellt.
+
+\begin{table}[H]
+  \centering
+  \caption{Gemessene Spannungen, Frequenzen und Abstände}
+  \label{tab:Spannungsamplitude}
+  \begin{tabular}{c c c c c}
+    \toprule
+    $f/$Hz & $U_0/V$ & $U_C/V$ & $a/\symup{\mu s}$ & $\frac{U_C}{U_0}$   \\
+    \midrule
+    5000 & 3.28  &  3.36  &  2.00  &  1.02 \\
+   10000 & 3.28  &  3.60  &  2.00  &  1.10 \\
+   15000 & 3.28  &  4.00  &  2.00  &  1.22 \\
+   20000 & 3.28  &  4.80  &  2.00  &  1.46 \\
+   25000 & 3.28  &  6.48  &  2.40  &  1.98 \\
+   27000 & 3.20  &  7.80  &  2.60  &  2.44 \\
+   28000 & 3.28  &  8.40  &  3.20  &  2.56 \\
+   29000 & 3.28  &  9.20  &  3.40  &  2.80 \\
+   30000 & 3.28  &  10.2  &  3.60  &  3.11 \\
+   31000 & 3.28  &  11.0  &  4.60  &  3.35 \\
+   32000 & 3.28  &  11.8  &  6.20  &  3.60 \\
+   33000 & 3.28  &  12.2  &  6.60  &  3.72 \\
+   34000 & 3.28  &  12.2  &  7.60  &  3.72 \\
+   35000 & 3.28  &  11.4  &  8.40  &  3.48 \\
+   36000 & 3.28  &  10.4  &  9.40  &  3.17 \\
+   37000 & 3.28  &  9.40  &  9.80  &  2.87 \\
+   38000 & 3.28  &  8.20  &  9.80  &  2.50 \\
+   39000 & 3.28  &  7.20  &  9.80  &  2.20 \\
+   40000 & 3.28  &  6.40  &  10.20 &  1.95 \\
+   45000 & 3.28  &  4.00  &  10.40 &  1.22 \\
+   50000 & 3.28  &  2.56  &  9.80  &  0.78 \\
+   55000 & 3.28  &  1.84  &  9.60  &  0.56 \\
+   60000 & 3.24  &  1.44  &  8.00  &  0.44 \\
+    \bottomrule
+  \end{tabular}
+\end{table}

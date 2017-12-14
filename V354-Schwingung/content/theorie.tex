@@ -24,18 +24,18 @@ für die gedämpfte Schwingung erhalten.
 Die Lösung der Differetialgleichung lautet:
 \begin{align}
   &I(t) = e^{-2\pi \nu t} \left(A_1 e^{2j\pi \mu t} + A_2 e^{-2j\pi \nu t}\right)   \\
-\text{mit} \:\:\:\:  &\mu = \frac{R}{4\pi L} \notag, \\
+\text{mit} \:\:\:\:  &\mu = \frac{R_{eff}}{4\pi L} , \\
   &\nu = \frac{1}{2\pi} \sqrt{\frac{1}{LC} - \frac{R^2}{4L^2}} \notag.
 \end{align}
 
-Dabei ist $j$ die imginäre Zahl.
+Dabei ist $j$ die imaginäre Zahl.
 
 Zwei Fälle werden unterschieden.
 1. Fall: Ist $\nu$ reell gilt für $I(t)$:
 \begin{equation}
   I(t) = A_0 e^{2\pi \mu t} \cos{2\pi \nu t + \eta}.
 \end{equation}
-Die Amplitude dieser gedämpften Schwingung geht für größer werdende $t$ gegen $O$ und die
+Die Amplitude dieser gedämpften Schwingung geht für größer werdende $t$ gegen $0$ und die
 Abklingdauer der Schwingung beträgt:
 \begin{equation}
   T_{ex} =\frac{1}{2\pi \mu} = \frac{2L}{R}
@@ -60,7 +60,7 @@ $I(t)$ für große Zeiten gegen Null geht.
 \end{figure}
 
 Die gestrichelte Linie in Abbildung 3 zeigt den aperiodischen Grenzfall und beschreibt den Verlauf
-in dem $I(t)$ am schnellsten gegen Null geht. Er tritt ein wenn $\nu = 0$ gilt.
+in dem $I(t)$ am schnellsten gegen Null geht. Er tritt ein wenn $\frac{1}{LC}=\frac{R_{ap}^2}{4L^2}$ gilt, also $\nu = 0$ ist.
 
 
 \subsection{Erzwungene Schwingung im RLC-Kreis}
@@ -103,7 +103,6 @@ Spannungsmaximum:
 
 Dabei beschreibt $q$ die Güte des Schwingkreises.
 %Für $R \rightarrow \infty$ wird $U_{C,max}$ unendlich groß und es kommt zur Resonanzkatastrophe.
-
 Die Breite der Resonanz ist ein Maß ihrer Schärfe und kann durch die beiden Frequenzen $\omega_+$ und $\omega_-$ beschrieben werden. Dies sind
 die Frequenzen bei der $U_C$ auf $\frac{1}{\sqrt{2}}$ des Maximalwertes gesunken ist. Zwischen der Güte und
 der Breite gilt folgende Beziehung:
