@@ -13,7 +13,7 @@ w, U0, UC, a, U, phi = np.genfromtxt('phase2.txt', unpack=True)
 def f(w):
        return 1/np.sqrt((1-L*C*(w*2*np.pi)**2)**2 + (w*2*np.pi)**2 * (R*C)**2)
 
-x_plot = np.linspace(27000, 39000, 1000)
+x_plot = np.linspace(26000, 41000, 1000)
 plt.plot((x_plot*2*np.pi), f(x_plot))
 
 
