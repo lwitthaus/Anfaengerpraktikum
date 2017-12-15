@@ -19,7 +19,15 @@ G = 50
 
 
 #Güte
-R2 = ufloat(509.5, 0.5)
+R2 = ufloat(509.5+50, 0.5)
 C = ufloat(2.098*10**(-9), 0.006*10**(-9))
 q = 1/(2*np.pi*34000*R2*C)
-print(q)
+#print(q)
+
+
+#Resonanzbreite
+R = ufloat(121, 1)
+#q = ufloat(4.34, 0.01)
+w = 2.13 *10**(3)
+n = R2/(2*np.pi*L)
+print(n)

@@ -4,7 +4,7 @@ from scipy.optimize import curve_fit
 from uncertainties import ufloat
 import uncertainties.unumpy as unp
 
-R = 509.5
+R = 509.5 + 50
 L = 10.11*10**(-3)
 C = 2.098*10**(-9)
 
