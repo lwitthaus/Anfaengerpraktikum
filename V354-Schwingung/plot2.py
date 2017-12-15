@@ -13,7 +13,7 @@ w, U0, UC, a, U, phi = np.genfromtxt('phase.txt', unpack=True)
 def f(w):
        return 1/np.sqrt((1-L*C*(w*2*np.pi)**2)**2 + (w*2*np.pi)**2 * (R*C)**2)
 
-x_plot = np.linspace(1000, 100000, 1000)
+x_plot = np.linspace(0, 100000, 1000)
 plt.plot((x_plot), f(x_plot))
 
 
@@ -26,6 +26,7 @@ plt.xscale("log")
 plt.title('Spannungsamplituden in Abhängigkeit von der Frequenz')
 plt.legend()
 plt.grid()
+plt.xlim((1000,100000))
 plt.xlabel(r'$f/$Hz')
 plt.ylabel(r'$\frac{U_C}{U_0}$')
 plt.savefig('build/plot2.pdf')

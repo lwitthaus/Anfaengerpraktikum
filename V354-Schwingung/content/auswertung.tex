@@ -1,6 +1,27 @@
 \section{Auswertung}
 \label{sec:Auswertung}
 
+\subsection{Fehlerrechnung}
+Der Mittelwert eines Datensatzes mit $N$ Werten ist definiert durch:
+\begin{equation}
+  \bar{x} = \frac{1}{N} \sum_{i=1}^N x_i
+\end{equation}
+Die Standardabweichung eines Datensatzes von seinem Mittelwert durch:
+\begin{equation}
+  \sigma = \sqrt{\frac{1}{N(N-1)} \sum_{i=1}^N (x_i - \bar{x})}
+\end{equation}
+Pflanzen sich Unsicherheiten fort, wird der Fehler mit der gaußschen
+Fehlerfortpflanzung berechnet:
+\begin{equation}
+  \sigma_f = \sqrt{
+      \sum\limits_{i = 1}^N
+       \left( \frac{\partial f}{\partial x_i} \sigma_i \right)^{\!\! 2}
+     }
+\end{equation}
+
+
+\subsection{Berechnung des Dämpfungswiderstandes}
+
 Die Bauteile des RLC-Kreises haben folgende Werte:
 \begin{align*}
   L &= \SI{10.11(3)}{\milli\henry} \\
@@ -8,8 +29,6 @@ Die Bauteile des RLC-Kreises haben folgende Werte:
   R_1 &= \SI{48.1(1)}{\ohm} \\
   R_2 &= \SI{509.5(5)}{\ohm}
 \end{align*}
-
-\subsection{Berechnung des Dämpfungswiderstandes}
 
 Die gemessenen Spannungsamplituden $U_C$ in Abhängigkeit von der Zeit $t$ wird in Tabelle 1 dargestellt.
 
@@ -84,7 +103,7 @@ kann bei der Messung nicht genau festgestellt werden, wann genau der Fall des ap
 \subsection{Bestimmung der Güte und der Breite der Schwingung}
 
 In Tabelle 2 werden die gemessenen Spannungen sowie der Abstand der Nulldurchgänge $a$ zu den jeweiligen
-Frequenzen dargestellt. Zudem wird die Phasenverschiebung $\varphi$ angegebn, welche in späteren Rechnungen
+Frequenzen dargestellt. Zudem wird die Phasenverschiebung $\varphi$ angegeben, welche in späteren Rechnungen
 benötigt wird.
 
 \begin{table}[H]
@@ -142,6 +161,7 @@ Güte $q_{theo}$ wird mit Gleichung (11) berechnet.
   q_{theo} = 3.99 \pm 0.01
 \end{equation*}
 
+Der Fehler von $q_{theo}$ wird mit Gleichung (15) berechnet.
 Die relative Abweichung des experimentell ermittelten Wertes zu dem Theoriewert beträgt $6.8\%$.
 
 Um die Breite der Resonanzkurve zu ermitteln, wird der Frequenzbereich um das Maximum herum linear dargestellt.
@@ -167,6 +187,7 @@ Der Theoriewert von $f_+ - f_-$ wird mit Gleichung (11) berechnet:
   f_+ - f_- = (7890 \pm 24) \:\symup{kHz}
 \end{equation*}
 
+Der Fehler wird mit Gleichung (15) berechnet.
 Die relative Abweichung des experimentell bestimmten Wertes zu dem Theoriewert beträgt $31.8 \%$.
 
 
@@ -214,6 +235,8 @@ Dabei wird auch der Generatorinnenwiderstand berücksichtigt.
 \begin{equation*}
   f_{res} = (33.99 \pm 0.07) \:\symup{kHz}
 \end{equation*}
+
+Der Fehler von $f_{res}$ wird mit Gleichung (15) berechnet.
 Die relative Abweichung entspricht also circa 0,02\%.
 
 Aus dem zuvor bereits berechneten Wert der Breite ergibt sich zu dem experimentell
