@@ -14,18 +14,18 @@ def f(w):
        return 1/np.sqrt((1-L*C*(w*2*np.pi)**2)**2 + (w*2*np.pi)**2 * (R*C)**2)
 
 x_plot = np.linspace(1000, 100000, 1000)
-plt.plot((x_plot*2*np.pi), f(x_plot))
+plt.plot((x_plot), f(x_plot))
 
 
 #print(np.sqrt(np.diag(covariance_matrix)))
 #print('U_0 gleich ', params[0], ' +- ', errors[0])
 #print('my gleich ', params[1], ' +-' , errors[1])
 plt.gcf().subplots_adjust(bottom=0.18)
-plt.plot((w*2*np.pi) , U, 'r.', label='Messwerte', Markersize=4)
+plt.plot((w) , U, 'r.', label='Messwerte', Markersize=4)
 plt.xscale("log")
 plt.title('Spannungsamplituden in Abhängigkeit von der Frequenz')
 plt.legend()
 plt.grid()
-plt.xlabel(r'$\omega/$Hz')
+plt.xlabel(r'$f/$Hz')
 plt.ylabel(r'$\frac{U_C}{U_0}$')
 plt.savefig('build/plot2.pdf')
