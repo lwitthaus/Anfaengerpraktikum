@@ -16,6 +16,7 @@ print(34000/(unp.sqrt(1/(L*C)-R2**2/(2*L**2))/(2*np.pi)))
 print('------------')
 print(1/(unp.sqrt(L*C)*q*2*np.pi))
 print(7500/(1/(unp.sqrt(L*C)*q*2*np.pi)))
+print(unp.sqrt(L*C)/(R2*C))
 
 plt.gcf().subplots_adjust(bottom=0.18)
 plt.plot(k, unp.nominal_values(unp.arctan((1-L*C*(2*np.pi*k)**2)/(-k*2*np.pi*R2*C)))+np.pi/2, 'k-', label='Theoriekurve', linewidth=0.5)
