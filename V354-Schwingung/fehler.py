@@ -27,7 +27,7 @@ q = 1/(2*np.pi*34000*R2*C)
 
 #Resonanzbreite
 R = ufloat(121, 1)
-#q = ufloat(4.34, 0.01)
+q = ufloat(4.34, 0.01)
 w = 2.13 *10**(3)
-n = R2/(L)
+n = 213*10**3/(q*2*np.pi)
 print(n)
