@@ -18,12 +18,6 @@ Fehlerfortpflanzung berechnet:
        \left( \frac{\partial f}{\partial x_i} \sigma_i \right)^{\!\! 2}
      }
 \end{equation}
-Der Fehler der Steigung $m$ und des Achsenabschnittes $b$ einer linearen Regression
-wird wie folgt berechnet:
-\begin{align}
-  \sigma_m &= \frac{\overline{xy}-\bar{x}\cdot\bar{y}}{\bar{x^2}-\bar{x}^2} \\
-  \sigma_b &= \frac{\bar{x^2}\bar{y}-\overline{xy}\bar{x}}{\bar{x^2}-\bar{x}^2}
-\end{align}
 
 
 \subsection{Entladevorgang des Kondensators}
@@ -101,6 +95,8 @@ Abstand der Nulldurchgänge $a$ tabelliert. Die Generatorspannung beträgt $U_0 
   \end{tabular}
 \end{table}
 
+Die Phasenverschiebung wird mit Gleichung (15) berechnet.
+
 Die Spannungsamplitude $\frac{A}{U_0}$ wird gegen $\omega$ aufgetragen. Es wird eine nicht-lineare
 Regression durchgeführt.
 
@@ -111,16 +107,17 @@ Regression durchgeführt.
   \label{fig:amplitude}
 \end{figure}
 
-Als Ausgleichsfunktion wird $f(\omega) = \frac{1}{\sqrt{1 + c^2 \omega^2}}$ verwendet, welche auf Gleichung (13)
+Als Ausgleichsfunktion wird $f(\omega) = \frac{1}{\sqrt{1 + c^2 \omega^2}} = \frac{1}{\sqrt{1 + c^2 (2\pi f)^2}}$ verwendet, welche auf Gleichung (13)
 zurückzuführen ist.
 Der Parameter $c$ beträgt:
 \begin{align*}
-  c = RC = \SI{0.232(3)e-3}{\second}.
+  c = RC = \SI{1.46(2)e-3}{\second}.
 \end{align*}
+Der Fehler von $c$ wird mit Python berechnet.
 
 Die Zeitkonstante wird nun mithilfe der Phasenverschiebung bestimmt. Die Phasenverschiebung wird gegen
 den Logarithmus der Frequenz aufgetragen. Eine nicht lineare Regression wird gemäß der Gleichung (11) durchgeführt.
-Die Ausgleichsfunktion lautet $f(\varphi) = \arctan(d \cdot \varphi)$. Das Minuszeichen in der Funktion wird
+Die Ausgleichsfunktion lautet $f(\omega) = \arctan(d \cdot \omega)$. Das Minuszeichen in der Funktion wird
 weggelassen, da das Oszilloskop den Betrag der Phasenverschiebung anzeigt.
 
 \begin{figure}[H]
@@ -132,8 +129,10 @@ weggelassen, da das Oszilloskop den Betrag der Phasenverschiebung anzeigt.
 
 Der Parameter $d$ beträgt:
 \begin{align*}
-  d = RC = \SI{1.23(7)e-3}{\second}
+  d = RC = \SI{1.28(8)e-3}{\second}
 \end{align*}
+
+Der Fehler von $d$ wird mit Python berechnet.
 
 Die Spannungsamplitude $\frac{A}{U_0}$ wird gegen $\varphi$ in einem Polarplot aufgetragen.
 
