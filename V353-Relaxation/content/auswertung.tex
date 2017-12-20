@@ -1,24 +1,6 @@
 \section{Auswertung}
 \label{sec:Auswertung}
 
-\subsection{Fehlerrechnung}
-Der Mittelwert eines Datensatzes mit $N$ Werten ist definiert durch:
-\begin{equation}
-  \bar{x} = \frac{1}{N} \sum_{i=1}^N x_i
-\end{equation}
-Die Standardabweichung eines Datensatzes von seinem Mittelwert durch:
-\begin{equation}
-  \sigma = \sqrt{\frac{1}{N(N-1)} \sum_{i=1}^N (x_i - \bar{x})}
-\end{equation}
-Pflanzen sich Unsicherheiten fort, wird der Fehler mit der gaußschen
-Fehlerfortpflanzung berechnet:
-\begin{equation}
-  \sigma_f = \sqrt{
-      \sum\limits_{i = 1}^N
-       \left( \frac{\partial f}{\partial x_i} \sigma_i \right)^{\!\! 2}
-     }
-\end{equation}
-
 
 \subsection{Entladevorgang des Kondensators}
 In Tabelle 1 sind die gemessenen Spannungen, bei dem Entladevorgang des Kondensators, zu den jeweiligen Zeitpunkten dargestellt. Zudem
@@ -67,6 +49,9 @@ Die Gerade kann durch die Gleichung $y = -\frac{1}{m}x + b$ beschrieben werden. 
   -\frac{1}{m} = &RC = (1.08 \pm 0.04) \, \cdot 10^{-3} \symup{s} \\
   &b = (0.28 \pm 0.11)
 \end{align*}
+
+Die jeweiligen Fehler von $RC$ und $b$ wird mit Python berechnet.
+
 
 \subsection{Bestimmung der Zeitkonstante mit frequenzabhängiger Amplitude und Phasenverschiebung}
 
