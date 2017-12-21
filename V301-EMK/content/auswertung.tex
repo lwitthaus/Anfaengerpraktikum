@@ -60,17 +60,17 @@ In Tabelle 2 werden die Messwerte $U_k$ und $I$ bei angelegter Gegenspannung dar
     \toprule
     $I/$mA & $U/$V \\
     \midrule
-    49.0  2.60 \\
-    46.0  2.55 \\
-    29.0  2.35 \\
-    23.0  2.25 \\
-    30.0  2.30 \\
-    35.0  2.40 \\
-    40.0  2.45 \\
-    55.0  2.70 \\
-    70.0  2.95 \\
-    80.0  3.13 \\
-    65.0  2.90 \\
+    23.0  &  2.25 \\
+    29.0  &  2.35 \\
+    30.0  &  2.30 \\
+    35.0  &  2.40 \\
+    40.0  &  2.45 \\
+    46.0  &  2.55 \\
+    49.0  &  2.60 \\
+    55.0  &  2.70 \\
+    65.0  &  2.90 \\
+    70.0  &  2.95 \\
+    80.0  &  3.13 \\
     \bottomrule
   \end{tabular}
 \end{table}
@@ -91,3 +91,62 @@ Die Gerade wird durch die Gleichung $y = cx + d$ beschrieben. Die Parameter betr
 \end{align*}
 
 Der Fehler der Parameter wird mit Python berechnet.
+
+
+\subsection{Bestimmung der Klemmspannung und des Innenwiderstandes bei angelegter Wechselspannung}
+Die gemessenen Spannungen und Stromstärken der Sinusspannungsquelle und der Rechteckspannungsquelle werden
+in Tabelle 3 dargestellt.
+
+\begin{table}[H]
+  \centering
+  \caption{Gemessene Spannungen und Stromstärken bei angelegter Wechselspannung}
+  \label{tab:wechselspannung}
+  \begin{tabular}{c c c c}
+    \toprule
+    \multicolumn{2}{c}{Sinusspannung} & \multicolumn{2}{c}{Rechteckspannung} \\
+    \cmidrule(lr){1-2}\cmidrule(lr){3-4}
+    $I/$mA & $U/$V & $I/$mA & $U/$V \\
+    \midrule
+    8.5  &  0.21  &  1.00  &   0.34 \\
+    8.0  &  0.22  &  0.90  &   0.41 \\
+    7.0  &  0.23  &  0.80  &   0.48 \\
+    6.0  &  0.24  &  0.70  &   0.55 \\
+    5.5  &  0.25  &  0.60  &   0.62 \\
+    5.0  &  0.26  &  0.50  &   0.69 \\
+    4.0  &  0.27  &  0.40  &   0.76 \\
+    3.0  &  0.29  &  0.30  &   0.83 \\
+    2.0  &  0.30  &  0.20  &   0.90 \\
+    1.0  &  0.32  &  0.16  &   0.92 \\
+    \bottomrule
+  \end{tabular}
+\end{table}
+
+Die Messwerte werden jeweils in ein Diagramm eingetragen und es wird eine lineare Regression durchgeführt.
+
+\begin{figure}[H]
+  \centering
+  \includegraphics{plot3.pdf}
+  \caption{$U_k$ in Abhängigkeit von der Stromstärke bei angelegter Sinusspannung}
+  \label{fig:plot3}
+\end{figure}
+
+Die Gerade wird durch die Gleichung $y = ex + f$ beschrieben. Die Parameter $e$ und $f$ betragen:
+\begin{align*}
+  -e &= R_i = \SI{14.3(4)}{\ohm} \\
+  f &= U_0 = \SI{0.331(2)}{\volt}
+\end{align*}
+
+Für die Rechteckspannung wird analog vorgegangen.
+
+\begin{figure}[H]
+  \centering
+  \includegraphics{plot4.pdf}
+  \caption{$U_k$ in Abhängigkeit von der Stromstärke bei angelegter Rechteckspannung}
+  \label{fig:plot4}
+\end{figure}
+
+Die Gerade wird durch die Gleichung $y = gx + h$ beschrieben. Die Parameter $g$ und $h$ betragen:
+\begin{align*}
+  g &= -R_i = \SI{696(3)}{\ohm}   \\
+  h &= U_0 = \SI{1.037(2)}{\volt}
+\end{align*}
