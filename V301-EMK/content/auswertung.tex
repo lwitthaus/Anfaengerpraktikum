@@ -151,6 +151,25 @@ Die Gerade wird durch die Gleichung $y = gx + h$ beschrieben. Die Parameter $g$ 
   h &= U_0 = \SI{1.037(2)}{\volt}
 \end{align*}
 
+\subsection{Systematische Fehler bei der einfachen Messung der Leerlaufspannung}
+Zur genauen Messung der Leerlaufspannung muss der Eingangswiderstand $R_V$ möglichst groß sein.
+Da dieser jedoch nicht unendlich groß sein kann, wird ein systematischer Fehler gemacht.
+Nach Gleichung (2) ergibt sich für die tatsächliche Leelaufspannung:
+\begin{equation*}
+  U_0 = U_k + \frac{U_kR_i}{R_V}
+\end{equation*}
+$U_k$ ist dabei nun die eigentlich gemessene Leerlaufspannung und für $R_i$ wird
+der zuvor berechnete Innenwiderstand bei Gleichspannung eingesetzt.
+Der Fehler entspricht dann der Differenz $U_0 - U_k$ und ergibt sich zu:
+\begin{align*}
+  \Delta U_0 &= \frac{U_kR_i}{R_V} \\
+  \Delta U_0 &= (2,771 \pm 0,034)\cdot 10^{-6} \: \symup{V}
+\end{align*}
+
+Mit dem Voltmeter sollte die Spannung nicht hinter dem Amperemeter (Punkt H, siehe Abblidung \ref{fig:Schaltung}) abgegriffen
+werden, da dessen Widerstand die gemessene Spannung ändert. Es würde also nicht mehr nur die
+Klemmspannung gemessen werden.
+
 
 
 
