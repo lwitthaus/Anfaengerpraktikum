@@ -3,7 +3,7 @@ import numpy as np
 from scipy.optimize import curve_fit
 from uncertainties import ufloat
 
-I, U = np.genfromtxt('spannung1.txt', unpack=True)
+I, U = np.genfromtxt('gegenspannung.txt', unpack=True)
 
 def f(I, a, b):
    return a*I + b
@@ -22,4 +22,4 @@ plt.grid()
 plt.xlim((0, 90))
 plt.xlabel(r'$I/\mathrm{mA}$')
 plt.ylabel(r'$U/$V')
-plt.savefig('build/plot.pdf')
+plt.savefig('build/plot2.pdf')
