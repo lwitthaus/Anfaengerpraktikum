@@ -174,9 +174,36 @@ Klemmspannung gemessen werden.
 
 
 \subsection{Bestimmung des belastungswiderstnades und der Leistung}
+In Tabelle 4 werden die Leistung und der Belastungswiderstand dargestellt.
+
+\begin{table}[H]
+  \centering
+  \caption{Leistung und Belastungswiderstand}
+  \label{tab:Leistung}
+  \begin{tabular}{c c}
+    \toprule
+    $P/$mW & $R/ \symup{\Omega}$ \\
+    \midrule
+    4.0   &  0.6        \\
+    7.5   &  1.3        \\
+    14.0  &  2.9        \\
+    16.9  &  4.0        \\
+    21.0  &  5.8        \\
+    26.5  &  10.6        \\
+    28    &  17.5        \\
+    25.5  &  28.3        \\
+    20.2  &  50.5        \\
+    16.5  &  73.3        \\
+    \bottomrule
+  \end{tabular}
+\end{table}
+
+Die Leistung $P=U_k \cdot I$ wird gegen den Belastungswiderstand $R_a = \frac{U_k}{I}$ aufgetragen. Zudem wird in dem
+Diagramm die TheorieKruve für $P = \frac{U_0^2 \cdot R_a}{(R_a + R_i)^2}$ dargestellt.
+
 \begin{figure}[H]
   \centering
   \includegraphics{plot5.pdf}
-  \caption{Leistung}
+  \caption{Berechnete Werte und Thoeriekurve der Leistung der Monozelle}
   \label{fig:plot5}
 \end{figure}
