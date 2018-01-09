@@ -1,23 +1,6 @@
 \section{Auswertung}
 \label{sec:Auswertung}
 
-\subsection{Fehlerrechnung}
-Der Mittelwert eines Datensatzes mit $N$ Werten ist definiert durch:
-\begin{equation}
-  \bar{x} = \frac{1}{N} \sum_{i=1}^N x_i
-\end{equation}
-Die Standardabweichung eines Datensatzes von seinem Mittelwert durch:
-\begin{equation}
-  \sigma = \sqrt{\frac{1}{N(N-1)} \sum_{i=1}^N (x_i - \bar{x})}
-\end{equation}
-Pflanzen sich Unsicherheiten fort, wird der Fehler mit der gaußschen
-Fehlerfortpflanzung berechnet:
-\begin{equation}
-  \sigma_f = \sqrt{
-      \sum\limits_{i = 1}^N
-       \left( \frac{\partial f}{\partial x_i} \sigma_i \right)^{\!\! 2}
-     }
-\end{equation}
 
 
 \subsection{Berechnung des Dämpfungswiderstandes}
@@ -40,18 +23,18 @@ Die gemessenen Spannungsamplituden $U_C$ in Abhängigkeit von der Zeit $t$ wird 
     \toprule
     $t/$s & $U_C/$V \\
     \midrule
-    29.00 & 0.69 \\
-    58.00 & 0.58 \\
-    88.00 & 0.50 \\
-    117.0 & 0.42 \\
-    147.0 & 0.34 \\
-    176.0 & 0.28 \\
-    205.0 & 0.24 \\
-    235.0 & 0.20 \\
-    264.0 & 0.17 \\
-    294.0 & 0.14 \\
-    323.0 & 0.12 \\
-    353.0 & 0.10 \\
+    29,00 & 0,69 \\
+    58,00 & 0,58 \\
+    88,00 & 0,50 \\
+    117,0 & 0,42 \\
+    147,0 & 0,34 \\
+    176,0 & 0,28 \\
+    205,0 & 0,24 \\
+    235,0 & 0,20 \\
+    264,0 & 0,17 \\
+    294,0 & 0,14 \\
+    323,0 & 0,12 \\
+    353,0 & 0,10 \\
     \bottomrule
   \end{tabular}
 \end{table}
@@ -67,7 +50,7 @@ Die Messwerte und die Regression werden in Abbildung 5 dargestellt. Die Ausgleic
 
 Die Parameter betragen:
 \begin{align*}
-  A &= (0.827 \pm 0.007) \symup{V} \\
+  A &= (0,827 \pm 0,007) \symup{V} \\
   \mu &= (954 \pm 10)\frac{1}{\symup{s}}
 \end{align*}
 
@@ -96,8 +79,7 @@ Der aus dem Versuch berechnete Wert beträgt:
 \end{equation*}
 
 Die absolute Abweichung der beiden Werte beträgt $(1290 \pm 9) \symup{\Omega}$.
-Diese Diskrepanz ist durch die nicht beachteten Widerstände von Spule, Kondensator und Kabeln zu erklären. Zusätzlich
-kann bei der Messung nicht genau festgestellt werden, wann genau der Fall des aperiodischen Grenzfalles eintritt.
+
 
 
 \subsection{Bestimmung der Güte und der Breite der Schwingung}
@@ -114,29 +96,29 @@ benötigt wird.
     \toprule
     $f/$Hz & $U_0/V$ & $U_C/V$ & $a/\symup{\mu s}$ & $\frac{U_C}{U_0}$ & $\varphi/$rad   \\
     \midrule
-    5000 & 3.28  &  3.36  &  2.00  &  1.02  &  0.06   \\
-   10000 & 3.28  &  3.60  &  2.00  &  1.10  &  0.13   \\
-   15000 & 3.28  &  4.00  &  2.00  &  1.22  &  0.19   \\
-   20000 & 3.28  &  4.80  &  2.00  &  1.46  &  0.25   \\
-   25000 & 3.28  &  6.48  &  2.40  &  1.98  &  0.38   \\
-   27000 & 3.20  &  7.80  &  2.60  &  2.44  &  0.44   \\
-   28000 & 3.28  &  8.40  &  3.20  &  2.56  &  0.56   \\
-   29000 & 3.28  &  9.20  &  3.40  &  2.80  &  0.62   \\
-   30000 & 3.28  &  10.2  &  3.60  &  3.11  &  0.68   \\
-   31000 & 3.28  &  11.0  &  4.60  &  3.35  &  0.90   \\
-   32000 & 3.28  &  11.8  &  6.20  &  3.60  &  1.25   \\
-   33000 & 3.28  &  12.2  &  6.60  &  3.72  &  1.37   \\
-   34000 & 3.28  &  12.2  &  7.60  &  3.72  &  1.62   \\
-   35000 & 3.28  &  11.4  &  8.40  &  3.48  &  1.85   \\
-   36000 & 3.28  &  10.4  &  9.40  &  3.17  &  2.13   \\
-   37000 & 3.28  &  9.40  &  9.80  &  2.87  &  2.28   \\
-   38000 & 3.28  &  8.20  &  9.80  &  2.50  &  2.34   \\
-   39000 & 3.28  &  7.20  &  9.80  &  2.20  &  2.40   \\
-   40000 & 3.28  &  6.40  &  10.20 &  1.95  &  2.56   \\
-   45000 & 3.28  &  4.00  &  10.40 &  1.22  &  2.94   \\
-   50000 & 3.28  &  2.56  &  9.80  &  0.78  &  3.08   \\
-   55000 & 3.28  &  1.84  &  9.60  &  0.56  &  3.32   \\
-   60000 & 3.24  &  1.44  &  8.00  &  0.44  &  3.02   \\
+    5000 & 3,28  &  3,36  &  2,00  &  1,02  &  0,06   \\
+   10000 & 3,28  &  3,60  &  2,00  &  1,10  &  0,13   \\
+   15000 & 3,28  &  4,00  &  2,00  &  1,22  &  0,19   \\
+   20000 & 3,28  &  4,80  &  2,00  &  1,46  &  0,25   \\
+   25000 & 3,28  &  6,48  &  2,40  &  1,98  &  0,38   \\
+   27000 & 3,20  &  7,80  &  2,60  &  2,44  &  0,44   \\
+   28000 & 3,28  &  8,40  &  3,20  &  2,56  &  0,56   \\
+   29000 & 3,28  &  9,20  &  3,40  &  2,80  &  0,62   \\
+   30000 & 3,28  &  10,2  &  3,60  &  3,11  &  0,68   \\
+   31000 & 3,28  &  11,0  &  4,60  &  3,35  &  0,90   \\
+   32000 & 3,28  &  11,8  &  6,20  &  3,60  &  1,25   \\
+   33000 & 3,28  &  12,2  &  6,60  &  3,72  &  1,37   \\
+   34000 & 3,28  &  12,2  &  7,60  &  3,72  &  1,62   \\
+   35000 & 3,28  &  11,4  &  8,40  &  3,48  &  1,85   \\
+   36000 & 3,28  &  10,4  &  9,40  &  3,17  &  2,13   \\
+   37000 & 3,28  &  9.40  &  9,80  &  2,87  &  2,28   \\
+   38000 & 3,28  &  8,20  &  9,80  &  2,50  &  2,34   \\
+   39000 & 3,28  &  7,20  &  9,80  &  2,20  &  2,40   \\
+   40000 & 3,28  &  6,40  &  10,20 &  1,95  &  2,56   \\
+   45000 & 3,28  &  4,00  &  10,40 &  1,22  &  2,94   \\
+   50000 & 3,28  &  2,56  &  9,80  &  0,78  &  3,08   \\
+   55000 & 3,28  &  1,84  &  9,60  &  0,56  &  3,32   \\
+   60000 & 3,24  &  1,44  &  8,00  &  0,44  &  3,02   \\
     \bottomrule
   \end{tabular}
 \end{table}
@@ -155,14 +137,26 @@ dargestellt.
   \label{fig:plot2}
 \end{figure}
 
-Aus den Messwerten wird die Resonanzüberhöhung $q_{exp} = 3.72$ bei $\omega_0 = 213 \cdot 10^{3} \symup{Hz}$ abgelesen . Der theoretische Wert der
+Aus den Messwerten wird die Resonanzüberhöhung $q_{exp} = 3,72$ bei $\omega_0 = 213 \cdot 10^{3} \symup{Hz}$ abgelesen . Der theoretische Wert der
 Güte $q_{theo}$ wird mit Gleichung (11) berechnet.
 \begin{equation*}
-  q_{theo} = 3.99 \pm 0.01
+  q_{theo} = 3,99 \pm 0,01
 \end{equation*}
 
-Der Fehler von $q_{theo}$ wird mit Gleichung (15) berechnet.
-Die relative Abweichung des experimentell ermittelten Wertes zu dem Theoriewert beträgt $6.8\%$.
+Der Fehler von $q_{theo}$ wird der Gaußschen Fehlerfortpflanzung berechnet.:
+
+\begin{align*}
+  \sigma_q =  \sqrt{
+      \left( \frac{\partial \left(\frac{1}{\omega_0 R_2C}\right)}{\partial R_2} \sigma_{R_2} \right)^{\!\! 2} +
+      \left( \frac{\partial \left(\frac{1}{\omega_0 R_2C} \right)}{\partial C} \sigma_{C} \right)^{\!\! 2}
+    } \\
+    \Rightarrow \sigma_q = \sqrt{\left(\frac{1}{\omega_0 R_2^2 C}\sigma_{R_2} \right)^2 +
+    \left(\frac{1}{\omega_0 R_2 C^2} \sigma_C \right)^2
+    }
+\end{align*}
+
+
+Die relative Abweichung des experimentell ermittelten Wertes zu dem Theoriewert beträgt $6,8\%$.
 
 Um die Breite der Resonanzkurve zu ermitteln, wird der Frequenzbereich um das Maximum herum linear dargestellt.
 
@@ -173,9 +167,9 @@ Um die Breite der Resonanzkurve zu ermitteln, wird der Frequenzbereich um das Ma
   \label{fig:plot5}
 \end{figure}
 
-Das Maximum hat den Wert $\frac{U_{C,max}}{U_0} = 3.72$. Fällt das Maximum auf den Bruchteil $\frac{1}{\sqrt{2}}$ seines Maximalwertes:
-$\frac{1}{\sqrt{2}} \cdot \frac{U_{C,max}}{U_0} = 2.63$, betragen
-die zugehörigen Kreisfrequenzen $\omega_+$ und $\omega_-$:
+Das Maximum hat den Wert $\frac{U_{C,max}}{U_0} = 3,72$. Fällt das Maximum auf den Bruchteil $\frac{1}{\sqrt{2}}$ seines Maximalwertes:
+$\frac{1}{\sqrt{2}} \cdot \frac{U_{C,max}}{U_0} = 2,63$, betragen
+die zugehörigen Frequenzen $f_+$ und $f_-$:
 \begin{align*}
   f_+ &= 37500 \symup{Hz} \\
   f_- &= 28500 \symup{Hz} \\
@@ -187,8 +181,14 @@ Der Theoriewert von $f_+ - f_-$ wird mit Gleichung (11) berechnet:
   f_+ - f_- = (7811 \pm 18) \:\symup{kHz}
 \end{equation*}
 
-Der Fehler wird mit Gleichung (15) berechnet.
-Die relative Abweichung des experimentell bestimmten Wertes zu dem Theoriewert beträgt $13.2 \%$.
+Der Fehler wird mit der Gaußschen Fehlerfortpflanzung bestimmt:
+\begin{align*}
+  \sigma_f = f_0 \sqrt{
+      \left(\frac{\partial \left(\frac{1}{q}\right)}{\partial q} \sigma_{q} \right)^{\!\! 2}
+      } \\
+      \Rightarrow \sigma_f = f_0 \sqrt{\left(\frac{1}{q^2} \sigma_q \right)^2}
+\end{align*}
+Die relative Abweichung des experimentell bestimmten Wertes zu dem Theoriewert beträgt $13,2 \%$.
 
 
 \subsection{Bestimmung der Resonanzfrequenz aus der Phasenverschiebung}
@@ -233,11 +233,39 @@ $\frac{\pi}{4}$ bzw. $\frac{3\pi}{4}$ beträgt, folgt:
 Der theoretische Wert für die Resonanzfrequenz ergibt sich aus Gleichung (10).
 Dabei wird auch der Generatorinnenwiderstand berücksichtigt.
 \begin{equation*}
-  f_{res} = (33.99 \pm 0.07) \:\symup{kHz}
+  f_{res} = (33,99 \pm 0,07) \:\symup{kHz}
 \end{equation*}
 
-Der Fehler von $f_{res}$ wird mit Gleichung (15) berechnet.
+Der Fehler von $f_{res}$ wird mit der Gaußschen Fehlerfortpflanzung berechnet:
+
+\begin{align*}
+  \sigma_f = 2\pi \sqrt{
+  \left( \frac{\partial \left(\sqrt{\frac{1}{LC} - \frac{R^2}{2L^2}}\right)}{\partial R_2} \sigma_{R_2} \right)^{\!\! 2} +
+  \left( \frac{\partial \left(\sqrt{\frac{1}{LC} - \frac{R_2^2}{2L^2}}\right)}{\partial L} \sigma_{L} \right)^{\!\! 2} +
+  \left( \frac{\partial \left(\sqrt{\frac{1}{LC} - \frac{R_2^2}{2L^2}}\right)}{\partial C} \sigma_{C} \right)^{\!\! 2}
+      } \\
+    \Rightarrow  \sigma_f = 2 \pi \sqrt{\left(\frac{R_2}{2L^2 \sqrt{\frac{1}{LC} - \frac{R_2^2}{2L^2}}} \sigma_{R_2} \right)^2 +
+  \left(\frac{\frac{R_2^2}{L^3}-\frac{1}{CL^2}}{2\sqrt{\frac{1}{LC} - \frac{R_2^2}{2L^2}}} \sigma_L \right)^2 +
+  \left(\frac{1}{2LC^2  \sqrt{\frac{1}{LC} - \frac{R_2^2}{2L^2}}} \sigma_C \right)^2}
+\end{align*}
+
 Die relative Abweichung entspricht also circa 0,02\%.
 
 Aus dem zuvor bereits berechneten Wert der Breite ergibt sich zu dem experimentell
-ermittelten Wert von $f_1 - f_2 \approx 7500$ Hz eine relative Abweichung von 4.1\%.
+ermittelten Wert von $f_1 - f_2 \approx 7500$ Hz eine relative Abweichung von 4,1\%.
+
+
+
+%\begin{equation}
+%  \sigma_f = 2\pi \sqrt{
+%      \left( \frac{\partial \left(\sqrt{\frac{1}{LC} - \frac{R^2}{2L^2}}\right)}{\partial R} \sigma_{R} \right)^{\!\! 2} +
+%      \left( \frac{\partial \left(\sqrt{\frac{1}{LC} - \frac{R^2}{2L^2}}\right)}{\partial L} \sigma_{L} \right)^{\!\! 2} +
+%      \left( \frac{\partial \left(\sqrt{\frac{1}{LC} - \frac{R^2}{2L^2}}\right)}{\partial C} \sigma_{C} \right)^{\!\! 2}
+%    }
+%\end{equation}
+
+%\begin{equation}
+%  \sigma_f = 2 \pi \sqrt{\left(\frac{R}{2L^2 \sqrt{\frac{1}{LC} - \frac{R^2}{2L^2}}} \sigma_R \right)^2 +
+%  \left(\frac{\frac{R^2}{L^3}-\frac{1}{CL^2}}{2\sqrt{\frac{1}{LC} - \frac{R^2}{2L^2}}} \sigma_L \right)^2 +
+%  \left(\frac{1}{2LC^2  \sqrt{\frac{1}{LC} - \frac{R^2}{2L^2}}} \sigma_C \right)^2}
+%\end{equation}
