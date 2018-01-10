@@ -1,9 +1,48 @@
 \section{Auswertung}
 \label{sec:Auswertung}
 
-\begin{figure}
+\subsection{Wheatsonesche Brückenschaltung}
+Der unbekannte Widerstand $R_{x_1}$ (Wert 10) in der Brückenschaltung wird mit Gleichung (4) bestimmt. Die gemessenen Widerstände
+werden in Tabelle 1 dargestellt.
+
+\begin{table}[H]
   \centering
-  \includegraphics{plot.pdf}
-  \caption{Plot.}
-  \label{fig:plot}
-\end{figure}
+  \caption{Gemessene Widerstände für $R_{x_1}$}
+  \label{tab:Widerstand}
+  \begin{tabular}{c c c}
+    \toprule
+    $R_2/ \symup{\Omega}$ & $R_3/ \symup{\Omega}$ & $R_4 / \symup{\Omega}$ \\
+    \midrule
+     500  &  321 & 679 \\
+    1000  &  190 & 820  \\
+     332  &  417 & 583  \\
+    \bottomrule
+  \end{tabular}
+\end{table}
+
+Daraus folgt für den Mittelwert  des unbekannten Widerstands:
+\begin{align*}
+  R_{x_1} = (235 \pm 1\text{(Bauteile)} \pm 2\text{(Mittelwert)}) \, \symup{\Omega}
+\end{align*}
+
+Für den zweiten unbekannten Widerstand $R_{x_2}$ (Wert 12) werden die gemesenen Widerstände in Tabelle 2 dargestellt.
+
+\begin{table}[H]
+  \centering
+  \caption{Gemessene Widerstände für $R_{x_2}$}
+  \label{tab:Widerstand}
+  \begin{tabular}{c c c}
+    \toprule
+    $R_2/ \symup{\Omega}$ & $R_3/ \symup{\Omega}$ & $R_4 / \symup{\Omega}$ \\
+    \midrule
+      312  &  530 & 470 \\
+      500  &  428 & 572  \\
+     1000  &  263 & 737  \\
+    \bottomrule
+  \end{tabular}
+\end{table}
+
+Daraus folgt für den Mittelwert des unbekannten Widerstandes:
+\begin{align*}
+  R_{x_2} = (368 \pm 2\text{(Bauteile)} \pm 8\text{(Mittelwert)}) \, \symup{\Omega}
+\end{align*}
