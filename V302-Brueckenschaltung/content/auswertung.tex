@@ -187,20 +187,17 @@ Toleranz von $R_3$ und $R_4$ beträgt $3\%$.
 
 
 
-
-
-
-
-
-
+\subsection{Berechnung der Frequenzabhängigkeit der Wien-Robinson-Brücke}
+Die gemessenen Werte von Speise- und Brückenspannung der Wien-Robinson-Brücke bei
+den entsprechenden Frequenzen werden in Tablle \ref{tab:wien} dargestellt.
 
 \begin{table}[H]
   \centering
-  \caption{Gemessene Widerstände und Induktivitäten für $L_{x} und R_{x}$ mit der Maxwell-Brücke}
-  \label{tab:Widerstand}
+  \caption{Gemessene Spannungen $U_{Br}$ und $U_s$ für Frequenzen $f$.}
+  \label{tab:wien}
   \begin{tabular}{c c c}
     \toprule
-     $R_2/ \symup{\Omega}$ & $R_3/ \symup{\Omega}$ & $R_4 / \symup{\Omega}$ \\
+     $f / \symup{Hz}$ & $U_{Br} / \symup{V}$ & $U_s / \symup{V}$ \\
     \midrule
     20	   &  1.51	   &  4.38   \\
     50	   &  1.47	   &  4.56\\
@@ -231,13 +228,15 @@ Toleranz von $R_3$ und $R_4$ beträgt $3\%$.
     5000	 &  1.31	   &  4.00\\
     10000  & 	1.35     &  3.96\\
     \bottomrule
-<<<<<<< HEAD
   \end{tabular}
 \end{table}
-||||||| merged common ancestors
-  \end{tabula
-=======
-  \end{tabula
+
+Aus diesen Werten lässt sich das Verhältnis von Brücken- und Speisespannung gegen
+das Frequenzverhältnis $\frac{f}{f_0}$ auftragen.
+Für $f_0$ ergibt sich gemäß Gleichung (14):
+\begin{equation*}
+  f_0 = 482,7 \: \symup{Hz}
+\end{equation*}
 
 \begin{figure}[H]
   \centering
@@ -245,4 +244,9 @@ Toleranz von $R_3$ und $R_4$ beträgt $3\%$.
   \caption{Spannungsverhältnis von Brücken- und Speisespannung in Abhängigkeit von der Frequenz.}
   \label{fig:plot}
 \end{figure}
->>>>>>> merge
+
+Die Theoriekurve ergibt sich dabei aus Gleichung (15).
+
+\subsection{Berechnung des Klirrfaktors}
+Zur Berechnung der Klirrfaktors wird zur Vereinfachung angenommen, dass die Summe
+der Oberwellen nur aus der zweiten Oberwelle besteht.

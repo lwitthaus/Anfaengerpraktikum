@@ -132,12 +132,17 @@ Für das Betragsquadrat des Verhältnisses von der Brückenspannung $U_{Br}$ und
   \left|\frac{U_{Br}}{U_S} \right|^2 = \frac{(\omega^2 R^2 C^2 -1)^2}{9((1- \omega^2 R^2 C^2) + 9 \omega^2 R^2 C^2)}
 \end{equation}
 
-Wird das Frequenzverhältnis $\Omega = \frac{\omega}{\omega_0}$ eingeführt, folgt aus Gleichung (13):
+Das Frequenzverhältnis $\Omega = \frac{\omega}{\omega_0}$ eingeführt. Dabei gilt:
+\begin{equation}
+  \omega_0 = \frac{1}{RC}
+\end{equation}
+
+Dann folgt aus Gleichung (13):
 \begin{equation}
   \left|\frac{U_{Br}}{U_S} \right|^2 = \frac{1}{9} \frac{(\Omega^2 -1)^2}{(1- \Omega^2)^2 + 9 \Omega^2}
 \end{equation}
 
-Gleichung (14) hat die Form eines Filters. Die Wien-Robinson-Brücke schwächt Schwingungen in einem
+Gleichung (15) hat die Form eines Filters. Die Wien-Robinson-Brücke schwächt Schwingungen in einem
 Bereich um $\omega_0$ ab. Mit dieser Schaltung wird der Klirr-Faktor gemessen. Ein Sinusgenerator kann keine
 Sinuschwingungen ohne Oberwellen erzeugen. Eine ideale Sinusschwingung besteht nur aus einer Grundschwingung.
 Der Klirr-Faktor ist ein Maß für die Qualität des Sinusgenerators. Hat der Sinusgenerator die Sperrfrequenz $\omega_0$
