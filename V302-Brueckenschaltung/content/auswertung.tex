@@ -25,7 +25,10 @@ Daraus folgt für den Mittelwert  des unbekannten Widerstands:
   R_{x_1} = (235 \pm 1\text{(Bauteile)} \pm 2\text{(Mittelwert)}) \, \symup{\Omega}
 \end{align*}
 
-Für den zweiten unbekannten Widerstand $R_{x_2}$ (Wert 12) werden die gemesenen Widerstände in Tabelle 2 dargestellt.
+Das Bauteil $R_2$ hat eine Toleranz von $0.2\%$ und das Verhältnis $\frac{R_3}{R_4}$ hat eine Abweichung von
+$0.5\%$.
+
+Für den zweiten unbekannten Widerstand $R_{x_2}$ (Wert 12) werden die gemessenen Widerstände in Tabelle 2 dargestellt.
 
 \begin{table}[H]
   \centering
@@ -46,3 +49,104 @@ Daraus folgt für den Mittelwert des unbekannten Widerstandes:
 \begin{align*}
   R_{x_2} = (368 \pm 2\text{(Bauteile)} \pm 8\text{(Mittelwert)}) \, \symup{\Omega}
 \end{align*}
+
+
+\subsection{Berechnung der Kapazität}
+Zur Bestimmung der Messgrößen $C_x$ und $R_x$ werden die gemessenen Wiederstände und Kapazitäten in
+Tabelle 3 dargestellt.
+
+\begin{table}[H]
+  \centering
+  \caption{Gemessene Widerstände und Kapazitäten für $C_{x_1} und R_{x_1}$}
+  \label{tab:Widerstand}
+  \begin{tabular}{c c c c}
+    \toprule
+    $C_2/$nF & $R_2/ \symup{\Omega}$ & $R_3/ \symup{\Omega}$ & $R_4 / \symup{\Omega}$ \\
+    \midrule
+    992 & 0 & 600 & 400 \\
+    597 & 0 & 474 & 526 \\
+    399 & 0 & 376 & 624 \\
+    \bottomrule
+  \end{tabular}
+\end{table}
+
+Die unbekannten Größen $C_{x_1}$ (Wert 1) und $R_{x_1}$ werden mit Gleichung (6) und (7) berechnet.
+\begin{align*}
+  C_{x_1} = (6.62 \pm 0.04\text{(Bauteile)} \pm 0.01\text{(Mittelwert)}) \cdot 10^{2} \symup{nF} \\
+  R_{x_1} = (0 \pm 0\text{(Bauteile)} \pm 0\text{(Bauteile)}) \, \symup{\Omega}
+\end{align*}
+
+Die gemessene Werte der zweiten Messreihe werden in Tabelle 4 dargestellt.
+
+\begin{table}[H]
+  \centering
+  \caption{Gemessene Widerstände und Kapazitäten für $C_{x_2} und R_{x_2}$}
+  \label{tab:Widerstand}
+  \begin{tabular}{c c c c}
+    \toprule
+    $C_2/$nF & $R_2/ \symup{\Omega}$ & $R_3/ \symup{\Omega}$ & $R_4 / \symup{\Omega}$ \\
+    \midrule
+    992 & 0 & 703 & 297 \\
+    597 & 0 & 587 & 413 \\
+    399 & 0 & 487 & 513 \\
+    \bottomrule
+  \end{tabular}
+\end{table}
+
+Die Kapazität $C_{x_2}$ (Wert 3) wird analog berechnet.
+
+\begin{align*}
+  C_{x_2} = (4.20 \pm 0.02 \text{(Bauteile)} \pm 0.01 \text{(Mittelwert)}) \cdot 10^{2} \symup{nF} \\
+  R_{x_2} = (0 \pm 0 \text{(Bauteile)} \pm 0 \text{(Mittelwert)}) \, \symup{\Omega}
+\end{align*}
+
+
+Die gemessene Werte der dritten Messreihe werden in Tabelle 5 dargestellt.
+
+\begin{table}[H]
+  \centering
+  \caption{Gemessene Widerstände und Kapazitäten für $C_{x_3} und R_{x_3}$}
+  \label{tab:Widerstand}
+  \begin{tabular}{c c c c}
+    \toprule
+    $C_2/$nF & $R_2/ \symup{\Omega}$ & $R_3/ \symup{\Omega}$ & $R_4 / \symup{\Omega}$ \\
+    \midrule
+    992 & 170 & 771 & 229 \\
+    597 & 281 & 671 & 329 \\
+    399 & 422 & 576 & 424 \\
+    \bottomrule
+  \end{tabular}
+\end{table}
+
+Die Kapazität $C_{x_3}$ (Wert 8) eines verlustbehafteten Kondensator und $R_{x_3}$ werden analog berechnet.
+Der Fehler von $R_2$ beträgt $3\%$
+
+\begin{align*}
+  C_{x_3} = (2.94 \pm 0.02 \text{(Bauteile)} \pm 0.01 \text{(Mittelwert)}) \cdot 10^{2} \symup{nF} \\
+  R_{x_3} = (571 \pm 17 \text{(Bauteile)} \pm 3\text{(Mittelwert)}) \cdot 10^{2} \symup{nF}
+\end{align*}
+
+
+
+\subsection{Berechnung der Induktivität mit der Induktivitätsbrücke}
+
+Die gemessenen Induktivitäten und Widerstände werden in Tabelle 6 dargestellt.
+
+\begin{table}[H]
+  \centering
+  \caption{Gemessene Widerstände und Induktivitäten für $L_{x_1} und R_{x_1}$}
+  \label{tab:Widerstand}
+  \begin{tabular}{c c c c}
+    \toprule
+    $L_2/$mH & $R_2/ \symup{\Omega}$ & $R_3/ \symup{\Omega}$ & $R_4 / \symup{\Omega}$ \\
+    \midrule
+    27.5 &   61 & 607 & 393 \\
+    20.1 & 1000 &  91 & 909 \\
+    14.6 & 1000 &  99 & 901 \\
+    \bottomrule
+  \end{tabular}
+\end{table}
+
+
+Die Induktivität $L_{x_1}$ und der Widerstand $R_{x_1}$ werden mit den Gleichungen (9) und (10) berechnet. Dabei hat
+das Bauteil $L_2$ eine Toleranz von $0.2\%$.
