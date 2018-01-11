@@ -171,4 +171,8 @@ from uncertainties.umath import *
 
 
 #Induktivität Maxwell Brücke
-R_q = ufloat(332, 1)
+C_4 = ufloat(597*10**(-9), 1*10**(-9))
+
+R_a = ufloat(332, 1)
+R_q = ufloat(139, 4.17)
+L_q
