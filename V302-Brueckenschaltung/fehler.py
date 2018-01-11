@@ -131,7 +131,37 @@ from uncertainties.umath import *
 
 
 #Induktivität Wert 17
-L_q = ufloat(27.5*10**(-3), 0.06*10**(-3))
+#L_q = ufloat(27.5*10**(-3), 0.06*10**(-3))
+#R_q = ufloat(1.545, 0.008)
+#L_1 = L_q * R_q
+#print(L_1)
+#
+#L_w = ufloat(20.1*10**(-3), 0.04*10**(-3))
+#R_w = ufloat(0.100, 0.001)
+#L_2 = L_w * R_w
+#print(L_2)
+#
+#L_e = ufloat(14.6*10**(-3), 0.03*10**(-3))
+#R_e = ufloat(0.110, 0.001)
+#L_3 = L_e * R_e
+#print(L_3)
+#a = np.std([42.49, 2.01, 1.61])
+#print(a)
+
+
+R_a = ufloat(61, 1.83)
 R_q = ufloat(1.545, 0.008)
-L_1 = L_q * R_q
-print(L_1)
+R_1 = R_a * R_q
+print(R_1)
+
+R_b = ufloat(1000, 30)
+R_w = ufloat(0.100, 0.001)
+R_2 = R_b * R_w
+print(R_2)
+
+R_c = ufloat(1000, 30)
+R_e = ufloat(0.110, 0.001)
+R_3 = R_c * R_e
+print(R_3)
+a = np.std([94.2, 100.0, 110.0])
+print(a)

@@ -128,13 +128,13 @@ Der Fehler von $R_2$ beträgt $3\%$
 
 
 
-\subsection{Berechnung der Induktivität mit der Induktivitätsbrücke}
+\subsection{Berechnung der Induktivität mit der Induktivitätsmessbrücke}
 
 Die gemessenen Induktivitäten und Widerstände werden in Tabelle 6 dargestellt.
 
 \begin{table}[H]
   \centering
-  \caption{Gemessene Widerstände und Induktivitäten für $L_{x_1} und R_{x_1}$}
+  \caption{Gemessene Widerstände und Induktivitäten für $L_{x} und R_{x}$ mit der Induktivitätsmessbrücke}
   \label{tab:Widerstand}
   \begin{tabular}{c c c c}
     \toprule
@@ -148,5 +148,30 @@ Die gemessenen Induktivitäten und Widerstände werden in Tabelle 6 dargestellt.
 \end{table}
 
 
-Die Induktivität $L_{x_1}$ und der Widerstand $R_{x_1}$ werden mit den Gleichungen (9) und (10) berechnet. Dabei hat
+Die Induktivität $L_{x}$ und der Widerstand $R_{x}$ werden mit den Gleichungen (9) und (10) berechnet. Dabei hat
 das Bauteil $L_2$ eine Toleranz von $0.2\%$.
+
+\begin{align*}
+  L_{x} = (15.37 \pm 0.09\text{(Bauteile)} \pm 19.18\text{(Mittelwert)}) \, \symup{mH} \\
+  R_x = (101 \pm 3\text{(Bauteile)} \pm 6\text{(Mittelwert)}) \, \symup{\Omega}
+\end{align*}
+
+
+\subsection{Berechnung der Induktivität mit der Maxwell-Brücke}
+Die Induktivität der selben Spule wird nun mit der Maxwell-Brücke gemessen. Die gemsessenen Werte, werden in Tabelle 7
+dargestellt.
+
+\begin{table}[H]
+  \centering
+  \caption{Gemessene Widerstände und Induktivitäten für $L_{x} und R_{x}$ mit der Maxwell-Brücke}
+  \label{tab:Widerstand}
+  \begin{tabular}{c c c}
+    \toprule
+     $R_2/ \symup{\Omega}$ & $R_3/ \symup{\Omega}$ & $R_4 / \symup{\Omega}$ \\
+    \midrule
+    332 & 203 & 715 \\
+    500 & 139 & 715 \\
+   1000 &  68 & 715 \\
+    \bottomrule
+  \end{tabular}
+\end{table}
