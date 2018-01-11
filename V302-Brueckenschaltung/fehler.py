@@ -149,19 +149,26 @@ from uncertainties.umath import *
 #print(a)
 
 
-R_a = ufloat(61, 1.83)
-R_q = ufloat(1.545, 0.008)
-R_1 = R_a * R_q
-print(R_1)
+#R_a = ufloat(61, 1.83)
+#R_q = ufloat(1.545, 0.008)
+#R_1 = R_a * R_q
+#print(R_1)
+#
+#R_b = ufloat(1000, 30)
+#R_w = ufloat(0.100, 0.001)
+#R_2 = R_b * R_w
+#print(R_2)
+#
+#R_c = ufloat(1000, 30)
+#R_e = ufloat(0.110, 0.001)
+#R_3 = R_c * R_e
+#print(R_3)
+#a = np.std([94.2, 100.0, 110.0])
+#print(a)
 
-R_b = ufloat(1000, 30)
-R_w = ufloat(0.100, 0.001)
-R_2 = R_b * R_w
-print(R_2)
 
-R_c = ufloat(1000, 30)
-R_e = ufloat(0.110, 0.001)
-R_3 = R_c * R_e
-print(R_3)
-a = np.std([94.2, 100.0, 110.0])
-print(a)
+
+
+
+#Induktivität Maxwell Brücke
+R_q = ufloat(332, 1)
