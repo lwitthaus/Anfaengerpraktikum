@@ -1,9 +1,73 @@
 \section{Auswertung}
 \label{sec:Auswertung}
 
-\begin{figure}
+
+\subsection{Messung von verrauschten Signalen in Abhängigkeit von der Phase}
+
+Die gemessenen Spannungen mit und ohne Rauschen, in Abhängigkeit von der Phase $\phi$, werden in Tabelle 1 dargestellt.
+
+\begin{table}[H]
+  \centering
+  \caption{Spannungen in Abhängigkeit von der Phase}
+  \label{tab:Phase}
+  \begin{tabular}{c c c}
+    \toprule
+    $\phi/$grad  &  $U_{out}/$mV &  $U_v/$mV \\
+    \midrule
+    0     &  -21,8   &  -22,0 \\
+    30    &  -29,7   &  -30,0 \\
+    60    &  -30,2   &  -30,5 \\
+    90    &  -23,4   &  -23,4 \\
+    120   &  -11,9   &  -11,4 \\
+    150   &   11,4   &   12,2 \\
+    180   &   23,3   &   23,5 \\
+    210   &   31,1   &   31,7 \\
+    240   &   31,4   &   32,1 \\
+    270   &   24,8   &   25,0 \\
+    300   &   13,1   &   12,9 \\
+    \bottomrule
+  \end{tabular}
+\end{table}
+
+Die Messwerte der nichtverrauschten Spannungen werden gegen die Phase aufgetragen. Eine Ausgleichsfunktion mit der Form
+$A \cos{\phi + B} + C$ mit den Parametern $A, B ,C$ wird erstellt und ist in Abbildung \ref{fig:plot} zu sehen.
+
+(Alle Plots werden mit Python erstellt und alle Fehler mit Python berechnet.)
+
+
+
+\begin{figure}[H]
   \centering
   \includegraphics{plot.pdf}
-  \caption{Plot.}
+  \caption{Nicht verrauschte Spannungen in Abhängigkeit von der Phase}
   \label{fig:plot}
 \end{figure}
+
+Die Parameter betragen:
+\begin{align*}
+  A &= \SI{-32.6(8)}{\milli\volt} \\
+  B &= \SI{33.72(2)}{} \\
+  C &= \SI{1.0(6)}{\milli\volt}
+\end{align*}
+
+
+Mit dem verrauschtem Signal wird analog vorgegangen. Die Messwerte und die Ausgleichsfunktion ist sind in Abbildung \ref{fig:plot2} dargestellt.
+
+\begin{figure}[H]
+  \centering
+  \includegraphics{plot2.pdf}
+  \caption{Nicht verrauschte Spannungen in Abhängigkeit von der Phase}
+  \label{fig:plot2}
+\end{figure}
+
+
+Die Parameter der Funktion $D \cos{\phi + E} + F$ betragen:
+\begin{align*}
+  D &= \SI{32.9(8)}{\milli\volt} \\
+  E &= \SI{33.73(3)}{} \\
+  F &= \SI{1.2(6)}{\milli\volt}
+\end{align*}
+
+
+
+\subsection{Messung eines verrauschten Lichtsignals}
