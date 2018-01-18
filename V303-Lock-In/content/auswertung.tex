@@ -1,6 +1,94 @@
 \section{Auswertung}
 \label{sec:Auswertung}
 
+\subsection{Spannungskurven bei unterschiedlichen Phasen.}
+Es wird eine Signalspannung von 25,6 V mit einer Frequenz von 2 kHz angelegt. Als
+Referenzsignal dient eine Spannung gleicher Frequenz mit einer Amplitude von
+2,32 V.
+Bei unterschiedlichen Phaseneinstellungen des Phase Shifters ergeben sich
+die in Abbildung \ref{fig:logos} zu sehenden Spannungen am Detektor.
+Zu erkennen sind die erwarteten Halbwellen (negative bzw. positive Halbwellen sind umgeklappt),
+die anschließend bei der zeitlichen Mittelung im Tiefpass einen nicht verschindenden
+Spannungsanteil liefern sollten.
+Bei Variation der Phase verschieben sich die Kurven jeweils,
+bis sie bei einer Phasendifferenz von 180° umklappen. Im Bereich von 0°-180° erhält
+man also nur negative Halbwellen und im Breich von 180°-360° nur positive.
+In Abbildung \ref{fig:logosv} ist ein identisches Verhalten zu beobachten.
+Jedoch ist auch zusätzlich das Rauschen anhand des unstetigen Verlaufs der Kurven zu
+erkennnen.
+\begin{figure}
+  \centering
+  \begin{subfigure}{0.48\textwidth}
+    \centering
+    \includegraphics[height=4cm]{phase0.jpg}
+    \caption{Phase 0.}
+    \label{fig:phase0}
+  \end{subfigure}
+  \begin{subfigure}{0.48\textwidth}
+    \centering
+    \includegraphics[height=4cm]{phase90.jpg}
+    \caption{Phase 90.}
+    \label{fig:phase90}
+  \end{subfigure}
+  \begin{subfigure}{0.48\textwidth}
+    \centering
+    \includegraphics[height=4cm]{phase135.jpg}
+    \caption{Phase 135.}
+    \label{fig:phase135}
+  \end{subfigure}
+  \begin{subfigure}{0.48\textwidth}
+    \centering
+    \includegraphics[height=4cm]{phase180.jpg}
+    \caption{Phase 180.}
+    \label{fig:phase180}
+  \end{subfigure}
+  \begin{subfigure}{0.48\textwidth}
+    \centering
+    \includegraphics[height=4cm]{phase270.jpg}
+    \caption{Phase 270.}
+    \label{fig:phase270}
+  \end{subfigure}
+  \caption{Spannung am Detektor bei unterschiedlichen Phaseneinstellungen.}
+  \label{fig:logos}
+\end{figure}
+
+\begin{figure}
+  \centering
+  \begin{subfigure}{0.48\textwidth}
+    \centering
+    \includegraphics[height=4cm]{phase0v.jpg}
+    \caption{Phase 0.}
+    \label{fig:phase0v}
+  \end{subfigure}
+  \begin{subfigure}{0.48\textwidth}
+    \centering
+    \includegraphics[height=4cm]{phase90v.jpg}
+    \caption{Phase 90.}
+    \label{fig:phase90v}
+  \end{subfigure}
+  \begin{subfigure}{0.48\textwidth}
+    \centering
+    \includegraphics[height=4cm]{phase135v.jpg}
+    \caption{Phase 135.}
+    \label{fig:phase135v}
+  \end{subfigure}
+  \begin{subfigure}{0.48\textwidth}
+    \centering
+    \includegraphics[height=4cm]{phase180v.jpg}
+    \caption{Phase 180.}
+    \label{fig:phase180v}
+  \end{subfigure}
+  \begin{subfigure}{0.48\textwidth}
+    \centering
+    \includegraphics[height=4cm]{phase270v.jpg}
+    \caption{Phase 270.}
+    \label{fig:phase270v}
+  \end{subfigure}
+  \caption{Spannung am Detektor bei unterschiedlichen Phaseneinstellungen und Störsignal.}
+  \label{fig:logosv}
+\end{figure}
+
+\FloatBarrier
 
 \subsection{Messung von verrauschten Signalen in Abhängigkeit von der Phase}
 
