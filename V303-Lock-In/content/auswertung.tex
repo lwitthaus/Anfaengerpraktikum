@@ -63,7 +63,7 @@ Mit dem verrauschtem Signal wird analog vorgegangen. Die Messwerte und die Ausgl
 
 Die Parameter der Funktion $D \cos{\phi + E} + F$ betragen:
 \begin{align*}
-  D &= \SI{32.9(8)}{\milli\volt} \\
+  D &= \SI{-32.9(8)}{\milli\volt} \\
   E &= \SI{33.73(3)}{} \\
   F &= \SI{1.2(6)}{\milli\volt}
 \end{align*}
@@ -102,8 +102,8 @@ Die gemessene Spannung $U$ der Photodiode, in Abhängigkeit von dem Abstand $r$,
   \end{tabular}
 \end{table}
 
-Die Spannung wird gegen den Abstand aufgetragen. Eine Ausgleichsfunktion mit der Form $A \frac{1}{r^2}$ wird, gemäß des
-Abstandsgesetz für Kugelwellen.
+Die Spannung wird gegen den Abstand aufgetragen. Eine Ausgleichsfunktion mit der Form $A \frac{1}{r^B}$ wird verwendet. Gemäß des
+Abstandsgesetzes für Kugelwellen, ist eine proportionalität zu $\frac{1}{r^2}$ zu erwarten.
 
 \begin{figure}[H]
   \centering
@@ -111,3 +111,5 @@ Abstandsgesetz für Kugelwellen.
   \caption{Spannungen in Abhängigkeit von dem Abstand}
   \label{fig:plot3}
 \end{figure}
+
+Der Parameter $B$ beträgt $B= \SI{1.2{1}}{}$.
