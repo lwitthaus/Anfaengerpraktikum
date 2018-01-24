@@ -14,6 +14,6 @@ plt.grid()
 plt.xscale('log')
 plt.xlim((0, 100))
 plt.xlabel(r'$f$')
-plt.ylabel(r'$\frac{U_{Br}}{U_s}$/V')
+plt.ylabel(r'$\frac{U_{Br}}{U_s}$')
 
 plt.savefig('build/plot.pdf')

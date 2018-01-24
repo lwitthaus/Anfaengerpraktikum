@@ -14,7 +14,7 @@ werden in Tabelle 1 dargestellt.
     $R_2/ \symup{\Omega}$ & $R_3/ \symup{\Omega}$ & $R_4 / \symup{\Omega}$ & $R_{x_1}/ \symup{\Omega}$\\
     \midrule
      500  &  321 & 679  &  236.5 \\
-    1000  &  190 & 820  &  232.0  \\
+    1000  &  190 & 810  &  232.0  \\
      332  &  417 & 583  &  237.4  \\
     \bottomrule
   \end{tabular}
@@ -27,7 +27,7 @@ $0.5\%$.
 
 Daraus folgt für den Mittelwert  des unbekannten Widerstands:
 \begin{align*}
-  R_{x_1} = (235 \pm 1\text{(Bauteile)} \pm 2\text{(Mittelwert)}) \, \symup{\Omega}
+  R_{x_1} = (235 \pm 1.2\text{(Bauteile)} \pm 1.7\text{(Mittelwert)}) \, \symup{\Omega}
 \end{align*}
 
 Die Fehler der unbekannnten Größen werden allesamt mit Python berechnet.
@@ -42,7 +42,7 @@ Für den zweiten unbekannten Widerstand $R_{x_2}$ (Wert 12) werden die gemessene
     \toprule
     $R_2/ \symup{\Omega}$ & $R_3/ \symup{\Omega}$ & $R_4 / \symup{\Omega}$ & $R_{x_2}/ \symup{\Omega}$ \\
     \midrule
-      312  &  530 & 470 & 374.0 \\
+      332  &  530 & 470 & 374.0 \\
       500  &  428 & 572 & 357.0  \\
      1000  &  263 & 737 & 374.5  \\
     \bottomrule
@@ -51,7 +51,7 @@ Für den zweiten unbekannten Widerstand $R_{x_2}$ (Wert 12) werden die gemessene
 
 Daraus folgt für den Mittelwert des unbekannten Widerstandes:
 \begin{align*}
-  R_{x_2} = (368 \pm 2\text{(Bauteile)} \pm 8\text{(Mittelwert)}) \, \symup{\Omega}
+  R_{x_2} = (368 \pm 2\text{(Bauteile)} \pm 6\text{(Mittelwert)}) \, \symup{\Omega}
 \end{align*}
 
 
@@ -76,8 +76,8 @@ Tabelle 3 dargestellt.
 
 Die unbekannten Größen $C_{x_1}$ (Wert 1) und $R_{x_1}$ werden mit Gleichung (6) und (7) berechnet.
 \begin{align*}
-  C_{x_1} = (6.62 \pm 0.04\text{(Bauteile)} \pm 0.01\text{(Mittelwert)}) \cdot 10^{2} \symup{nF} \\
-  R_{x_1} = (0 \pm 0\text{(Bauteile)} \pm 0\text{(Bauteile)}) \, \symup{\Omega}
+  C_{x_1} = (662 \pm 4\text{(Bauteile)} \pm 0.4\text{(Mittelwert)}) \cdot  \symup{nF} \\
+  R_{x_1} = 0  \, \symup{\Omega}
 \end{align*}
 
 Die gemessene Werte der zweiten Messreihe werden in Tabelle 4 dargestellt.
@@ -100,8 +100,8 @@ Die gemessene Werte der zweiten Messreihe werden in Tabelle 4 dargestellt.
 Die Kapazität $C_{x_2}$ (Wert 3) wird analog berechnet.
 
 \begin{align*}
-  C_{x_2} = (4.20 \pm 0.02 \text{(Bauteile)} \pm 0.01 \text{(Mittelwert)}) \cdot 10^{2} \symup{nF} \\
-  R_{x_2} = (0 \pm 0 \text{(Bauteile)} \pm 0 \text{(Mittelwert)}) \, \symup{\Omega}
+  C_{x_2} = (420 \pm 2 \text{(Bauteile)} \pm 3 \text{(Mittelwert)})  \symup{nF} \\
+  R_{x_2} = 0 \, \symup{\Omega}
 \end{align*}
 
 
@@ -126,8 +126,8 @@ Die Kapazität $C_{x_3}$ (Wert 8) eines verlustbehafteten Kondensator und $R_{x_
 Der Fehler von $R_2$ beträgt $3\%$
 
 \begin{align*}
-  C_{x_3} = (2.94 \pm 0.02 \text{(Bauteile)} \pm 0.01 \text{(Mittelwert)}) \cdot 10^{2} \symup{nF} \\
-  R_{x_3} = (571 \pm 17 \text{(Bauteile)} \pm 3\text{(Mittelwert)}) \cdot 10^{2} \symup{nF}
+  C_{x_3} = (294 \pm 2 \text{(Bauteile)} \pm 0.6 \text{(Mittelwert)})  \symup{nF} \\
+  R_{x_3} = (671 \pm 17 \text{(Bauteile)} \pm 2\text{(Mittelwert)}) \cdot 10^{2} \symup{nF}
 \end{align*}
 
 
@@ -156,9 +156,11 @@ Die Induktivität $L_{x}$ und der Widerstand $R_{x}$ werden mit den Gleichungen 
 das Bauteil $L_2$ eine Toleranz von $0.2\%$.
 
 \begin{align*}
-  L_{x} = (15.37 \pm 0.09\text{(Bauteile)} \pm 19.18\text{(Mittelwert)}) \, \symup{mH} \\
-  R_x = (101 \pm 3\text{(Bauteile)} \pm 6\text{(Mittelwert)}) \, \symup{\Omega}
+  L_{x} = (15.37 \pm 0.09\text{(Bauteile)} \pm 13.57\text{(Mittelwert)}) \, \symup{mH} \\
+  R_x = (101 \pm 3\text{(Bauteile)} \pm 5\text{(Mittelwert)}) \, \symup{\Omega}
 \end{align*}
+
+Da bei der Messung des Widerstandes $R_2$ etwas schiefgegangen sein muss, sind die Messwerte nicht aussagekräftig.
 
 
 \subsection{Berechnung der Induktivität mit der Maxwell-Brücke}
@@ -184,7 +186,7 @@ Die Induktivität $L_{x}$ und der Widerstand $R_{x}$ werden mit den Gleichungen 
 Toleranz von $R_3$ und $R_4$ beträgt $3\%$.
 
 \begin{align*}
-  L_x = (40 \pm 1\text{(Bauteile)} \pm 1 \text{(Mittelwert)})  \, \symup{mH} \\
+  L_x = (40 \pm 1.2\text{(Bauteile)} \pm 0.7 \text{(Mittelwert)})  \, \symup{mH} \\
   R_x = (95 \pm 4\text{(Bauteile)} \pm 1\text{(Mittelwert)})   \, \symup{\Omega}
 \end{align*}
 
