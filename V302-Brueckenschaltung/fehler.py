@@ -171,21 +171,21 @@ print(a)
 
 
 #Induktivität Maxwell Brücke
-C = ufloat(597*10**(-9), 1*10**(-9))
-R_a = ufloat(332, 1)
-R_q = ufloat(203, 6.09)
-L_1 = R_a * R_q * C
-print(L_1)
-
-R_b = ufloat(500, 1)
-R_w = ufloat(139, 4.17)
-L_2 = R_b * R_w * C
-print(L_2)
-
-R_c = ufloat(1000, 2)
-R_e = ufloat(68, 2.04)
-L_3 = R_c * R_e * C
-print(L_3)
+#C = ufloat(597*10**(-9), 1*10**(-9))
+#R_a = ufloat(332, 1)
+#R_q = ufloat(203, 6.09)
+#L_1 = R_a * R_q * C
+#print(L_1)
+#
+#R_b = ufloat(500, 1)
+#R_w = ufloat(139, 4.17)
+#L_2 = R_b * R_w * C
+#print(L_2)
+#
+#R_c = ufloat(1000, 2)
+#R_e = ufloat(68, 2.04)
+#L_3 = R_c * R_e * C
+#print(L_3)
 #
 #a = np.std([40.2, 41.5, 40.6])
 #print(a)
