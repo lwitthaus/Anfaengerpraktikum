@@ -192,11 +192,121 @@ Die Sägezahnfrequenzen $\nu_{Sä}$ und die Strahlauslenkung s wurden für die 4
 
 Mit Gleichung (9) folgt daraus, dass die Frequenz der Sinusspannung näherungsweise 80Hz.
 
-\subsection{Magnetfeld}
+\subsection{Berechnung der spezifischen Ladung aus der Ablenkung im Magnetfeld}
+Tabelle \ref{tab:Magnetfeld} stellt die gemessenen Werte für die Verschiebung des Leuchtpunkts in Abhängigkeit
+des Induzierten Magnetfelds bei einer Beschleunigungsspannung von $U_B = 250$ dar.
 
-\begin{figure}
+\begin{table}[H]
+  \centering
+  \caption{Stromstärke der Helmholtz-Spulen bei unterschiedliechen Ablenkungen.}
+  \label{tab:Magnetfeld}
+  \begin{tabular}{c c}
+    \toprule
+    $D/$ mm & $I/$A \\
+    \midrule
+    0 & 0 \\
+    6 & 0,36 \\
+    12 & 0,66 \\
+    18 & 1,00 \\
+    24 & 1,30 \\
+    30 & 1,60 \\
+    36 & 1,94 \\
+    42 & 2,26 \\
+    48 & 2,58 \\
+    \bottomrule
+  \end{tabular}
+\end{table}
+
+Die Anzahl der Windungen der Helmholtz-Spulen beträgt $N=20$ und sie haben einen Radius von $R = 28,2$ cm.
+Der Abstand von Beginn der Ablenkung durch das Magnetfeld bis zum Detektorschirm beträgt $L = 17,5$ cm
+Daraus ergibt sich der folgende Graph.
+
+\begin{figure}[H]
   \centering
   \includegraphics{plot.pdf}
   \caption{Plot.}
   \label{fig:plot}
 \end{figure}
+
+Die lineare Regression wird dabei mit Python erstellt.
+
+Es ergibt sich ein Proportionalitätsfaktor von
+\begin{equation*}
+  a = (8,97 \pm 0,12)\cdot 10^3\, \symup{\frac{1}{mT}}.
+\end{equation*}
+
+Aus Gleichung 15 ergibt sich dann der Wert von $\frac{e_0}{m_0}$ zu
+\begin{equation*}
+  \frac{e_0}{m_0} = (1,61 \pm 0,04)\cdot 10^{11} \, \symup{\frac{C}{kg}}.
+\end{equation*}
+
+
+
+Tabelle \ref{tab:Magnetfeld1} stellt die gemessenen Werte für die Verschiebung des Leuchtpunkts in Abhängigkeit
+des Induzierten Magnetfelds bei einer Beschleunigungsspannung von $U_B = 400$ dar.
+
+\begin{table}[H]
+  \centering
+  \caption{Stromstärke der Helmholtz-Spulen bei unterschiedliechen Ablenkungen.}
+  \label{tab:Magnetfeld1}
+  \begin{tabular}{c c}
+    \toprule
+    $D/$ mm & $I/$A \\
+    \midrule
+    0 & 0 \\
+    6 & 0,4 \\
+    12 & 0,82 \\
+    18 & 1,22 \\
+    24 & 1,61 \\
+    30 & 2,02 \\
+    36 & 2,41 \\
+    42 & 2,85 \\
+    48 & 3,26 \\
+    \bottomrule
+  \end{tabular}
+\end{table}
+
+Daraus ergibt sich der folgende Graph.
+
+\begin{figure}[H]
+  \centering
+  \includegraphics{plot2.pdf}
+  \caption{Plot.}
+  \label{fig:plot222}
+\end{figure}
+
+Die lineare Regression wird wieder mit Python erstellt.
+
+Es ergibt sich ein Proportionalitätsfaktor von
+\begin{equation*}
+  a = (7.06 \pm 0.10)\cdot 10^3\, \symup{\frac{1}{mT}}.
+\end{equation*}
+
+Aus Gleichung 15 ergibt sich dann der Wert von $\frac{e_0}{m_0}$ zu
+\begin{equation*}
+  \frac{e_0}{m_0} = (1,59 \pm 0,05)\cdot 10^{11} \, \symup{\frac{C}{kg}}.
+\end{equation*}
+
+Als Mittelwert der beiden Ergebnisse ergibt sich dann
+\begin{equation*}
+  \frac{e_0}{m_0} = (1,60 \pm 0,03)\cdot 10^{11} \, \symup{\frac{C}{kg}}.
+\end{equation*}
+Dieser wurde widerum mit Python brechnet.
+
+Der Literaturwert lautet $\frac{e_0}{m_0} = 1,76 \cdot 10^{11} \, \symup{\frac{C}{kg}}$.
+Die Relative Abweichung beträgt also etwa 10\%.
+
+\subsection{Berechnung des Erdmagnetfelds aus der Elektronenablenkung}
+
+Die gemessene Stromstärke zum Ausgleichen des Erdmagnetfeldes beträgt $I = 0,08$ A.
+Daraus ergibt sich nach Gleichung ... eine Magnetfeldstäre von
+
+\begin{equation*}
+  B_{hor} = 5,10 \cdot 10^{-6} \, \symup{T}
+\end{equation*}
+
+Mit dem gemessenen Inklinationswinkel $\phi = 72°$ ergibt sich das totale
+Erdmagnetfeld zu
+\begin{equation*}
+  B_{tot} = \frac{B_{hor}}{cos(\phi)} = 1,65 \cdot 10^{-5} \, \symup{T}
+\end{equation*}
