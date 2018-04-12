@@ -144,6 +144,53 @@ Mit Python wird die Steigung der Geraden berechnet. \\
 \end{table}
 
 
+Nun wird werden die ermittelten Empfindlichkeiten gegen $\frac{1}{U_B}$ aufgetragen. Eine weitere
+lineare Regression wird durchgeführt.
+
+\begin{figure}
+  \centering
+  \includegraphics{plot12.pdf}
+  \caption{Gegen $1/U_B$ aufegtragene Empfindlichkeiten}
+  \label{fig:plot}
+\end{figure}
+
+Die Steigung $a$ beträgt:
+\begin{align*}
+  a = \SI{0.327(8)}{\meter}
+\end{align*}
+
+Der Plattenabstand der Ablenkplatten ist $d = 0,38$cm. Die Länge der Platten beträgt $p= 1,9$cm und der
+Abstand dieser zum Leuchtschirm beträgt $L = 14,3$cm.
+
+Die Größe $\frac{pL}{2d}$ beträgt dann:
+\begin{equation*}
+  \frac{pL}{2d} = 0,358
+\end{equation*}
+
+Die Abweichung dieses Wertes zu $a$ beträgt 8,7 \%.
+
+\subsection{Bestimmung der Frequenz der Sinusspannung}
+
+Die Sägezahnfrequenzen $\nu_{Sä}$ und die Strahlauslenkung s wurden für die 4 verschiedenen n gemessen.
+
+
+\begin{table}[H]
+  \centering
+  \caption{Empfindlichkeiten bei unterschiedlichen Beschleunigungspannungen}
+  \label{tab:Spannungsamplitude}
+  \begin{tabular}{c c c}
+    \toprule
+    $n$ & $\nu_{Sä} / \symup{\frac{1}{s}}$ &  $s/$mm\\
+    \midrule
+    1/2 &  40,00 & 9 \\
+      1 &  79,98 & 9 \\
+      2 & 159,93 & 9 \\
+      3 & 239,87 & 9 \\
+    \bottomrule
+  \end{tabular}
+\end{table}
+
+Mit Gleichung (9) folgt daraus, dass die Frequenz der Sinusspannung näherungsweise 80Hz.
 
 \subsection{Magnetfeld}
 
