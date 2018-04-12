@@ -5,7 +5,7 @@ from scipy.optimize import curve_fit
 from uncertainties import ufloat
 
 I, D = np.genfromtxt('daten_bfeld_250.txt', unpack=True)
-L = 0.143
+L = 0.175
 N = 20
 R = 0.282
 
