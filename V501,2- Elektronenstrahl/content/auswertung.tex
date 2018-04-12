@@ -1,6 +1,152 @@
 \section{Auswertung}
 \label{sec:Auswertung}
 
+\subsection{Bestimmung der Empfindlichkeit}
+
+Die Tabellen 1 bis 5 stellen die Daten für die gemessenen Verschiebungen in Abhängigkeit von
+der Ablenkspannung dar.
+
+\begin{table}[H]
+  \centering
+  \caption{Gemessene Verschiebung in Abhängigkeit von der Ablenkspannung mit $U_B=200$V}
+  \label{tab:Spannungsamplitude}
+  \begin{tabular}{c c}
+    \toprule
+    $U_d/$V & $D/$mm \\
+    \midrule
+    -19,72 & 0 \\
+    -16,00 & 6 \\
+    -12,50 & 12 \\
+     -9,14 & 18 \\
+     -5,72 & 24 \\
+     -2,02 & 30 \\
+      1,69 & 36 \\
+      5,41 & 42 \\
+      9,12 & 48 \\
+    \bottomrule
+  \end{tabular}
+\end{table}
+
+\begin{table}[H]
+  \centering
+  \caption{Gemessene Verschiebung in Abhängigkeit von der Ablenkspannung mit $U_B=250$V}
+  \label{tab:Spannungsamplitude}
+  \begin{tabular}{c c}
+    \toprule
+    $U_d/$V & $D/$mm \\
+    \midrule
+     -24,6 & 0 \\
+     -20,3 & 6 \\
+     -16,3 & 12 \\
+     -11,8 & 18 \\
+      -7,5 & 24 \\
+      -2,9 & 30 \\
+       1,8 & 36 \\
+       6,8 & 42 \\
+      11,8 & 48 \\
+    \bottomrule
+  \end{tabular}
+\end{table}
+
+
+
+\begin{table}[H]
+  \centering
+  \caption{Gemessene Verschiebung in Abhängigkeit von der Ablenkspannung mit $U_B=300$V}
+  \label{tab:Spannungsamplitude}
+  \begin{tabular}{c c}
+    \toprule
+    $U_d/$V & $D/$mm \\
+    \midrule
+     -29,5 & 0 \\
+     -24,6 & 6 \\
+     -19,1 & 12 \\
+     -14,2 & 18 \\
+      -9,2 & 24 \\
+      -3,9 & 30 \\
+       1,6 & 36 \\
+       7,4 & 42 \\
+      13,3 & 48 \\
+    \bottomrule
+  \end{tabular}
+\end{table}
+
+
+\begin{table}[H]
+  \centering
+  \caption{Gemessene Verschiebung in Abhängigkeit von der Ablenkspannung mit $U_B=350$V}
+  \label{tab:Spannungsamplitude}
+  \begin{tabular}{c c}
+    \toprule
+    $U_d/$V & $D/$mm \\
+    \midrule
+     -34,1 & 0 \\
+     -28,2 & 6 \\
+     -22,5 & 12 \\
+     -16,2 & 18 \\
+     -10,1 & 24 \\
+      -4,1 & 30 \\
+       2,0 & 36 \\
+       8,7 & 42 \\
+      15,2 & 48 \\
+    \bottomrule
+  \end{tabular}
+\end{table}
+
+
+\begin{table}[H]
+  \centering
+  \caption{Gemessene Verschiebung in Abhängigkeit von der Ablenkspannung mit $U_B=400$V}
+  \label{tab:Spannungsamplitude}
+  \begin{tabular}{c c}
+    \toprule
+    $U_d/$V & $D/$mm \\
+    \midrule
+     -32,2 & 6 \\
+     -25,2 & 12 \\
+     -18,2 & 18 \\
+     -11,4 & 24 \\
+      -4,2 & 30 \\
+       2,9 & 36 \\
+      10,5 & 42 \\
+      17,8 & 48 \\
+    \bottomrule
+  \end{tabular}
+\end{table}
+
+
+Mit den Messwerten wird eine lineare Regression durchgefürht, welche in Abbildung 6 zusehen ist.
+
+\begin{figure}
+  \centering
+  \includegraphics{plot11.pdf}
+  \caption{Empfindlichkeiten bei verschiedenen Beschleunigungsspannungen}
+  \label{fig:plot}
+\end{figure}
+
+Mit Python wird die Steigung der Geraden berechnet. \\
+
+\begin{table}[H]
+  \centering
+  \caption{Empfindlichkeiten bei unterschiedlichen Beschleunigungspannungen}
+  \label{tab:Spannungsamplitude}
+  \begin{tabular}{c c}
+    \toprule
+    $U_B/$V & $\frac{D}{U_d} / 10^{-3}\symup{\frac{m}{V}}$ \\
+    \midrule
+    200 & $\Si{1.67(1)}$ \\
+    250 & $\Si{1.32(2)}$ \\
+    300 & $\Si{1.13(1)}$ \\
+    350 & $\Si{0.98(1)}$ \\
+    400 & $\Si{0.84(1)}$ \\
+    \bottomrule
+  \end{tabular}
+\end{table}
+
+
+
+\subsection{Magnetfeld}
+
 \begin{figure}
   \centering
   \includegraphics{plot.pdf}
