@@ -39,7 +39,7 @@ Für die lineare Regression werden die letzten drei Messwerte weggelassen, da be
 großen Spannungen kein lineares Verhältnis mehr zu sehen ist und somit die lineare Regression
 ungenauer macht. Die Anpassungsfunktion wird mit Python erstellt.
 
-\begin{figure}
+\begin{figure}[H]
   \centering
   \includegraphics{plot.pdf}
   \caption{Lineare Regression der Messwerte für das grüne Licht}
@@ -48,8 +48,8 @@ ungenauer macht. Die Anpassungsfunktion wird mit Python erstellt.
 
 Die Paramater betragen:
 \begin{align*}
-  a_1 = \SI{6,2(1)e-5}{\sqrt\ampere\per\volt}
-  b_1 = \SI{3.4(2)e-5}{\sqrt\ampere}
+  a_1 &= \SI{6,2(1)e-5}{\sqrt\ampere\per\volt} \\
+  b_1 &= \SI{3.4(2)e-5}{\sqrt\ampere}
 \end{align*}
 
 Die Fehler werden mit Python berechnet.
@@ -61,7 +61,7 @@ Es gilt $U_B = -\frac{b}{a}$. Für $U_B$ ergibt sich somit:
 \end{equation*}
 
 
-In Tabelle 2 wird die gemessene Stromstärke und die zugehörige Spannung für das rote LIcht dargestellt.
+In Tabelle 2 wird die gemessene Stromstärke und die zugehörige Spannung für das rote Licht dargestellt.
 
 \begin{table}[H]
   \centering
@@ -87,7 +87,7 @@ In Tabelle 2 wird die gemessene Stromstärke und die zugehörige Spannung für d
 Mit diesen Messwerten wird erneut eine lineare Regression durchgeführt, wobei wieder die letzten drei Messwerte
 aud den oben genannten Gründen vernachlässigt werden.
 
-\begin{figure}
+\begin{figure}[H]
   \centering
   \includegraphics{plotrot.pdf}
   \caption{Lineare Regression der Messwerte für das rote Licht}
@@ -96,6 +96,68 @@ aud den oben genannten Gründen vernachlässigt werden.
 
 Die Paramater betragen:
 \begin{align*}
-  a_2 = \SI{0.67(9)e-5}{\sqrt\ampere\per\volt}
-  b_2 = \SI{0.5(3)e-5}{\sqrt\ampere}
+  a_2 &= \SI{0.67(9)e-5}{\sqrt\ampere\per\volt} \\
+  b_2 &= \SI{0.5(3)e-5}{\sqrt\ampere}
+\end{align*}
+
+Daraus folgt für $U_B$:
+\begin{align*}
+  U_B = ?
+\end{align*}
+
+
+In Tabelle 3 wird die gemessene Stromstärke und die zugehörige Spannung für das violette Licht dargestellt.
+
+\begin{table}[H]
+  \centering
+  \caption{Gemessene Stromstärke bei verschiedenen Spannungen für violettes Licht}
+  \label{tab:Spannungsamplitude}
+  \begin{tabular}{c c}
+    \toprule
+    $U/$V & $I/$nA \\
+    \midrule
+    -0,9 &	0,016 \\
+    -0,7 &	0,072 \\
+    -0,5 &	0,141 \\
+    -0,3 &	0,31 \\
+    -0,1 &	0,50 \\
+    0	   &  0,60 \\
+    0,2	 &  0,89 \\
+    0,4	 &  1,00 \\
+    0,6	 &  1,30 \\
+    0,8	 &  1,60 \\
+    1,0  &  2,20 \\
+    1,5	 &  3,60 \\
+    2,0  &  4,80 \\
+    3,0  &  7,40 \\
+    4,0	 &  8,50 \\
+    6,0	 &  12,0 \\
+    8,0	 &  14,0 \\
+    10,0 &  15,0 \\
+    15,0 &  16,0 \\
+    \bottomrule
+  \end{tabular}
+\end{table}
+
+Mit diesen Messwerten wird erneut eine lineare Regression durchgeführt, wobei die letzten fünf Messwerte
+aus den oben genannten Gründen vernachlässigt werden.
+
+
+\begin{figure}[H]
+  \centering
+  \includegraphics{plotviolett.pdf}
+  \caption{Lineare Regression der Messwerte für das violette Licht}
+  \label{fig:plot}
+\end{figure}
+
+
+Die Parameter betragen:
+\begin{align*}
+  a_3 &= \SI{6.9(1)e-5}{\sqrt\ampere\per\volt} \\
+  b_3 &= \SI{7.6(2)e-5}{\sqrt\ampere}
+\end{align*}
+
+Daraus folgt für $U_B$:
+\begin{align*}
+  U_B = ?
 \end{align*}
