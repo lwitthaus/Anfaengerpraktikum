@@ -1,9 +1,101 @@
 \section{Auswertung}
 \label{sec:Auswertung}
 
+
+
+Die gemessene Stromstärke in Abhängigkeit von der Bremsspannung wird für das grüne
+Licht in Tabelle 1 dargestellt. Negative Spannungen bezeichenen dabei das Gegenfeld, also
+die Spannung mit der Elektronen gebremst werden. Positive Spannungnen beschleunigen die Elektronen.
+
+
+\begin{table}[H]
+  \centering
+  \caption{Gemessene Stromstärke bei verschiedenen Spannungen für grünes Licht}
+  \label{tab:Spannungsamplitude}
+  \begin{tabular}{c c}
+    \toprule
+    $U/$V & $I/$nA \\
+    \midrule
+    -0,5 & 0 \\
+    -0,3 & 0,02 \\
+    -0,1 & 0,08 \\
+     0	 & 0,13 \\
+     0,1 & 0,21 \\
+     0,3 & 0,30 \\
+     0,5 & 0,49 \\
+     0,7 & 0,66 \\
+     1,0 & 0,80 \\
+     1,5 & 1,49 \\
+     2,0 & 2,50 \\
+     3,0 & 5,10 \\
+     5,0 & 9,60 \\
+     8,0 & 11,0 \\
+    12,0 & 11,0 \\
+    \bottomrule
+  \end{tabular}
+\end{table}
+
+Für die lineare Regression werden die letzten drei Messwerte weggelassen, da bei hinreichend
+großen Spannungen kein lineares Verhältnis mehr zu sehen ist und somit die lineare Regression
+ungenauer macht. Die Anpassungsfunktion wird mit Python erstellt.
+
 \begin{figure}
   \centering
   \includegraphics{plot.pdf}
-  \caption{Plot.}
+  \caption{Lineare Regression der Messwerte für das grüne Licht}
   \label{fig:plot}
 \end{figure}
+
+Die Paramater betragen:
+\begin{align*}
+  a_1 = \SI{6,2(1)e-5}{\sqrt\ampere\per\volt}
+  b_1 = \SI{3.4(2)e-5}{\sqrt\ampere}
+\end{align*}
+
+Die Fehler werden mit Python berechnet.
+
+Für $U_B$ muss der Schnittpunkt der Geraden mit der U-Achse ermittelt werden, die x-Koordinate ist dann $U_B$.
+Es gilt $U_B = -\frac{b}{a}$. Für $U_B$ ergibt sich somit:
+\begin{equation*}
+  U_B = ?
+\end{equation*}
+
+
+In Tabelle 2 wird die gemessene Stromstärke und die zugehörige Spannung für das rote LIcht dargestellt.
+
+\begin{table}[H]
+  \centering
+  \caption{Gemessene Stromstärke bei verschiedenen Spannungen für rotes Licht}
+  \label{tab:Spannungsamplitude}
+  \begin{tabular}{c c}
+    \toprule
+    $U/$V & $I/$nA \\
+    \midrule
+     0 & 0 \\
+     1,0 & 0,014 \\
+     2,0 & 0,040 \\
+     3,0 & 0,080 \\
+     4,0 & 0,125 \\
+     6,0 & 0,16 \\
+     8,0 & 0,18 \\
+    10,0 & 0,20 \\
+    15,0 & 0,20 \\
+    \bottomrule
+  \end{tabular}
+\end{table}
+
+Mit diesen Messwerten wird erneut eine lineare Regression durchgeführt, wobei wieder die letzten drei Messwerte
+aud den oben genannten Gründen vernachlässigt werden.
+
+\begin{figure}
+  \centering
+  \includegraphics{plotrot.pdf}
+  \caption{Lineare Regression der Messwerte für das rote Licht}
+  \label{fig:plot}
+\end{figure}
+
+Die Paramater betragen:
+\begin{align*}
+  a_2 = \SI{0.67(9)e-5}{\sqrt\ampere\per\volt}
+  b_2 = \SI{0.5(3)e-5}{\sqrt\ampere}
+\end{align*}
