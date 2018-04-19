@@ -1,6 +1,7 @@
 \section{Auswertung}
 \label{sec:Auswertung}
 
+\subsection{Berechnung der Grenzspannung des Lichtes verschiedener Wellenlänge}
 
 
 Die gemessene Stromstärke in Abhängigkeit von der Bremsspannung wird für das grüne
@@ -102,7 +103,7 @@ Die Paramater betragen:
 
 Daraus folgt für $U_B$:
 \begin{align*}
-  U_B = ?
+  U_B = \SI{-0.7(5)}{\volt}
 \end{align*}
 
 
@@ -159,7 +160,7 @@ Die Parameter betragen:
 
 Daraus folgt für $U_B$:
 \begin{align*}
-  U_B = ?
+  U_B = \SI{-1.10(3)}{\volt}
 \end{align*}
 
 In Tabelle 4 wird die gemessene Stromstärke und die zugehörige Spannung für das ultra violette Licht dargestellt.
@@ -207,7 +208,7 @@ Die Parameter betragen:
 
 Daraus folgt für $U_B$:
 \begin{align*}
-  U_B = ?
+  U_B = \SI{-1.5{7}}{\volt}
 \end{align*}
 
 In Tabelle 5 wird die gemessene Stromstärke und die zugehörige Spannung für das orangene Licht dargestellt.
@@ -258,5 +259,48 @@ Die Parameter betragen:
 
 Daraus folgt für $U_B$:
 \begin{align*}
-  U_B = ?
+  U_B = \SI{-0.39(9)}{\volt}
+\end{align*}
+
+
+
+\subsection{Bestimmung der Austrittsarbeit und des Verhältnisses $h/e_0$}
+
+Die errechneten Grenzspannungen $U$ wird gegen die Frequenz $\nu$ aufgetragen. Die wellenlängen des Lichtes werden dabei der
+Anleitung entnommen. Für das rote Licht wurde eine Wellenlänge von $620$nm genommen.
+
+
+\begin{table}[H]
+  \centering
+  \caption{Frequenzen und Grenzspannungnen der Spektrallinien}
+  \label{tab:Spannungsamplitude}
+  \begin{tabular}{c c}
+    \toprule
+    $U/$V & $\nu/$Hz \\
+    \midrule
+    546 &     -0.55 \\
+    620 &     -0.7 \\
+    435 &     -1.10 \\
+    365 &     -1.57 \\
+    585 &     -0.39 \\
+    \bottomrule
+  \end{tabular}
+\end{table}
+
+
+
+\begin{figure}[H]
+  \centering
+  \includegraphics{plotwellenlaenge.pdf}
+  \caption{Grenzspannung aufgetragen gegen die Frequenz des Lichtes}
+  \label{fig:plotorange}
+\end{figure}
+
+
+
+Die Steigung ist dabei das Verhätlnis $h/e_0$ und der x-Achsenabschnitt ist die Autrittsarbeit $A_k$.
+Die Parameter betragen:
+\begin{align*}
+  a &=| \frac{h}{e_0} |= \SI{2.0(4)e4}{\eV\per\ampere} \\
+  b &= A_k = \SI{1.1(4)}{\eV}
 \end{align*}
