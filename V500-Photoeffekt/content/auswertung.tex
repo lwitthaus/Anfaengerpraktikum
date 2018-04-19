@@ -209,3 +209,54 @@ Daraus folgt für $U_B$:
 \begin{align*}
   U_B = ?
 \end{align*}
+
+In Tabelle 5 wird die gemessene Stromstärke und die zugehörige Spannung für das orangene Licht dargestellt.
+
+\begin{table}[H]
+  \centering
+  \caption{Gemessene Stromstärke bei verschiedenen Spannungen für ultraviolettes Licht}
+  \label{tab:Spannungsamplitude}
+  \begin{tabular}{c c}
+    \toprule
+    $U/$V & $I/$nA \\
+    \midrule
+    -20,0 &	0,00 \\
+    -16,0 &	0,00 \\
+    -12,0 &	0,00 \\
+    -8,0 &	0,00\\
+    -4,0 &	0,00 \\
+    -0,1   &  0,015 \\
+    0,0	 &  0,05 \\
+    0,5	 &  0,17\\
+    1,0	 &  0,28 \\
+    2,0  &  1,40 \\
+    4,0  &  4,00 \\
+    6,0  &  5,00 \\
+    8,0  &  5,50 \\
+    10,0 &  5,70 \\
+    15,0  & 6,00 \\
+    20,0  & 6,20 \\
+    \bottomrule
+  \end{tabular}
+\end{table}
+
+Mit diesen Messwerten wird erneut eine lineare Regression durchgeführt, wobei die letzten  und die ersten fünf Messwerte
+aus den oben genannten Gründen vernachlässigt werden.
+
+\begin{figure}[H]
+  \centering
+  \includegraphics{plotorangeint.pdf}
+  \caption{Lineare Regression der Messwerte für das orangene Licht.}
+  \label{fig:plotorange}
+\end{figure}
+
+Die Parameter betragen:
+\begin{align*}
+  a_3 &= \SI{0.46(2)e-5}{\sqrt{\nano\ampere}\per\volt} \\
+  b_3 &= \SI{0.18(4)e-5}{\sqrt{\nano\ampere}}
+\end{align*}
+
+Daraus folgt für $U_B$:
+\begin{align*}
+  U_B = ?
+\end{align*}
