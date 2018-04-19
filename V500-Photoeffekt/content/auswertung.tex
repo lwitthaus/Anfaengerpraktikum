@@ -248,7 +248,7 @@ aus den oben genannten Gründen vernachlässigt werden.
   \centering
   \includegraphics{plotorangeint.pdf}
   \caption{Lineare Regression der Messwerte für das orangene Licht.}
-  \label{fig:plotorange}
+  \label{fig:plotorangeint}
 \end{figure}
 
 Die Parameter betragen:
@@ -304,3 +304,30 @@ Die Parameter betragen:
   a &=| \frac{h}{e_0} |= \SI{2.0(4)e4}{\eV\per\ampere} \\
   b &= A_k = \SI{1.1(4)}{\eV}
 \end{align*}
+
+Trägt man alle gemessenen Werte auf, so erhält man folgendes Diagramm.
+
+\begin{figure}[H]
+  \centering
+  \includegraphics{plotorange.pdf}
+  \caption{Diagramm der Messwerte für das orangene Licht.}
+  \label{fig:plotorange}
+\end{figure}
+
+Es ist zu erkennen, dass bei einer angelegten Gegenspannung praktisch kein Strom fließt. Legt man
+jodch eine Beschleunigungsspannung an, so steigt die Stromstäre schnell an, bis sie dann
+asymptotisch gegen einen Sättigungswert läuft.
+Dies geschieht, da bei ausreichend hoher Beschleunigungsspannung nahezu alle ausgelösten
+Photoelektronen die Anode erreichen. Durch eine höhere Intensität des Lichtes werden mehr
+Elektronen ausgelöst. Daher sollte der Sättigungswert durch diese festgelegt werden. Je höher
+die Intensität ist, desto mehr Elektronen erreichen bei einer gewissen Beschleunigungsspannung
+auch die Anode.
+Aufgrund der geringen Oberfläche der Anode und da nicht alle Elektronen nach dem Austreten die gleiche Energie haben (Fermi-Dirac-Statistik), erreichen sie diese
+nicht alle bei dem gleichen Spannungsbetrag bzw. teilweise auch gar nicht. Somit wird der Sättigungswert nur asymptotisch erreicht.
+Damit der Sättigungswert schon bei endlichen Beschleunigungsspannungen erreicht werden kann, müsste gewährleistet werden, dass eben
+alle Elektronen auf die Anode treffen. Dies könnte z.B. durch eine sehr große Oberfläche dieser erreicht werden.
+Mit der obigen Erklärung lässt sich auch begründen, wieso die Stromstärke nicht bei einer Gegenspannung $U_g$ abrupt auf Null abfällt, sondern
+sich langsam verringert. Da nicht alle Elektronen die gleiche Energie haben, erreichen manche auch schon bei geringerer Spannung nicht mehr
+die Anode. Die Stromstärke nimmt also ab.
+Es kann ein negativer Strom auftreten, wenn das Anodenmaterial eine hohe Austrittsarbeit $A_A$besitzt und die Kathode mit einem Licht hoher
+Wellenlänge bestrahlt wird. Dann ist nämlich $h\nu<A_A$ und die Elektronen müssen gegen ein Gegenfeld anlaufen.
