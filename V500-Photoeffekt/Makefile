@@ -17,9 +17,11 @@ build/plotrot.pdf: plotrot.py matplotlibrc header-matplotlib.tex | build
 	TEXINPUTS="$(call translate,$(pwd):)" python plotrot.py
 build/plotviolett.pdf: plotviolett.py matplotlibrc header-matplotlib.tex | build
 	TEXINPUTS="$(call translate,$(pwd):)" python plotviolett.py
+build/plotuv.pdf: plotuv.py matplotlibrc header-matplotlib.tex | build
+	TEXINPUTS="$(call translate,$(pwd):)" python plotuv.py
 
 # hier weitere Abhängigkeiten für build/main.pdf deklarieren:
-build/main.pdf: build/plot.pdf build/plotrot.pdf build/plotviolett.pdf
+build/main.pdf: build/plot.pdf build/plotrot.pdf build/plotviolett.pdf build/plotuv.pdf
 
 build/main.pdf: FORCE | build
 	  TEXINPUTS="$(call translate,build:)" \

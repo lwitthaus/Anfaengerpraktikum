@@ -161,3 +161,48 @@ Daraus folgt für $U_B$:
 \begin{align*}
   U_B = ?
 \end{align*}
+
+In Tabelle 4 wird die gemessene Stromstärke und die zugehörige Spannung für das violette Licht dargestellt.
+
+\begin{table}[H]
+  \centering
+  \caption{Gemessene Stromstärke bei verschiedenen Spannungen für ultraviolettes Licht}
+  \label{tab:Spannungsamplitude}
+  \begin{tabular}{c c}
+    \toprule
+    $U/$V & $I/$nA \\
+    \midrule
+    -1,0 &	0,006 \\
+    -0,8 &	0,02 \\
+    -0,6 &	0,05 \\
+    -0,3 &	0,10 \\
+    0,0 &	0,17 \\
+    0,5   &  0,34 \\
+    1,0	 &  0,53 \\
+    2,0	 &  1,00 \\
+    4,0	 &  2,20 \\
+    5,0	 &  2,90 \\
+    \bottomrule
+  \end{tabular}
+\end{table}
+
+Mit diesen Messwerten wird erneut eine lineare Regression durchgeführt, wobei die letzten fünf Messwerte
+aus den oben genannten Gründen vernachlässigt werden.
+
+\begin{figure}[H]
+  \centering
+  \includegraphics{plotuv.pdf}
+  \caption{Lineare Regression der Messwerte für das ultraviolette Licht.}
+  \label{fig:plotuv}
+\end{figure}
+
+Die Parameter betragen:
+\begin{align*}
+  a_3 &= \SI{2.7(1)e-5}{\sqrt\ampere\per\volt} \\
+  b_3 &= \SI{4.0(2)e-5}{\sqrt\ampere}
+\end{align*}
+
+Daraus folgt für $U_B$:
+\begin{align*}
+  U_B = ?
+\end{align*}
