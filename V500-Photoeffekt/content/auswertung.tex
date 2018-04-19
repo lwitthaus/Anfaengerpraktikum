@@ -48,8 +48,8 @@ ungenauer macht. Die Anpassungsfunktion wird mit Python erstellt.
 
 Die Paramater betragen:
 \begin{align*}
-  a_1 &= \SI{6,2(1)e-5}{\sqrt\ampere\per\volt} \\
-  b_1 &= \SI{3.4(2)e-5}{\sqrt\ampere}
+  a_1 &= \SI{0.62(1)}{\sqrt{\nano\ampere}\per\volt} \\
+  b_1 &= \SI{0.34(2)}{\sqrt{\nano\ampere}}
 \end{align*}
 
 Die Fehler werden mit Python berechnet.
@@ -57,7 +57,7 @@ Die Fehler werden mit Python berechnet.
 Für $U_B$ muss der Schnittpunkt der Geraden mit der U-Achse ermittelt werden, die x-Koordinate ist dann $U_B$.
 Es gilt $U_B = -\frac{b}{a}$. Für $U_B$ ergibt sich somit:
 \begin{equation*}
-  U_B = ?
+  U_B = \SI{-0.55(3)}{\volt}
 \end{equation*}
 
 
@@ -96,8 +96,8 @@ aud den oben genannten Gründen vernachlässigt werden.
 
 Die Paramater betragen:
 \begin{align*}
-  a_2 &= \SI{0.67(9)e-5}{\sqrt\ampere\per\volt} \\
-  b_2 &= \SI{0.5(3)e-5}{\sqrt\ampere}
+  a_2 &= \SI{0.067(9)}{\sqrt{\nano\ampere}\per\volt} \\
+  b_2 &= \SI{0.05(3)}{\sqrt{\nano\ampere}}
 \end{align*}
 
 Daraus folgt für $U_B$:
@@ -153,8 +153,8 @@ aus den oben genannten Gründen vernachlässigt werden.
 
 Die Parameter betragen:
 \begin{align*}
-  a_3 &= \SI{6.9(1)e-5}{\sqrt\ampere\per\volt} \\
-  b_3 &= \SI{7.6(2)e-5}{\sqrt\ampere}
+  a_3 &= \SI{0.69(1)}{\sqrt{\nano\ampere}\per\volt} \\
+  b_3 &= \SI{0.76(2)}{\sqrt{\nano\ampere}}
 \end{align*}
 
 Daraus folgt für $U_B$:
@@ -162,7 +162,7 @@ Daraus folgt für $U_B$:
   U_B = ?
 \end{align*}
 
-In Tabelle 4 wird die gemessene Stromstärke und die zugehörige Spannung für das violette Licht dargestellt.
+In Tabelle 4 wird die gemessene Stromstärke und die zugehörige Spannung für das ultra violette Licht dargestellt.
 
 \begin{table}[H]
   \centering
@@ -182,11 +182,14 @@ In Tabelle 4 wird die gemessene Stromstärke und die zugehörige Spannung für d
     2,0	 &  1,00 \\
     4,0	 &  2,20 \\
     5,0	 &  2,90 \\
+    10,0 &  3,60 \\
+    15,0 &  4,0 \\
+    20,0 & 4,0 \\
     \bottomrule
   \end{tabular}
 \end{table}
 
-Mit diesen Messwerten wird erneut eine lineare Regression durchgeführt, wobei die letzten fünf Messwerte
+Mit diesen Messwerten wird erneut eine lineare Regression durchgeführt, wobei die letzten drei Messwerte
 aus den oben genannten Gründen vernachlässigt werden.
 
 \begin{figure}[H]
@@ -198,8 +201,8 @@ aus den oben genannten Gründen vernachlässigt werden.
 
 Die Parameter betragen:
 \begin{align*}
-  a_3 &= \SI{2.7(1)e-5}{\sqrt\ampere\per\volt} \\
-  b_3 &= \SI{4.0(2)e-5}{\sqrt\ampere}
+  a_3 &= \SI{0.27(1)}{\sqrt{\nano\ampere}\per\volt} \\
+  b_3 &= \SI{0.4(2)}{\sqrt{\nano\ampere}}
 \end{align*}
 
 Daraus folgt für $U_B$:
