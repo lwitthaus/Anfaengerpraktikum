@@ -5,7 +5,7 @@ from scipy.optimize import curve_fit
 from uncertainties import ufloat
 
 n, U = np.genfromtxt('wellenlaenge.txt', unpack=True)
-c = 299792458 
+c = 299792458
 
 def f(x, a, b):
    return a * x + b
@@ -20,7 +20,7 @@ plt.gcf().subplots_adjust(bottom=0.18)
 plt.plot(c/n, U, 'r.', label='Messwerte', Markersize=4)
 plt.legend()
 plt.grid()
-#plt.xlim((400000, 900000))
-plt.xlabel(r'$\nu / 10**9 \mathrm{Hz}$')
+plt.xlim((400000, 900000))
+plt.xlabel(r'$\nu / 10^9 \mathrm{Hz}$')
 plt.ylabel(r'$U / V$')
 plt.savefig('build/plotwellenlaenge.pdf')
