@@ -5,8 +5,8 @@
 
 
 Die gemessene Stromstärke in Abhängigkeit von der Bremsspannung wird für das grüne
-Licht in Tabelle 1 dargestellt. Negative Spannungen bezeichenen dabei das Gegenfeld, also
-die Spannung mit der Elektronen gebremst werden. Positive Spannungnen beschleunigen die Elektronen.
+Licht in Tabelle 1 dargestellt. Negative Spannungen bezeichnen dabei das Gegenfeld, also
+die Spannung mit der Elektronen gebremst werden. Positive Spannungen beschleunigen die Elektronen.
 
 
 \begin{table}[H]
@@ -47,7 +47,7 @@ ungenauer macht. Die Anpassungsfunktion wird mit Python erstellt.
   \label{fig:plot}
 \end{figure}
 
-Die Paramater betragen:
+Die Parameter betragen:
 \begin{align*}
   a_1 &= \SI{0.62(1)}{\sqrt{\nano\ampere}\per\volt} \\
   b_1 &= \SI{0.34(2)}{\sqrt{\nano\ampere}}
@@ -86,7 +86,7 @@ In Tabelle 2 wird die gemessene Stromstärke und die zugehörige Spannung für d
 \end{table}
 
 Mit diesen Messwerten wird erneut eine lineare Regression durchgeführt, wobei wieder die letzten drei Messwerte
-aud den oben genannten Gründen vernachlässigt werden.
+aus den oben genannten Gründen vernachlässigt werden.
 
 \begin{figure}[H]
   \centering
@@ -95,7 +95,7 @@ aud den oben genannten Gründen vernachlässigt werden.
   \label{fig:plot}
 \end{figure}
 
-Die Paramater betragen:
+Die Parameter betragen:
 \begin{align*}
   a_2 &= \SI{0.067(9)}{\sqrt{\nano\ampere}\per\volt} \\
   b_2 &= \SI{0.05(3)}{\sqrt{\nano\ampere}}
@@ -275,7 +275,7 @@ Trägt man alle gemessenen Werte des orangenen Lichtes auf, so erhält man folge
 \end{figure}
 
 Es ist zu erkennen, dass bei einer angelegten Gegenspannung praktisch kein Strom fließt. Legt man
-jodch eine Beschleunigungsspannung an, so steigt die Stromstäre schnell an, bis sie dann
+jedoch eine Beschleunigungsspannung an, so steigt die Stromstärke schnell an, bis sie dann
 asymptotisch gegen einen Sättigungswert läuft.
 Dies geschieht, da bei ausreichend hoher Beschleunigungsspannung nahezu alle ausgelösten
 Photoelektronen die Anode erreichen. Durch eine höhere Intensität des Lichtes werden mehr
@@ -295,21 +295,13 @@ Wellenlänge bestrahlt wird. Dann ist nämlich $h\nu<A_A$ und die Elektronen mü
 
 \subsection{Bestimmung der Austrittsarbeit und des Verhältnisses $h/e_0$}
 
-<<<<<<< HEAD
-Die errechneten Grenzspannungen $U$ wird gegen die Frequenz $\nu$ aufgetragen. Die wellenlängen des Lichtes werden dabei der
+Die errechneten Grenzspannungen $U$ werden gegen die Frequenz $\nu$ aufgetragen. Die Wellenlängen des Lichtes werden dabei der
 Anleitung entnommen. Für das rote Licht wurde eine Wellenlänge von $620$nm genommen \cite{sample3}.
-||||||| merged common ancestors
-Die errechneten Grenzspannungen $U$ wird gegen die Frequenz $\nu$ aufgetragen. Die wellenlängen des Lichtes werden dabei der
-Anleitung entnommen. Für das rote Licht wurde eine Wellenlänge von $620$nm genommen.
-=======
-Die errechneten Grenzspannungen $U$ werden gegen die Frequenz $\nu$ aufgetragen. Die wellenlängen des Lichtes werden dabei der
-Anleitung entnommen. Für das rote Licht wurde eine Wellenlänge von $620$nm genommen.
->>>>>>> what am i doing with my life
 
 
 \begin{table}[H]
   \centering
-  \caption{Frequenzen und Grenzspannungnen der Spektrallinien}
+  \caption{Frequenzen und Grenzspannungen der Spektrallinien}
   \label{tab:Spannungsamplitude}
   \begin{tabular}{c c}
     \toprule
@@ -334,8 +326,8 @@ Anleitung entnommen. Für das rote Licht wurde eine Wellenlänge von $620$nm gen
 \end{figure}
 
 
-
-Die Steigung ist dabei das Verhätlnis $h/e_0$ und der x-Achsenabschnitt ist die Autrittsarbeit $A_k$.
+Aus Gleichung (4) folgt, dass die
+ Steigung  das Verhältnis $h/e_0$ und der x-Achsenabschnitt die Austrittsarbeit $A_k/ e_0$ ist.
 Die Parameter betragen:
 \begin{align*}
   |a| &=\ \frac{h}{e_0}= \SI{2.0(4)e4}{\eV\per\ampere} \\
