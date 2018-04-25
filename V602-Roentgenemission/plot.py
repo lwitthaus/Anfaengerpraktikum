@@ -1,21 +1,19 @@
 import matplotlib.pyplot as plt
 import numpy as np
+from scipy.optimize import curve_fit
+from uncertainties import ufloat
 
-x = np.linspace(0, 10, 1000)
-y = x ** np.sin(x)
+w, U = np.genfromtxt('emission.txt', unpack=True)
 
-plt.subplot(1, 2, 1)
-plt.plot(x, y, label='Kurve')
-plt.xlabel(r'$\alpha \:/\: \si{\ohm}$')
-plt.ylabel(r'$y \:/\: \si{\micro\joule}$')
-plt.legend(loc='best')
 
-plt.subplot(1, 2, 2)
-plt.plot(x, y, label='Kurve')
-plt.xlabel(r'$\alpha \:/\: \si{\ohm}$')
-plt.ylabel(r'$y \:/\: \si{\micro\joule}$')
-plt.legend(loc='best')
 
-# in matplotlibrc leider (noch) nicht möglich
-plt.tight_layout(pad=0, h_pad=1.08, w_pad=1.08)
+x_plot = np.linspace(7, 55)
+plt.gcf().subplots_adjust(bottom=0.18)
+plt.plot(w, U, 'r.', label='Messwerte', Markersize=4)
+plt.legend()
+plt.grid()
+plt.xlim((7, 55))
+plt.ylim((30, 5000))
+plt.xlabel(r'$Winkel/$Grad')
+plt.ylabel(r'Intensität')
 plt.savefig('build/plot.pdf')
