@@ -1,6 +1,4 @@
-Z�hlrohrwinkel	Rate bei 35kV
-2*theta/�	R(35kV)/Imp/s
-
+#Z�hlrohrwinkel2*theta/� 	Rate bei 35kV
 38.0	16.0
 38.2	16.0
 38.4	16.0
