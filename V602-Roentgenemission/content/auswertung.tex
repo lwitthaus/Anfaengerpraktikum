@@ -1,6 +1,23 @@
 \section{Auswertung}
 \label{sec:Auswertung}
 
+\subsection{Überprüfung der Bragg-Bedingung}
+
+Bei einem Kristallwinkel von 14° ergibt sich die folgende Intensitätsverteilung
+hinter dem LiF-Kristall, an dem die Bragg-Reflexion stattgefunden hat.
+
+\begin{figure}
+  \centering
+  \includegraphics{bragg.pdf}
+  \caption{Intensität in Abhängigkeit des Winkels bei Bragg-Reflexion.}
+  \label{fig:bragg}
+\end{figure}
+
+Das Maximum liegt bei ca. 27,7°. Erwartet wurde das Maximum entsprechend der
+Bragg-Bedingung (Gleichung 6) bei einem Winkel von 28°. Der gemessene Wert weicht
+also lediglich um etwa 0,3° ab.
+
+
 \subsection{Emissionspektrum der Kupferröntgenröhre}
 
 Die Intensität $I$ der gemessenen Röntgenstrahlung wird gegen den doppelten Winkel $\Theta$ des Zählrohrs aufgetragen.
@@ -24,8 +41,6 @@ Dies entspricht einer Abweichung von $36,6 \%$.
 
 Das Maximum der $K_{\beta}$-Linie beträgt $I=1624$.
 
-
-
 Die Maxima des Spektrums liegen bei den Winkeln $\Theta_{\beta} = 20,2°$ und $\Theta_{\alpha} = 22,2°$.
 Mit Gleichung (7) folgt daraus für die Energien:
 \begin{align*}
@@ -38,6 +53,25 @@ Mit Gleichung (3) werden daraus die beiden Abschirmzahlen $\sigma_1$ und $\sigma
   \sigma_1 &= Z - \sqrt{\frac{E_{\beta}}{R_{\infty}}} = 3,38 \\
   \sigma_2 &= Z - \sqrt{4 \frac{R_{\infty} (Z-\sigma_1)^2 - E_{\alpha}}{R_{\infty}}} = 13,98
 \end{align*}
+
+Zur Bestimmung der Halbwertsbreite wird der Bereich um die $K^{\alpha}$ und $K^{\beta}$ Strahlung
+noch einmal genau aufgetragen.
+
+\begin{figure}
+  \centering
+  \includegraphics{plot1.pdf}
+  \caption{Emissionspektrum der Kupferröntgenröhre im Bereich der charakteristischen Strahlung.}
+  \label{fig:plot1}
+\end{figure}
+
+Daraus ergeben sich dich Halbwertsbreiten:
+\begin{equation*}
+  b_{\alpha} = 0.59°
+\end{equation*}
+
+\begin{equation*}
+  b_{\beta} = 0.44°
+\end{equation*}
 
 
 \subsection{Absorptionspektrum von Brom}
