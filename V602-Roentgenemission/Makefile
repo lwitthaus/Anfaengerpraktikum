@@ -13,9 +13,14 @@ all: build/main.pdf
 # hier Python-Skripte:
 build/plot.pdf: plot.py matplotlibrc header-matplotlib.tex | build
 	TEXINPUTS="$(call translate,$(pwd):)" python plot.py
-
+build/plotbrom.pdf: plotbrom.py matplotlibrc header-matplotlib.tex | build
+	TEXINPUTS="$(call translate,$(pwd):)" python plotbrom.py
+build/plotstrontium.pdf: plotstrontium.py matplotlibrc header-matplotlib.tex | build
+	TEXINPUTS="$(call translate,$(pwd):)" python plotstrontium.py
+build/plotzirconium.pdf: plotzirconium.py matplotlibrc header-matplotlib.tex | build
+	TEXINPUTS="$(call translate,$(pwd):)" python plotzirconium.py
 # hier weitere Abhängigkeiten für build/main.pdf deklarieren:
-build/main.pdf: build/plot.pdf
+build/main.pdf: build/plot.pdf build/plotbrom.pdf build/plotstrontium.pdf build/plotzirconium.pdf
 
 build/main.pdf: FORCE | build
 	  TEXINPUTS="$(call translate,build:)" \
