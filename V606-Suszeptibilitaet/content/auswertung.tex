@@ -39,17 +39,78 @@ die zugehörige Spannung $U$ aufgetragen. Die Messwerte werden in Tabelle 1 darg
 \end{table}
 
 Abbildung 4 stellt die Spannung in Abhängigkeit von der Frequenz dar.
-
-\begin{figure}
-  \centering
-  \includegraphics{plot.pdf}
-  \caption{Plot.}
-  \label{fig:plot}
+\includegraphics{plot.pdf}
+\caption{Plot.}
+\label{fig:plot}
 \end{figure}
 
 Das Maximum liegt bei einer Frequenz von $35,5$kHz.
 
-\subsection{Berechnung der Suszeptibilität verschiedener Selten-Erd-Metalle}
 
+\subsection{Berechnung der magnetischen Suszeptibiliät anhand der gemessenen Daten}
+Die in der Brückenschaltung eingebaute Spule hat die folgenden Abmessungen:
 
-Die Brückenspannung
+Länge $l = 135 \: \symup{mm}$
+
+Querschnitt $F = 86,7 \: \symup{mm^2}$
+
+Windungen $n = 250$
+
+Widerstand $R = 0,7 \: \symup{\Omega}$
+
+Ohne eine Probe in der Spule ergibt sich eine minimale Brückenspannung von
+\begin{equation*}
+  U_{br} = 13,5 \: \symup{mV}
+\end{equation*}
+bei einem Widerstand
+\begin{equation*}
+  R_3 = 4150 \: \symup{m\Omega} \: .
+\end{equation*}
+
+Die Widerstände $R_a$, bei denen die Brückenschaltung mit den entsprechenden Proben
+in der Spule abgeglichen ist, und die daraus resultierenden Widerstandsänderungen $\Delta R$ können
+Tabelle \ref{tab:Widerstand} entnommen werden. Zudem werden die Ausgangsspannungen der Brücke aufgeführt,
+die sich ergeben, wenn die Proben bei vorher abgeglichener Brücke in Spule geschoben werden.
+\begin{table}[H]
+  \centering
+  \caption{Messwerte zur Bestimmung der Suszeptibiliäten.}
+  \label{tab:Widerstand}
+  \begin{tabular}{c c c c c}
+    \toprule
+    Probe & $U_{neu} / \symup{mV}$ & $\Delta U / \symup{mV}$ &  $R_a / \symup{m\Omega}$   & $\Delta R / \symup{m\Omega}$  \\
+    \midrule
+    Dy & 21,0 & 7,5 & 2550 & 1600 \\
+    Nd & 13,5 & 0,0 & 4000 & 150 \\
+    Pr & 13,5 & 0,0 & 3850 & 300 \\
+    Gd & 15,9 & 2,4 & 3300 & 850 \\
+    \bottomrule
+  \end{tabular}
+\end{table}
+
+\subsubsection{Dysprosium}
+Die Abmessungen der Probe können Tabelle \ref{tab:Dy} entnommen werden.
+Dabei ist M die Masse, $\rho$ die Dichte, und L die Länge der Probe.
+\begin{table}[H]
+  \centering
+  \caption{Abmessungen der Dysprosium-Probe.}
+  \label{tab:Dy}
+  \begin{tabular}{c c c}
+    \toprule
+    $M_{Dy} / \symup{g}$ & $\rho_{Dy} / \symup{\frac{g}{cm^3}}$   & $L_{Dy} / \symup{cm}$  \\
+    \midrule
+    15,1 & 7,8 & 13,5\\
+    \bottomrule
+  \end{tabular}
+\end{table}
+Daraus ergibt sich nach
+\begin{equation*}
+  Q_{real} = \frac{M}{L \cdot \rho}
+\end{equation*}
+ein realer Querschnitt von
+\begin{equation*}
+  Q_{Dy} = 14,33 \: \symup{mm^2}
+\end{equation*}
+Daraus ergibt sich nach Gleichung (20) eine Suszeptibiliät von
+\begin{equation*}
+  \chi_{Dy} = 0 \: \symup{cm^2}
+\end{equation*}
