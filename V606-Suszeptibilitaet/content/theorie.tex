@@ -143,7 +143,15 @@ Speisepannung.
 Eine zweite Methode ist, nachdem Befüllen einer Spule mit der Probe erneut abzugleichen, sodass $U_{Br} = 0$ ist. Aus
 der Änderung der Abgleichelemente wird die Suszeptibilität berechnet. Für die Suszeptibilität gilt dann:
 \begin{align}
-  \chi = 2 \frac{\delta R}{R_3}{F}{Q}
+  \chi = 2 \frac{\Delta R}{R_3} \frac{F}{Q}
 \end{align}
 Wobei $R_3$ der Widerstand am Potentiometer ist und $\Delta R$ die Änderung des Widerstandes ist, um die
 Brückenspannung nachdem dem einfüllen der Probe wieder auf Null zu senken.
+
+Für $Q$ muss in diesem Fall $Q_{real} = \frac{M_p}{L \rho_w}$. Dabei ist $M_p$ die Masse der Probe und $\rho_w$ die Dichte
+eines Einkristalles der Probe.
+
+
+An den Ausgangsklemmen der Brückenspannung ist eine Störspannung zu messen, welche die Brückenspannung überdeckt. Die
+zu messene Spannung ist jedoch eine monofrequente Signalspannung. Mit einem Filter, welcher die Signalspannung herausfiltert
+wird das Problem gelöst.
