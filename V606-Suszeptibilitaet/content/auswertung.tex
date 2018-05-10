@@ -108,6 +108,8 @@ Dabei ist M die Masse, $\rho$ die Dichte, und L die Länge der Probe.
   \end{tabular}
 \end{table}
 
+
+
 \subsubsection{Dysprosium}
 Es ergibt sich nach
 \begin{equation*}
@@ -118,14 +120,16 @@ ein realer Querschnitt von
   Q_{Dy} = 14,33 \: \symup{mm^2}
 \end{equation*}
 
-Mit Gleichung (19) ergibt sich für die Suszeptibilität 
+Mit Gleichung (19) ergibt sich für die Suszeptibilität:
 \begin{equation*}
   \chi_{Dy_U} = 0,010146
 \end{equation*}
+Wobei beachtet werden muss, dass die Brückenspannung um einen Faktor $100$ verstärkt gemessen wird. Für die anderen
+Proben gilt dies auch.
 
 Mit Gleichung (20) ergibt sich eine Suszeptibiliät von
 \begin{equation*}
-  \chi_{Dy_R} = 0
+  \chi_{Dy_R} = ? .
 \end{equation*}
 
 \subsubsection{Neodym}
@@ -133,14 +137,14 @@ Es ergibt sich ein realer Querschnitt von
 \begin{equation*}
   Q_{Nd} = 9,21 \: \symup{mm^2}
 \end{equation*}
-Mit Gleichung (19) ergibt sich für die Suszeptibilität
+Mit Gleichung (19) ergibt sich für die Suszeptibilität:
 \begin{equation*}
   \chi_{Nd_U} = 0,010157
 \end{equation*}
 
 Mit Gleichung (20) ergibt sich eine Suszeptibiliät von
 \begin{equation*}
-  \chi_{Nd_R} = 0
+  \chi_{Nd_R} = 0 .
 \end{equation*}
 
 \subsubsection{Gadolinium}
@@ -148,12 +152,60 @@ Es ergibt sich ein realer Querschnitt von
 \begin{equation*}
   Q_{Gd} = 14,81 \: \symup{mm^2}
 \end{equation*}
-Mit Gleichung (19) ergibt sich für die Suszeptibilität
+Mit Gleichung (19) ergibt sich für die Suszeptibilität:
 \begin{equation*}
   \chi_{Gd_U} = 0,007817
 \end{equation*}
 
 Mit Gleichung (20) ergibt sich eine Suszeptibiliät von
 \begin{equation*}
-  \chi_{Gd_R} = ?
+  \chi_{Gd_R} = ? .
 \end{equation*}
+
+
+\subsection{Theoretische Werte und Vergleich mit den berechneten Werten}
+
+Um den theoretischen Wert der Suszeptibilität mit Gleichung (18) zu bestimmen wird der Land$\acute{\text{e}}$-Faktor $g_J$, sowie $\vec{J}$ und
+die Anzahl $N= \frac{\rho}{M}$ der Momente pro Volumen benötigt. Dabei ist $M$ die molare Masse. Als Raumtemperatur wird bei der
+Rechnung $296,15$K angenommen. Die Elemente Dy, Nd und Gd besitzen jeweils $9$, $3$ und $7$ Elektronen in der 4f-Schale. In Tabelle §
+sind die aus den Hundschen Regeln folgende Werte dargestellt.
+
+\begin{table}[H]
+  \centering
+  \caption{Gesamtspin, Bahndrehimpuls, Gesamtdrehimpuls und Land$\acute{\text{e}}$-Faktor der Proben}
+  \label{tab:Dy}
+  \begin{tabular}{c c c c c}
+    \toprule
+    Probe & $L$ & $S$ & $J$  & $g_J$  \\
+    \midrule
+    Dy & 5 & 2,5 & 7,5 & 1,33\\
+    Nd & 6 & 1,5 & 4,5 & 0,73\\
+    Gd & 0 & 3,5 & 3,5 & 2,00\\
+    \bottomrule
+  \end{tabular}
+\end{table}
+
+Für $N$ der drei Proben ergibt sich:
+\begin{align*}
+  &N_{Dy} = \SI{2.89e28}{\per\meter^3} \\
+  &N_{Nd} = \SI{3.02e28}{\per\meter^3} \\
+  &N_{Gd} = \SI{2.83e28}{\per\meter^3}
+\end{align*}
+
+Die theoretischen Werte der Suszeptibilitäten $\chi_T$, sowie die vorher berechneten Suszeptibilitäten
+der Proben werden in Tabelle 5 dargestellt. Eine relative Abweichung der Werte wird ebenfalls angegeben.
+
+\begin{table}[H]
+  \centering
+  \caption{Theoretische Werte und Vergleiche der Suszeptibilitäten}
+  \label{tab:Dy}
+  \begin{tabular}{c c c c c c}
+    \toprule
+    Probe & $\chi_T$ & $\chi_U$ & $\chi_R$ & $\frac{\chi_T - \chi_U}{\chi_T}/$\%  & $\frac{\chi_T - \chi_R}{\chi_T}/$\% \\
+    \midrule
+    Dy & 0.028705 & 0,010146& ? & -64,7 & ?\\
+    Nd & 0.003508 & 0,010157& ? & 189,5 & ?\\
+    Gd & 0.015704 & 0,007817& ? & -50,2 & ?\\
+    \bottomrule
+  \end{tabular}
+\end{table}
