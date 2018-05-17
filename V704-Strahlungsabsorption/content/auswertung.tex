@@ -84,3 +84,73 @@ Es wird erneut eine lineare Regression durchgeführt.
   \caption{Lineare Regression der Aktivität aufgetragen gegen die Dicke des Bleiabsorbers}
   \label{fig:plot}
 \end{figure}
+
+
+\subsection{Beta-Strahlung}
+
+Ohne einen Absorber zu verwenden hat das Zählrohr in $???$ Sekunden $994$ Wechselwirkungen gemessen.
+
+In Tabelle 2 werden wieder die Anzahl an Wechselwirkungen $N$ und die Aktivität $A = N/t$ in Abhängigkeit von der Dicke $D$ des Absorbers und der
+Dauer der Messung $t$ angeben.
+
+\begin{table}[H]
+  \centering
+  \caption{Zählrate und Aktivität in Abhängigkeit von der Zeit und der Dicke des Absorbers bei Beta-Strahlung}
+  \label{tab:}
+  \begin{tabular}{c c c c}
+    \toprule
+    Zeit$/$s & $D/\symup{\mu m}$ & $N \pm \Delta N$ & $(A \pm \Delta A)/$s\\
+    \midrule
+    100 & 100 & $\num{3873(70)}$  &  $\num{38.7(7)}$ \\
+    200 & 125 & $\num{2021(50)}$ &   $\num{10.1(3)}$ \\
+    200 & 153 & $\num{1978(50)}$ &   $\num{9.9(3)}$ \\
+    300 & 160 & $\num{1685(50)}$ &  $\num{5.6(2)}$ \\
+    400 & 200 & $\num{880(30)}$ & $\num{2.2(1)}$ \\
+    700 & 253 & $\num{572(30)}$ & $\num{0.8(1)}$ \\
+    700 & 302 & $\num{489(30)}$ & $\num{0.7(1)}$ \\
+    700 & 338 & $\num{478(30)}$ & $\num{0.7(1)}$ \\
+    700 & 400 & $\num{438(30)}$ & $\num{0.6(1)}$ \\
+    700 & 444 & $\num{481(30)}$ & $\num{0.7(1)}$ \\
+    700 & 482 & $\num{494(30)}$ & $\num{0.7(1)}$ \\
+    \bottomrule
+  \end{tabular}
+\end{table}
+
+Daraus ergibt sich das folgende Diagramm.
+
+\begin{figure}[H]
+  \centering
+  \includegraphics{plot1.pdf}
+  \caption{Lineare Regression der Aktivität aufgetragen gegen die Dicke.}
+  \label{fig:plot1}
+\end{figure}
+
+Dabei ist R die Massenbelegung des Aluminiums und ergibt sich aus Gleichung 6.
+Die Dichte von Aluminium beträgt 2,7 / $\symup{\frac{g}{cm^3}}$ (??).
+
+Es werden zwei lineare Regressionen durchgeführt. Eine für den abfallenden Teil der Kurve
+und eine für den nahezu konstant verlaufenden Teil der Kurve:
+\begin{equation*}
+  y = a\cdot x + b
+\end{equation*}
+Es ergibt sich für die Parameter der  Anpassungsfunktionen:
+\begin{align*}
+  a_1 &= (-9,82 \pm 1,66) \: \symup{\frac{m^3}{kg\cdot s}} \\
+  a_2 &= (-0,20 \pm 0,17) \: \symup{\frac{m^3}{kg\cdot s}} \\
+  b_1 &= (6,07 \pm 0,68) \\
+  b_2 &= (-0,16 \pm 0,17)
+\end{align*}
+
+Die x-Koordinate des Schnittpunkts der beiden Ausgleichsgeraden ist der Wert $R_{max}$ und ergibt
+sich folglich aus
+\begin{equation*}
+  R_{max} = \frac{b_2 - b_1}{a_1 - a_2}
+\end{equation*}
+Daraus erhält man einen Wert von
+\begin{equation*}
+  R_{max} = (0,65 \pm 0,13) \: \symup{\frac{kg}{m^3}}
+\end{equation*}
+Aus Gleichung 7 folgt dann für die maximale Energie $E_{max}$
+\begin{equation*}
+  E_{max} = (1,44 \pm 0,26) \: \symup{J}
+\end{equation*}
