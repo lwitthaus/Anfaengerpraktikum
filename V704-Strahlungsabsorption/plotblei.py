@@ -11,7 +11,7 @@ def f(x, a, b):
    return a * x + b
 
 
-x_plot = np.linspace(1, 21)
+x_plot = np.linspace(0, 52)
 params, covariance_matrix = curve_fit(f, D, np.log(A))
 errors = np.sqrt(np.diag(covariance_matrix))
 plt.plot(x_plot, f(x_plot, *params), 'k-', label='Anpassungsfunktion', linewidth=0.5)
@@ -22,8 +22,8 @@ plt.gcf().subplots_adjust(bottom=0.18)
 plt.plot(D, np.log(A), 'r.', label='Messwerte', Markersize=4)
 plt.legend()
 plt.grid()
-plt.xlim((1, 21))
+plt.xlim((0, 52))
 #plt.ylim((2, 20))
-plt.ylabel(r'$\ln(A/A_0)/$s')
+plt.ylabel(r'$\ln(A/A_0)$')
 plt.xlabel(r'$D/$mm')
 plt.savefig('build/plotblei.pdf')
