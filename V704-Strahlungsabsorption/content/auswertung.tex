@@ -2,7 +2,7 @@
 \label{sec:Auswertung}
 
 \subsection{Gamma-Strahlung}
-
+\subsubsection{Bestimmung des Absorptionskoeffizienten eines Zinkabsorbers}
 Ohne einen Absorber zu verwenden hat das Zählrohr in $100$ Sekunden $994$ Wechselwirkungen gemessen.
 
 In Tabelle 1 werden die Anzahl an Wechselwirkungen $N$ und die Aktivität $A = N/t$ in Abhängigkeit von der Dicke $D$ des Absorbers und der
@@ -11,7 +11,7 @@ Poissonverteilung handelt. Für die Aktivität wird ebenfalls der Fehler angegeb
 
 \begin{table}[H]
   \centering
-  \caption{Zählrate und Aktivität in Abhängigkeit von der Zeit und der Dicke des Absorbers}
+  \caption{Zählrate und Aktivität in Abhängigkeit von der Zeit und der Dicke des Zinkabsorbers}
   \label{tab:Rechteckspannung}
   \begin{tabular}{c c c c}
     \toprule
@@ -31,9 +31,56 @@ Poissonverteilung handelt. Für die Aktivität wird ebenfalls der Fehler angegeb
   \end{tabular}
 \end{table}
 
-\begin{figure}
+Es wird eine lineare Regression durchgeführt .Die Anpassungsfunktion wird durch die Gerade $y = ax + b$  dargestellt und die Parameter $a$ und $b$
+mit Python berechnet.
+
+\begin{figure}[H]
   \centering
   \includegraphics{plot.pdf}
-  \caption{Lineare Regression der Aktivität aufgetragen gegen die Dicke}
+  \caption{Lineare Regression der Aktivität aufgetragen gegen die Dicke des Zinkabsorbers}
+  \label{fig:plot}
+\end{figure}
+
+Dabei gilt $A_0 =$ 1/s.
+
+Der Absorptionskoeffizient $\mu$ entspricht dann der negativen Steigung der Geraden.
+\begin{align*}
+  a = \mu_{Zn} = \SI{0.0478(15)}{\per\milli\meter} = \SI{47.8(15)e2}{\per\meter}
+\end{align*}
+
+\subsubsection{Bestimmung des Absorptionskoeffizienten eines Bleiabsorber}
+
+In Tabelle 2 werden die gemessenen Daten für einen Bleiabsorber dargestellt.
+
+\begin{table}[H]
+  \centering
+  \caption{Zählrate und Aktivität in Abhängigkeit von der Zeit und der Dicke des Bleiabsorbers}
+  \label{tab:Rechteckspannung}
+  \begin{tabular}{c c c c}
+    \toprule
+    Zeit$/$s & $D/$mm & $N \pm \Delta N$ & $(A \pm \Delta A)/$s\\
+    \midrule
+    60 & 1 & $\num{7895(90)}$  &  $\num{131.6(15)}$ \\
+    60 & 2 & $\num{7020(90)}$ &   $\num{117.0(15)}$ \\
+    70 & 3 & $\num{7418(90)}$ &   $\num{106.0(13)}$ \\
+    90 & 4 & $\num{8242(100)}$ &  $\num{91.6(11)}$ \\
+    100 & 5 & $\num{8322(100)}$ & $\num{83.2(10)}$ \\
+    130 & 10 & $\num{6843(90)}$ & $\num{52.6(7)}$ \\
+    150 & 12 & $\num{6026(80)}$ & $\num{40.2(6)}$ \\
+    170 & 15 & $\num{4932(80)}$ & $\num{29.0(5)}$ \\
+    220 & 20 & $\num{4166(70)}$ & $\num{18.9(3)}$ \\
+    350 & 30 & $\num{2569(60)}$ & $\num{7.3(2)}$ \\
+    500 & 40 & $\num{1635(50)}$ & $\num{3.3(1)}$ \\
+    700 & 50 & $\num{1176(40)}$ & $\num{1.7(1)}$ \\
+    \bottomrule
+  \end{tabular}
+\end{table}
+
+Es wird erneut eine lineare Regression durchgeführt.
+
+\begin{figure}[H]
+  \centering
+  \includegraphics{plotblei.pdf}
+  \caption{Lineare Regression der Aktivität aufgetragen gegen die Dicke des Bleiabsorbers}
   \label{fig:plot}
 \end{figure}

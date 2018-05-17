@@ -4,8 +4,8 @@ from scipy.constants import mu_0
 from scipy.optimize import curve_fit
 from uncertainties import ufloat
 
-D, A = np.genfromtxt('gammazahlen.txt', unpack=True)
-F =[1.7, 1.4, 1.3, 1.1, 1.0, 0.9, 0.8, 0.7, 0.7, 0.7]
+D, A = np.genfromtxt('bleizahlen.txt', unpack=True)
+F =[1.5, 1.5, 1.3, 1.1, 1.0, 0.7, 0.6, 0.5, 0.3, 0.2, 0.1, 0.1]
 
 def f(x, a, b):
    return a * x + b
@@ -26,4 +26,4 @@ plt.xlim((1, 21))
 #plt.ylim((2, 20))
 plt.ylabel(r'$\ln(A/A_0)/$s')
 plt.xlabel(r'$D/$mm')
-plt.savefig('build/plot.pdf')
+plt.savefig('build/plotblei.pdf')
