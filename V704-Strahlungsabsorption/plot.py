@@ -5,7 +5,7 @@ from scipy.optimize import curve_fit
 from uncertainties import ufloat
 
 D, A = np.genfromtxt('gammazahlen.txt', unpack=True)
-#F =[1.7,]
+F =[1.7, 1.4, 1.3, 1.1, 1.0, 0.9, 0.8, 0.7, 0.7, 0.7]
 
 def f(x, a, b):
    return a * x + b
@@ -17,14 +17,13 @@ errors = np.sqrt(np.diag(covariance_matrix))
 plt.plot(x_plot, f(x_plot, *params), 'k-', label='Anpassungsfunktion', linewidth=0.5)
 print(params)
 print(np.sqrt(np.diag(covariance_matrix)))
-#errA = np.sqrt(A)
-plt.errorbar(D, np.log(A), yerr= np.log(A), fmt = '.')
+plt.errorbar(D, np.log(A), yerr= np.log(F), fmt = '.')
 plt.gcf().subplots_adjust(bottom=0.18)
 plt.plot(D, np.log(A), 'r.', label='Messwerte', Markersize=4)
 plt.legend()
 plt.grid()
 plt.xlim((1, 21))
 #plt.ylim((2, 20))
-plt.ylabel(r'$A/$s')
+plt.ylabel(r'$\log{A/A_0}/$s')
 plt.xlabel(r'$D/$mm')
 plt.savefig('build/plot.pdf')
