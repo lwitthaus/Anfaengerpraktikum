@@ -67,7 +67,7 @@ Ohne eine Probe in der Spule ergibt sich eine minimale Brückenspannung von
 \end{equation*}
 bei einem Widerstand
 \begin{equation*}
-  R_3 = 4150 \: \symup{m\Omega} \: .
+  R = 4150 \: \symup{m\Omega} \: .
 \end{equation*}
 
 Die Widerstände $R_a$, bei denen die Brückenschaltung mit den entsprechenden Proben
@@ -103,12 +103,13 @@ Dabei ist M die Masse, $\rho$ die Dichte, und L die Länge der Probe.
     \midrule
     Dy & 15,1 & 7,8 & 135\\
     Nd & 9,0 & 7,24 & 135\\
-    Gd & 14,8 & 7,40 & 135\\
+    Gd & 14,08 & 7,40 & 135\\
     \bottomrule
   \end{tabular}
 \end{table}
 
-
+Die Speisespannung beträgt $U_{Sp} = 0,5$V.
+Der Widerstand $R_3$ beträgt $998 \Omega$
 
 \subsubsection{Dysprosium}
 Es ergibt sich nach
@@ -122,45 +123,44 @@ ein realer Querschnitt von
 
 Mit Gleichung (19) ergibt sich für die Suszeptibilität:
 \begin{equation*}
-  \chi_{Dy_U} = 0,010146
+  \chi_{Dy_U} = 0,0036 %Korrigiert
 \end{equation*}
 Wobei beachtet werden muss, dass die Brückenspannung um einen Faktor $100$ verstärkt gemessen wird. Für die anderen
 Proben gilt dies auch.
 
-Mit Gleichung (20) ergibt sich daruas die Suszeptibilität. Dabei hat die
-Brückenschaltung einene Widerstand $R_3 = 998 \Omega$
+Mit Gleichung (20) ergibt sich daruas die Suszeptibilität.
 \begin{equation*}
-  \chi_{Dy_R} = 0,019377
+  \chi_{Dy_R} = 0,0194  %Korrigiert
 \end{equation*}
 
 \subsubsection{Neodym}
 Es ergibt sich ein realer Querschnitt von
 \begin{equation*}
-  Q_{Nd} = 9,21 \: \symup{mm^2}
+  Q_{Nd} = 9,21 \: \symup{mm^2} %Richtig
 \end{equation*}
 Mit Gleichung (19) ergibt sich für die Suszeptibilität:
 \begin{equation*}
-  \chi_{Nd_U} = 0,010157
+  \chi_{Nd_U} = 0 %Korrigiert
 \end{equation*}
 
 Mit Gleichung (20) ergibt sich eine Suszeptibilität von
 \begin{equation*}
-  \chi_{Nd_R} = 0,002826
+  \chi_{Nd_R} = 0,0028 %Korrigiert
 \end{equation*}
 
 \subsubsection{Gadolinium}
 Es ergibt sich ein realer Querschnitt von
 \begin{equation*}
-  Q_{Gd} = 14,81 \: \symup{mm^2}
+  Q_{Gd} = 14,09 \: \symup{mm^2}  %Korrigiert
 \end{equation*}
 Mit Gleichung (19) ergibt sich für die Suszeptibilität:
 \begin{equation*}
-  \chi_{Gd_U} = 0,007817
+  \chi_{Gd_U} = 0,1180 %Korrigiert
 \end{equation*}
 
 Mit Gleichung (20) ergibt sich eine Suszeptibilität von
 \begin{equation*}
-  \chi_{Gd_R} = 0,009961
+  \chi_{Gd_R} = 0,0105 %Korrigiert
 \end{equation*}
 
 
@@ -188,9 +188,16 @@ sind die aus den Hundschen Regeln folgende Werte dargestellt.
 
 Für $N$ der drei Proben ergibt sich:
 \begin{align*}
-  &N_{Dy} = \SI{2.89e28}{\per\meter^3} \\
-  &N_{Nd} = \SI{3.02e28}{\per\meter^3} \\
-  &N_{Gd} = \SI{2.83e28}{\per\meter^3}
+  &N_{Dy} = \SI{1.26e28}{\per\meter^3} \\ %Korrigert
+  &N_{Nd} = \SI{1.30e28}{\per\meter^3} \\ %Korrigert
+  &N_{Gd} = \SI{1.23e28}{\per\meter^3} \\ %Korrigert
+\end{align*}
+
+Die molaren Massen betragen dabei:
+\begin{align*}
+  M_{Dy} = 373,00 \frac{g}{mol} \\
+  M_{Nd} = 336,48 \frac{g}{mol} \\
+  M_{Gd} = 362,49 \frac{g}{mol} \\
 \end{align*}
 
 Die theoretischen Werte der Suszeptibilität $\chi_T$, sowie die vorher berechneten Suszeptibilitäten
@@ -204,9 +211,9 @@ der Proben werden in Tabelle 5 dargestellt. Eine relative Abweichung der Werte w
     \toprule
     Probe & $\chi_T$ & $\chi_U$ & $\chi_R$ & $\frac{\chi_T - \chi_U}{\chi_T}/$\%  & $\frac{\chi_T - \chi_R}{\chi_T}/$\% \\
     \midrule
-    Dy & 0.028705 & 0,010146& 0,019377 & -64,7 & 48,1\\
-    Nd & 0.003508 & 0,010157& 0,002826 & 189,5 & 24,1\\
-    Gd & 0.015704 & 0,007817& 0,009961 & -50,2 & 57,7\\
+    Dy & 0.0125 & 0,0036 & 0,0194 & 71.2 & -55,2\\  %Korrigert
+    Nd & 0.0015 & 0 & 0,0028 & 100,0 & -86,7\\      %Korrigiert
+    Gd & 0.0068 & 0,1180 &  0,0105 & -16,35 & -54,4\\   %Korrigiert
     \bottomrule
   \end{tabular}
 \end{table}
