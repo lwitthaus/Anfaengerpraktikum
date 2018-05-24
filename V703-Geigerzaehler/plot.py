@@ -12,7 +12,7 @@ def f(x, a, b):
 
 
 
-#plt.errorbar(D, np.log(A), yerr= np.log(F), fmt = '.')
+
 plt.gcf().subplots_adjust(bottom=0.18)
 plt.plot(U, N, 'r.', label='Messwerte', Markersize=4)
 plt.legend()
@@ -29,5 +29,6 @@ errors = np.sqrt(np.diag(covariance_matrix))
 plt.plot(x_plot, f(x_plot, *params), 'k-', label='Anpassungsfunktion', linewidth=0.5)
 print(params)
 print(np.sqrt(np.diag(covariance_matrix)))
+plt.errorbar(U, N, yerr= np.sqrt(N), fmt = '.')
 
 plt.savefig('build/plot.pdf')

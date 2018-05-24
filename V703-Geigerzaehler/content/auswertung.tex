@@ -1,9 +1,106 @@
 \section{Auswertung}
 \label{sec:Auswertung}
 
+\subsection{Charakteristik}
+In Tabelle 1 ist die Anzahl an gemessenen Teilchen $N$ in Abhängigkeit von der Spannung  $U$ dargestellt. Zusätzlich
+ist dort auch die gemessene Stromstärke $I$ angegeben.
+
+\begin{table}[H]
+  \centering
+  \caption{Stromstärke und Anzahl an gemessenen Teilchen in Abhängigkeit von der Spannung.}
+  \label{tab:Rechteckspannung}
+  \begin{tabular}{c c c}
+    \toprule
+    $U/$V & $N$ & $I/\symup{\mu}$A \\
+    \midrule
+    300 &	0	    & 0  \\
+    310 &	16104 &	0  \\
+    320 &	16789 &	0,5 \\
+    330 &	16869 &	1,0 \\
+    340 &	16774 &	1,0 \\
+    350 &	17052 &	1,2 \\
+    360 &	16952 &	1,4 \\
+    370 &	17137 &	1,6 \\
+    380 &	17248 &	1,9 \\
+    390 &	17137 &	2,0 \\
+    400 &	17237 &	2,1 \\
+    410 &	17092 &	2,3 \\
+    420 &	17377 &	2,4 \\
+    430 &	17272 &	2,6 \\
+    440 &	17092 &	2,9 \\
+    450 &	17510 &	3,0 \\
+    460 &	17521 &	3,0 \\
+    470 &	17576 &	3,2 \\
+    480 &	17418 &	3,5 \\
+    490 &	17401 &	3,7 \\
+    500 &	17547 &	4,0 \\
+    510 &	17465 &	4,0 \\
+    520 &	17400 &	4,2 \\
+    530 &	17347 &	4,4 \\
+    540 &	17485 &	4,5 \\
+    550 &	17601 &	4,7 \\
+    560 &	17659 &	5,0 \\
+    570 &	17465 &	5,2 \\
+    580 &	17750 &	5,4 \\
+    590 &	17782 &	5,6 \\
+    600 &	17732 &	5,9 \\
+    610 &	17823 &	6,0 \\
+    620 &	18170 &	6,2 \\
+    630 &	18016 &	6,5 \\
+    640 &	17992 &	6,7 \\
+    650 &	18008 &	7,0 \\
+    660 &	18123 &	7,0 \\
+    670 &	18441 &	7,2 \\
+    680 &	18425 &	7,3 \\
+    690 &	18241 &	7,5 \\
+    700 &	18646 &	7,7 \\
+    \bottomrule
+  \end{tabular}
+\end{table}
+
 \begin{figure}
   \centering
   \includegraphics{plot.pdf}
   \caption{Plot.}
   \label{fig:plot}
 \end{figure}
+
+
+
+
+
+
+
+
+
+
+\subsection{Bestimmung der Totzeit}
+
+In Tabelle 2 wird Zählrate $N$ für 2 Beta-Strahler, sowie die Zählrate, wenn beide Strahler gleichzeitig
+eingesetzt werden.
+
+\begin{table}[H]
+  \centering
+  \caption{Anzahl an gemessenen Teilchen pro Sekunde in Abhängigkeit von dem Strahler}
+  \label{tab:Rechteckspannung}
+  \begin{tabular}{c c}
+    \toprule
+    Strahler & $N$  \\
+    \midrule
+    1. Strahler & 310,5 \\
+    2. Strahler & 238,1\\
+    Beide Strahler & 535,7 \\
+    \bottomrule
+  \end{tabular}
+\end{table}
+
+Mit Gleichung (1) lässt sich aus diesen Werten die ungefähre Totzeit bestimmen.
+\begin{align*}
+  T_1 \approx \SI{8.72e-5}{\second} = \SI{87,2}{\micro\second}
+\end{align*}
+
+Die mit dem Oszilloskop abgeschätzte Totzeit beträgt $T_2 = 50 \symup{\mu}$s.
+Die Abweichung der beiden Totzeiten beträgt $42,7 \%$.
+
+
+\subsection{Bestimmung der freigesetzten Ladungsmenge pro Teilchen}
