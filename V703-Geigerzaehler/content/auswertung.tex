@@ -106,102 +106,75 @@ Mit Gleichung (1) lässt sich aus diesen Werten die ungefähre Totzeit bestimmen
   T_1 \approx \SI{8.72e-5}{\second} = \SI{87,2}{\micro\second}
 \end{align*}
 
-Die mit dem Oszilloskop abgeschätzte Totzeit beträgt $T_2 = 50 \symup{\mu}$s.
-Die Abweichung der beiden Totzeiten beträgt $42,7 \%$.
+Die mit dem Oszilloskop abgeschätzte Totzeit beträgt $T_2 = 50 \, \symup{\mu} $s.
+Die Abweichung der beiden Totzeiten beträgt $42,7 \, \%$.
+
+Die geschätzte Erholungszeit beträgt $0,8 \,$ms.
 
 
 \subsection{Bestimmung der freigesetzten Ladungsmenge pro Teilchen}
 
+Die Ladung $\Delta Q$ wird mit Gleichung (2) bestimmt. In Tabelle 3 werden die Werte für Q und die zuehörigen Spannungen dargestellt.
 
 \begin{table}[H]
   \centering
-  \caption{Ladungsmenge in Abhängigkeit von der Spannung}
+  \caption{Ladung in Abhängigkeit von der Spannung}
   \label{tab:Rechteckspannung}
   \begin{tabular}{c c}
     \toprule
-    $U/$V & $\Delta Q/e_0 \cdot \symup{10^10}/$ \\
+    $U/$V & $\Delta Q/e_0 \cdot \symup{10^{10}}$ \\
     \midrule
       300 &                  0   $\pm 0$ \\
       310 &                  0   $\pm 0$ \\
-      320 &        1.12    $\pm$0.01 \\
-      330 &        2.22    $\pm$0.02 \\
-      340 &        2.24    $\pm$0.02 \\
-      350 &        2.64    $\pm$0.02 \\
-      360 &        3.10    $\pm$0.03 \\
-      370 &        3.50    $\pm$0.03 \\
-      380 &        4.13    $\pm$0.04 \\
-      390 &        4.38    $\pm$0.04 \\
-      400 &        4.57    $\pm$0.04 \\
-      410 &        5.05    $\pm$0.04 \\
-      420 &        5.18    $\pm$0.04 \\
-      430 &        5.64    $\pm$0.05 \\
-      440 &        6.36    $\pm$0.05 \\
-      450 &        6.42    $\pm$0.05 \\
-      460 &        6.42    $\pm$0.05 \\
-      470 &        6.83    $\pm$0.06 \\
-      480 &        7.54    $\pm$0.06 \\
-      490 &        7.97    $\pm$0.06 \\
-      500 &        8.55    $\pm$0.07 \\
-      510 &        8.59    $\pm$0.07 \\
-      520 &        9.05    $\pm$0.07 \\
-      530 &        9.51    $\pm$0.08 \\
-      540 &        9.65    $\pm$0.08 \\
-      550 &        10.01   $\pm$0.08 \\
-      560 &        10.62   $\pm$0.08 \\
-      570 &        11.17   $\pm$0.09 \\
-      580 &        11.41   $\pm$0.09 \\
-      590 &        11.81   $\pm$0.09 \\
-      600 &        12.48   $\pm$0.10 \\
-      610 &        12.62   $\pm$0.10 \\
-      620 &        12.80   $\pm$0.10 \\
-      630 &        13.53   $\pm$0.10 \\
-      640 &        13.96   $\pm$0.11 \\
-      650 &        14.58   $\pm$0.11 \\
-      660 &        14.48   $\pm$0.11 \\
-      670 &        14.64   $\pm$0.11 \\
-      680 &        14.86   $\pm$0.11 \\
-      690 &        15.42   $\pm$0.12 \\
-      700 &        15.49   $\pm$0.12 \\
+      320 &        1,12    $\pm$0,01 \\
+      330 &        2,22    $\pm$0,02 \\
+      340 &        2,24    $\pm$0,02 \\
+      350 &        2,64    $\pm$0,02 \\
+      360 &        3,10    $\pm$0,03 \\
+      370 &        3,50    $\pm$0,03 \\
+      380 &        4,13    $\pm$0,04 \\
+      390 &        4,38    $\pm$0,04 \\
+      400 &        4,57    $\pm$0,04 \\
+      410 &        5,05    $\pm$0,04 \\
+      420 &        5,18    $\pm$0,04 \\
+      430 &        5,64    $\pm$0,05 \\
+      440 &        6,36    $\pm$0,05 \\
+      450 &        6,42    $\pm$0,05 \\
+      460 &        6,42    $\pm$0,05 \\
+      470 &        6,83    $\pm$0,06 \\
+      480 &        7,54    $\pm$0,06 \\
+      490 &        7,97    $\pm$0,06 \\
+      500 &        8,55    $\pm$0,07 \\
+      510 &        8,59    $\pm$0,07 \\
+      520 &        9,05    $\pm$0,07 \\
+      530 &        9,51    $\pm$0,08 \\
+      540 &        9,65    $\pm$0,08 \\
+      550 &        10,01   $\pm$0,08 \\
+      560 &        10,62   $\pm$0,08 \\
+      570 &        11,17   $\pm$0,09 \\
+      580 &        11,41   $\pm$0,09 \\
+      590 &        11,81   $\pm$0,09 \\
+      600 &        12,48   $\pm$0,10 \\
+      610 &        12,62   $\pm$0,10 \\
+      620 &        12,80   $\pm$0,10 \\
+      630 &        13,53   $\pm$0,10 \\
+      640 &        13,96   $\pm$0,11 \\
+      650 &        14,58   $\pm$0,11 \\
+      660 &        14,48   $\pm$0,11 \\
+      670 &        14,64   $\pm$0,11 \\
+      680 &        14,86   $\pm$0,11 \\
+      690 &        15,42   $\pm$0,12 \\
+      700 &        15,49   $\pm$0,12 \\
     \bottomrule
   \end{tabular}
 \end{table}
 
-320
-330
-340
-350
-360
-370
-380
-390
-400
-410
-420
-430
-440
-450
-460
-470
-480
-490
-500
-510
-520
-530
-540
-550
-560
-570
-580
-590
-600
-610
-620
-630
-640
-650
-660
-670
-680
-690
-700
+Die Ladung wird in Einheiten der Elementarladung $e$ gegen die Spannung aufgetragen.
+
+
+\begin{figure}
+  \centering
+  \includegraphics{rechnung.pdf}
+  \caption{Freigesetzte Ladung aufgetragen gegen die Spannung}
+  \label{fig:plot}
+\end{figure}
