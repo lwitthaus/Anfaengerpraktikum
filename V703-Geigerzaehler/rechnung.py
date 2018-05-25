@@ -7,4 +7,4 @@ import uncertainties.unumpy as unp
 U, N, I = np.genfromtxt('datenfit.txt', unpack=True)
 F = np.sqrt(N)
 R = unp.uarray([N],[F])
-print(I*60/R)
+print(I*60* 10**(-6)/(R*1.6*10**(-19)))
