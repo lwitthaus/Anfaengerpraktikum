@@ -1,0 +1,45 @@
+\section{Theorie}
+\label{sec:Theorie}
+
+\subsection{Eigenschaften von Ultraschall}
+Ultraschall ist eine Schallwelle, wlche sich in dem Frequenzbereich von 20 kHz und 1 GHz befindet. Somit sind diese
+Wellen nicht mehr für den Menschen hörbar. Schall breitet sich über Druckschwankungen aus:
+\begin{align}
+  p(x,t) = p_0 + v_0 Z \cos{\omega t - k x}
+\end{align}
+Hierbei ist $Z= c \rho$ die akkustische Impedanz, $p(x, t)$ die räumlich und zeitliche Druckverteilung, $\omega$ die frequenz der Welle,
+$k$ der Wellenvektor, $\rho$ die Dichte und $v_0$ die Anfangsgeschwindigkeit.
+
+Die Ausbreitungsgeschwindigkeit hängt von dem Medium. In Festkörpern sind auch transversale Wellen möglich. Ein Teil der
+Energie geht bei der Schallausbreitung verloren. Für die Intensität $I$ gilt:
+\begin{align}
+  I =I_0 e^{\alpha x}
+\end{align}
+
+Dabei ist $\alpha$ der Absorptionskoeffizient der Schallamplitude.
+
+Trifft die Schallwelle auf eine Grenzfläche wird ein Teil transmitiert und ein gewisser Teil reflektiert.
+Für den Reflexionskoeffizient $R$ und den Transmissionskoeffizient $T$ von Ultraschall gilt:
+\begin{align}
+  R = \left( \frac{Z_1 - Z_2}{Z_1 + Z_2} \right) \\
+  T = 1 - R
+\end{align}
+
+Ultraschall kann mit piezoelektrischen Kristalle, zum Beispiel Quarze, erzeugt werden. In elektrischen Wechselfeldern werden
+sie zu Schwingungen angeregt, wenn eine polare Achse des Kristalls in Richtung des elektrischen Feldes zeigt. Dadruch strahlen sie
+Ultraschallwellen ab. Wenn Eigenfrequenz und Anregungsfrequenz übereinstimmen kommt es zu Resonanzeffekten, wodurch hohe Schallenergiedichten
+genutzt werden können.
+
+
+\subsection{Verschiedene Verfahren der Ultraschallmessung}
+Es werden zwei Verfahren in der Ultraschalltechnik verwendet.
+Bei dem Durchallungsverfahren, wird mit einem Sender ein kurzzeitiger Ultraschallimpuls ausgesendet, welcher
+durch die Probe läuft und dahinter von einem Empfänger aufgefangen wird. Ist in der Probe eine Fehlstelle vorhanden, wird dementsprechend
+eine geringere Intensität von dem Empfänger gemessen. Es ist keine Aussage über den Ort der Fehlstelle möglich.
+
+Bei dem Impuls-Echo-Verfahren dient der Ultraschallsender ebenfalls als Empfänger. Hierbei werden die von der Probe reflektierten
+Schallwellen gemessen. Daraus kann die größe der Fehlstelle berechnet werden. Ist die Schallgeschwindigkeit $c$ in dem Medium bekannt
+so kann zusätzlich der Ort $s$ der Fehlstelle bestimmt werden.
+\begin{align}
+  s = \frac{1}{2}ct
+\end{align}
