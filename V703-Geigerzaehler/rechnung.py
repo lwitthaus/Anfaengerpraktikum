@@ -13,8 +13,8 @@ R = unp.uarray([N],[F])
 Q = I*60* 10**(-6)/(N*1.6*10**(-19))
 K = np.sqrt(Q)
 
-plt.plot(U, Q, 'b.', label='Messwerte', Markersize=4)
-plt.errorbar(U, Q, yerr= K, fmt = '.')
+#plt.plot(U, Q, 'b.', label='Messwerte', Markersize=4)
+plt.errorbar(U, Q, yerr=K, fmt = 'o',color='r', markersize=2, capsize=2, ecolor='b', elinewidth=0.5, markeredgewidth=0.5)
 
 plt.legend()
 plt.grid()
