@@ -177,14 +177,31 @@ Es ergibt sich für die Parameter der  Anpassungsfunktionen:
 Die x-Koordinate des Schnittpunkts der beiden Ausgleichsgeraden ist der Wert $R_{max}$ und ergibt
 sich folglich aus
 \begin{equation*}
-  R_{max} = \frac{b_2 - b_1}{a_1 - a_2}
+  R_{max} =  \frac{b_2 - b_1}{a_1 - a_2}
 \end{equation*}
 Daraus ergibt sich ein Wert von
 \begin{equation*}
   R_{max} = (0,65 \pm 0,13) \: \symup{\frac{kg}{m^2}}
 \end{equation*}
+
+Der Fehler von $R_max$ wird mit der Gauß'schen Fehlerfortpflanzung berechnet.
+\begin{align*}
+  \sigma_R = \sqrt{
+      \sum\limits_{i = 1}^N
+       \left( \frac{\partial f}{\partial x_i} \sigma_i \right)^{\!\! 2}
+     }
+     =\sqrt{\frac{\sigma_{a_{1}}^{2} \left(- b_{1} + b_{2}\right)^{2}}{\left(- a_{1} + a_{2}\right)^{4}}
+  + \frac{\sigma_{a_{2}}^{2} \left(- b_{1} + b_{2}\right)^{2}}{\left(- a_{1} + a_{2}\right)^{4}} + \frac{\sigma_{b_{1}}^{2}}{\left(- a_{1}
+  + a_{2}\right)^{2}} + \frac{\sigma_{b_{2}}^{2}}{\left(- a_{1} + a_{2}\right)^{2}}}
+\end{align*}
+
 Aus Gleichung 7 folgt dann für die maximale Energie $E_{max}$
 \begin{equation*}
   E_{max} = (261 \pm 33) \: \symup{keV}
 \end{equation*}
+
+Der Fehler von $E_{max}$ wird mit der Gauß'schen Fehlerfortpflanzung berechnet.
+\begin{align*}
+  \sigma_E =\sqrt{\sigma_{R}^{2} \left(3.84 R + 0.4224\right)^{2}}
+\end{align*}
 Der Theoriewert entspricht $294$ keV \cite{sample2}. Die relative Abweichung beträgt 12,6\%.
