@@ -17,7 +17,7 @@ plt.gcf().subplots_adjust(bottom=0.18)
 #plt.plot(D*10**(-6)*2700, np.log(A), 'r.', label='Messwerte', Markersize=4)
 plt.grid()
 plt.xlim((0.2, 1.4))
-plt.ylabel(r'$\ln{A/A_0}$ ')
+plt.ylabel(r'$\ln{(A/A_0)}$ ')
 plt.xlabel(r'$R/\frac{kg}{m^2}$')
 
 D, A = np.genfromtxt('betazahlen1.txt', unpack=True)
