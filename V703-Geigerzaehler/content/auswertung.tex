@@ -94,20 +94,29 @@ eingesetzt werden.
     \toprule
     Strahler & $N$  \\
     \midrule
-    1. Strahler & 310,5 \\
-    2. Strahler & 238,1\\
-    Beide Strahler & 535,7 \\
+    1. Strahler & 311 $\pm$ 2 \\
+    2. Strahler & 238 $\pm$ 2\\
+    Beide Strahler & 536 $\pm$ 3\\
     \bottomrule
   \end{tabular}
 \end{table}
 
 Mit Gleichung (1) lässt sich aus diesen Werten die ungefähre Totzeit bestimmen.
 \begin{align*}
-  T_1 \approx \SI{8.72e-5}{\second} = \SI{87,2}{\micro\second}
+  T_1 \approx \SI{9(3)e-5}{\second} = \SI{90(30)}{\micro\second}
 \end{align*}
 
+Der Fehler von $T$ wird mit der Gauß'schen Fehlerfortpflanzung bestimmt.
+\begin{align*}
+  \sigma_T = \sqrt{
+      \sum\limits_{i = 1}^N
+       \left( \frac{\partial f}{\partial x_i} \sigma_i \right)^{\!\! 2}
+     }
+    = \sqrt{\sigma_{a}^{2} \left(\frac{1}{2 a b} - \frac{a + b - c}{2 a^{2} b}\right)^{2}
+  + \sigma_{b}^{2} \left(\frac{1}{2 a b} - \frac{a + b - c}{2 a b^{2}}\right)^{2} + \frac{\sigma_{c}^{2}}{4 a^{2} b^{2}}}
+\end{align*}
 Die mit dem Oszilloskop abgeschätzte Totzeit beträgt $T_2 = 50 \, \symup{\mu} $s.
-Die Abweichung der beiden Totzeiten beträgt $42,7 \, \%$.
+Die Abweichung der beiden Totzeiten voneinader beträgt $44,4 \, \%$.
 
 Die geschätzte Erholungszeit beträgt $0,8 \,$ms.
 
