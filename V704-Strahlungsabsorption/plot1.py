@@ -14,11 +14,11 @@ def f(x, a, b):
 
 plt.errorbar(D*10**(-6)*2700, np.log(A), yerr=[np.log(A+F)-np.log(A), np.log(A)-np.log(A-F)], fmt = 'o',color='r', markersize=2, capsize=2, ecolor='b', elinewidth=0.5, markeredgewidth=0.5)
 plt.gcf().subplots_adjust(bottom=0.18)
-plt.plot(D*10**(-6)*2700, np.log(A), 'r.', label='Messwerte', Markersize=4)
+#plt.plot(D*10**(-6)*2700, np.log(A), 'r.', label='Messwerte', Markersize=4)
 plt.grid()
 plt.xlim((0.2, 1.4))
 plt.ylabel(r'$\ln{A/A_0}$ ')
-plt.xlabel(r'$R/\frac{kg}{m^3}$')
+plt.xlabel(r'$R/\frac{kg}{m^2}$')
 
 D, A = np.genfromtxt('betazahlen1.txt', unpack=True)
 x_plot = np.linspace(0.2, 1.4)
