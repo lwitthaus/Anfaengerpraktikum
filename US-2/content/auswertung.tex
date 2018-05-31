@@ -29,31 +29,6 @@ die beiden Strecken, sowie die daraus resultierenden Strecken $(s_o' \text{und} 
     \toprule
   Fehlstelle & $s_o/$cm & $s_u/$cm & $t_o/\symup{\mu}$s & $t_u/\symup{\mu}$s & $s_o'/$cm & $s_u'/$cm  \\
     \midrule
-<<<<<<< HEAD
-    1  &  1,95 & 5,97 & 14,44 & 43,97 & 1,97 & 6,00    \\
-    2  &  1,74 & 6,15 & 13,23 & 45,20 & 1,81 & 6,17    \\
-    3  &  6,11 & 1,33 & 45,18 & 9,84  & 6,17 & 1,34    \\
-    4  &  5,40 & 2,18 & 40,42 & 16,50 & 5,52 & 2,25    \\
-    5  &  4,63 & 3,01 & 34,37 & 22,55 & 4,69 & 3,08    \\
-    6  &  3,89 & 3,89 & 28,86 & 28,90 & 3,94 & 3,94    \\
-    7  &  3,08 & 4,66 & 22,91 & 34,85 & 3,13 & 4,76    \\
-    8  &  2,29 & 5,48 & 17,08 & 40,58 & 2,33 & 5,54    \\
-    9  &  1,49 & 6,18 & 11,27 & 46,43 & 1,54 & 6,34    \\
-    10 &  0,70 & 7,17 & 5,43  & -     & 0,74 & -     \\
-    11 &  5,55 & 1,58 & 40,99 & 11,57 & 5,59 & 1,58    \\
-||||||| merged common ancestors
-    1  &  1,95 & 5,97 & 14,44 & 43,97 & 1,97 & 6,00 &   \\
-    2  &  1,74 & 6,15 & 13,23 & 45,20 & 1,81 & 6,17 &   \\
-    3  &  6,11 & 1,33 & 45,18 & 9,84  & 6,17 & 1,34 &   \\
-    4  &  5,40 & 2,18 & 40,42 & 16,50 & 5,52 & 2,25 &   \\
-    5  &  4,63 & 3,01 & 34,37 & 22,55 & 4,69 & 3,08 &   \\
-    6  &  3,89 & 3,89 & 28,86 & 28,90 & 3,94 & 3,94 &   \\
-    7  &  3,08 & 4,66 & 22,91 & 34,85 & 3,13 & 4,76 &   \\
-    8  &  2,29 & 5,48 & 17,08 & 40,58 & 2,33 & 5,54 &   \\
-    9  &  1,49 & 6,18 & 11,27 & 46,43 & 1,54 & 6,34 &   \\
-    10 &  0,70 & 7,17 & 5,43  & -     & 0,74 & -    & \\
-    11 &  5,55 & 1,58 & 40,99 & 11,57 & 5,59 & 1,58 &   \\
-=======
     1  &  1,95 & 5,97 & 14,44 & 43,97 & 1,91 & 5,94    \\
     2  &  1,74 & 6,15 & 13,23 & 45,20 & 1,75 & 6,11    \\
     3  &  6,11 & 1,33 & 45,18 & 9,84  & 6,11 & 1,28    \\
@@ -65,7 +40,6 @@ die beiden Strecken, sowie die daraus resultierenden Strecken $(s_o' \text{und} 
     9  &  1,49 & 6,18 & 11,27 & 46,43 & 1,48 & 6,28    \\
     10 &  0,70 & 7,17 & 5,43  & -     & 0,68 & -     \\
     11 &  5,55 & 1,58 & 40,99 & 11,57 & 5,54 & 1,52    \\
->>>>>>> plizz no conflicts
     \bottomrule
   \end{tabular}
 \end{table}
@@ -106,27 +80,45 @@ Größe $d$ der Fehstellenangegeben. Dabei gilt $d = h - s_o - s_u$. Außerdem w
 
 \subsection{Bestimmung der Abmessungend er Störstellen mit dem B-Scan}
 
+Für den B-Scan ergeben sich folgende Bilder.
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[height=5cm]{BScanoben.PNG}
+  \caption{Abbildung des B-Scans von der oberen Kante.}
+  \label{fig:acryl}
+\end{figure}
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[height=5cm]{B-Scanunten.PNG}
+  \caption{Abbildung des B-Scans von der unteren Kante.}
+  \label{fig:acryl}
+\end{figure}
+
 Die mit dem B-Scan betimmten Laufzeiten und die daraus resultierenden Strecken werden in Tabelle 3 dargestellt.
+Die Größe der Fehlstellen wird erneut aus den Strecken berechnet und ebenfalls in Tabelle 3, mit zugehöriger Abweichung
+zu den abgemessenen Werten, dargestellt.
 
 \begin{table}[H]
   \centering
-  \caption{Dicke der Fehlstellen.}
+  \caption{Berechnete Werte bei einem B-Scan.}
   \label{tab:spannung1}
   \begin{tabular}{c c c c c c c}
     \toprule
   Fehlstelle & $t_{B,o}/\symup{\mu}$s & $t_{B,u}/ \symup{\mu}$s  & $s_{B,o}/$cm & $s_{B,u}/$cm & $d_B/$cm & $\Delta d/ \%$\\
     \midrule
-    1  & 13,26 &  45,22 & 1,75 & 6,11  & 0,15      \\
-    2  & 14,62 &  44,04 & 1,94 & 5,95  & 0,12  \\
-    3  & 44,82 &  9,94  & 6,06 & 1,30  & 0,65  \\
-    4  & 39,56 &  15,78 & 5,34 & 2,09  & 0,58  \\
-    5  & 34,10 &  22,22 & 4,59 & 2,97  & 0,45   \\
-    6  & 28,64 &  28,64 & 3,85 & 3,85  & 0,31   \\
-    7  & 22,60 &  34,30 & 3,02 & 4,62  & 0,37   \\
-    8  & 16,76 &  40,14 & 2,23 & 5,42  & 0,36    \\
-    9  & 11,10 &  46,38 & 1,46 & 6,27  & 0,28    \\
-    10 & 5,26  &  -     &  0,66 & -    & -       \\
-    11 & 40,74 &  11,30 &  5,50 & 1,48 & 1,03    \\
+    1  & 13,26 &  45,22 & 1,75 & 6,11  & 0,15 & 66,6      \\
+    2  & 14,62 &  44,04 & 1,94 & 5,95  & 0,12 & 0  \\
+    3  & 44,82 &  9,94  & 6,06 & 1,30  & 0,65 & 14,0  \\
+    4  & 39,56 &  15,78 & 5,34 & 2,09  & 0,58 & 34,9  \\
+    5  & 34,10 &  22,22 & 4,59 & 2,97  & 0,45 & 21,6   \\
+    6  & 28,64 &  28,64 & 3,85 & 3,85  & 0,31 & 34,8   \\
+    7  & 22,60 &  34,30 & 3,02 & 4,62  & 0,37 & 37,0   \\
+    8  & 16,76 &  40,14 & 2,23 & 5,42  & 0,36 & 50,0    \\
+    9  & 11,10 &  46,38 & 1,46 & 6,27  & 0,28 & -17,6    \\
+    10 & 5,26  &  -     &  0,66 & -    & -    &  -      \\
+    11 & 40,74 &  11,30 &  5,50 & 1,48 & 1,03 & 17,0   \\
     \bottomrule
   \end{tabular}
 \end{table}
