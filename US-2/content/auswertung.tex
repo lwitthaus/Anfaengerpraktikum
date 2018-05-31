@@ -29,17 +29,17 @@ die beiden Strecken, sowie die daraus resultierenden Strecken $(s_o' \text{und} 
     \toprule
   Fehlstelle & $s_o/$cm & $s_u/$cm & $t_o/\symup{\mu}$s & $t_u/\symup{\mu}$s & $s_o'/$cm & $s_u'/$cm  \\
     \midrule
-    1  &  1,95 & 5,97 & 14,44 & 43,97 & 1,97 & 6,00 &   \\
-    2  &  1,74 & 6,15 & 13,23 & 45,20 & 1,81 & 6,17 &   \\
-    3  &  6,11 & 1,33 & 45,18 & 9,84  & 6,17 & 1,34 &   \\
-    4  &  5,40 & 2,18 & 40,42 & 16,50 & 5,52 & 2,25 &   \\
-    5  &  4,63 & 3,01 & 34,37 & 22,55 & 4,69 & 3,08 &   \\
-    6  &  3,89 & 3,89 & 28,86 & 28,90 & 3,94 & 3,94 &   \\
-    7  &  3,08 & 4,66 & 22,91 & 34,85 & 3,13 & 4,76 &   \\
-    8  &  2,29 & 5,48 & 17,08 & 40,58 & 2,33 & 5,54 &   \\
-    9  &  1,49 & 6,18 & 11,27 & 46,43 & 1,54 & 6,34 &   \\
-    10 &  0,70 & 7,17 & 5,43  & -     & 0,74 & -    & \\
-    11 &  5,55 & 1,58 & 40,99 & 11,57 & 5,59 & 1,58 &   \\
+    1  &  1,95 & 5,97 & 14,44 & 43,97 & 1,97 & 6,00    \\
+    2  &  1,74 & 6,15 & 13,23 & 45,20 & 1,81 & 6,17    \\
+    3  &  6,11 & 1,33 & 45,18 & 9,84  & 6,17 & 1,34    \\
+    4  &  5,40 & 2,18 & 40,42 & 16,50 & 5,52 & 2,25    \\
+    5  &  4,63 & 3,01 & 34,37 & 22,55 & 4,69 & 3,08    \\
+    6  &  3,89 & 3,89 & 28,86 & 28,90 & 3,94 & 3,94    \\
+    7  &  3,08 & 4,66 & 22,91 & 34,85 & 3,13 & 4,76    \\
+    8  &  2,29 & 5,48 & 17,08 & 40,58 & 2,33 & 5,54    \\
+    9  &  1,49 & 6,18 & 11,27 & 46,43 & 1,54 & 6,34    \\
+    10 &  0,70 & 7,17 & 5,43  & -     & 0,74 & -     \\
+    11 &  5,55 & 1,58 & 40,99 & 11,57 & 5,59 & 1,58    \\
     \bottomrule
   \end{tabular}
 \end{table}
@@ -74,9 +74,59 @@ Größe $d$ der Fehstellenangegeben. Dabei gilt $d = h - s_o - s_u$. Außerdem w
 %\end{table}
 
 
-\begin{figure}
+
+\subsection{Bestimmung des Herzvolumens}
+In Tabelle 3 werden für die 20 simulierten Herzschläge jeweils die gemessenen Amplituden $t_s$ und die daraus berechneten
+Volumina $V_s$ aufgeführt. Das Luftvolumen, welches das Wasser beim pumpen durch die bewegliche Membran verdrängt, wird als
+Kugelsegment angenähert. Das Volumen ergibt sich also aus
+\begin{equation*}
+  V_s = \frac{h\pi}{6}\cdot(3r^2 + h^2)
+\end{equation*}
+wobei
+\begin{equation*}
+  h = \frac{1}{2}\cdot c \cdot t_s
+\end{equation*}
+Der Radius beträgt $r = 2,46 \: \symup{cm}$.
+Die Frequenz des simulietern Herzschlags beträgt $f = 0,47$ Hz.
+\begin{table}[H]
   \centering
-  \includegraphics{plot.pdf}
-  \caption{Plot.}
-  \label{fig:plot}
-\end{figure}
+  \caption{Gemessene Amplituden bei Herzschlagsimulation.}
+  \label{tab:spannung1}
+  \begin{tabular}{c c c }
+    \toprule
+  Schlag & $st_s/\symup{\mu s}$ & $V_s/\symup{cm^3}$ \\
+    \midrule
+    1  &  38,96 & 40,17     \\
+    2  &  37,22 & 37,32     \\
+    3  &  38,58 & 39,54     \\
+    4  &  37,60 & 37,93     \\
+    5  &  37,80 & 38,26     \\
+    6  &  36,44 & 36.09     \\
+    7  &  36,45 & 36,11     \\
+    8  &  36,47 & 36,14     \\
+    9  &  36,46 & 36,12     \\
+    10 &  35,26 & 34,28      \\
+    11 &  36,24 & 35,78     \\
+    12  &  36,24 & 35,78     \\
+    13  &  35,86 & 35,19     \\
+    14  &  35,90 & 35,26     \\
+    15  &  36,04 & 35,47     \\
+    16  &  36,04 & 35,47     \\
+    17  &  36,01 & 35,42     \\
+    18  &  36,01 & 35,42     \\
+    19  &  36,24 & 35,78     \\
+    20  &  37,42 & 37,64     \\
+    \bottomrule
+  \end{tabular}
+\end{table}
+
+Als Mittelwert ergibt sich ein Volumen von $V_{m} = (36,46 \pm 1,49) \: \symup{cm^3}$.
+
+Aus
+\begin{equation*}
+  V_{Herz} = V_m \cdot f
+\end{equation*}
+ergibt sich das gesuchte Herzvolumen zu
+\begin{equation*}
+  V_{Herz} = (17,1 \pm 0,7) \: \symup{\frac{cm^3}{s}}
+\end{equation*}
