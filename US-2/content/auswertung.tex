@@ -47,7 +47,7 @@ die beiden Strecken, sowie die daraus resultierenden Strecken $(s_o' \text{und} 
 Dabei wurde für die Strecken $s_o' \text{und} s_u'$ die zusätzliche Strecke $\Delta s$ bereits abgezogen. Für die zehnte Fehlstelle konnte
 kein Wert für $t_u$ gemessen werden, da die elfte Fehlstelle diese überdeckt.
 
-Die Größe $d'$ der Fehlstelle wir durch $d' = h - s_o' - s_u'$ bestimmt. In Tabelle 2 wird die Größe $d'$ der Fehlstellen und die
+Die Größe $d'$ der Fehlstelle wird durch $d' = h - s_o' - s_u'$ bestimmt. In Tabelle 2 wird die Größe $d'$ der Fehlstellen und die
 Größe $d$ der Fehstellenangegeben. Dabei gilt $d = h - s_o - s_u$. Außerdem wird die relative Abweichung $\Delta d$ dargestellt.
 
 \begin{table}[H]
@@ -75,8 +75,43 @@ Größe $d$ der Fehstellenangegeben. Dabei gilt $d = h - s_o - s_u$. Außerdem w
 
 
 \subsection{Bestimmung des Auflösevermögen}
+Die Messergebnisse und die daraus errechneten Abstände der Messung der ersten beiden
+Fehlstellen mit der 4 MHz Ultraschallsonde werden analog zu obigen Ausführungen in Tabelle \ref{tab:4} aufgeführt.
 
+\begin{table}[H]
+  \centering
+  \caption{Gemessene Abstände der ersten beiden Fehlstellen in dem Acrylblock mit der 4 MHz Ultraschallsonde.}
+  \label{tab:4}
+  \begin{tabular}{c c c c c c c}
+    \toprule
+  Fehlstelle & $s_o/$cm & $s_u/$cm & $t_o/\symup{\mu}$s & $t_u/\symup{\mu}$s & $s_o'/$cm & $s_u'/$cm  \\
+    \midrule
+    1  &  1,95 & 5,97 & 14,21 & 43,67 & 1,88 & 5,90    \\
+    2  &  1,74 & 6,15 & 13,08 & 44,86 & 1,73 & 6,06    \\
+    \bottomrule
+  \end{tabular}
+\end{table}
 
+Dabei wurde wieder für die Strecken $s_o' \text{und} s_u'$ die zusätzliche Strecke $\Delta s$ bereits abgezogen.
+
+In Tabelle \ref{fig:3} werden wieder die daraus errechneten Größen sowie die abgemessenen Größen der Fehlstellen,
+sowie die bestehende Abweichung dargestellt.
+
+\begin{table}[H]
+  \centering
+  \caption{Dicke der Fehlstellen bei Messung mit 4 MHz Ultraschallsonde.}
+  \label{tab:3}
+  \begin{tabular}{c c c c}
+    \toprule
+  Fehlstelle & $d/$cm & $d'/$cm & $\Delta d/ \%$  \\
+    \midrule
+    1  &  0,09 & 0,23 & 155,6    \\
+    2  &  0,12 & 0,22 & 83,3  \\
+    \bottomrule
+  \end{tabular}
+\end{table}
+
+Die Abweichungen sind also wesentlich größer als bei der 2 MHz Sonde. 
 
 \subsection{Bestimmung der Abmessungend er Störstellen mit dem B-Scan}
 
@@ -97,13 +132,13 @@ Für den B-Scan ergeben sich folgende Bilder.
 \end{figure}
 
 Die mit dem B-Scan betimmten Laufzeiten und die daraus resultierenden Strecken werden in Tabelle 3 dargestellt.
-Die Größe der Fehlstellen wird erneut aus den Strecken berechnet und ebenfalls in Tabelle 3, mit zugehöriger Abweichung
+Die Größe der Fehlstellen wird erneut aus den Strecken berechnet und ebenfalls in Tabelle \ref{tab:2}, mit zugehöriger Abweichung
 zu den abgemessenen Werten, dargestellt.
 
 \begin{table}[H]
   \centering
   \caption{Berechnete Werte bei einem B-Scan.}
-  \label{tab:spannung1}
+  \label{tab:2}
   \begin{tabular}{c c c c c c c}
     \toprule
   Fehlstelle & $t_{B,o}/\symup{\mu}$s & $t_{B,u}/ \symup{\mu}$s  & $s_{B,o}/$cm & $s_{B,u}/$cm & $d_B/$cm & $\Delta d/ \%$\\
@@ -126,7 +161,7 @@ zu den abgemessenen Werten, dargestellt.
 
 
 \subsection{Bestimmung des Herzvolumens}
-In Tabelle 4 werden für die 20 simulierten Herzschläge jeweils die gemessenen Amplituden $t_s$ und die daraus berechneten
+In Tabelle \ref{tab:1} werden für die 20 simulierten Herzschläge jeweils die gemessenen Amplituden $t_s$ und die daraus berechneten
 Volumina $V_s$ aufgeführt. In Abbildung \ref{fig:TM} ist das Diagramm des erstellten TM-Scans zu erkennen, aus dem die besagten Amplituden
 bestimmt wurden. Das Luftvolumen, welches das Wasser beim pumpen durch die bewegliche Membran verdrängt, wird als
 Kugelsegment angenähert. Das Volumen ergibt sich also aus
@@ -151,7 +186,7 @@ Die Frequenz des simulietern Herzschlags beträgt $f = 0,47$ Hz.
 \begin{table}[H]
   \centering
   \caption{Gemessene Amplituden bei Herzschlagsimulation.}
-  \label{tab:spannung1}
+  \label{tab:1}
   \begin{tabular}{c c c }
     \toprule
   Schlag & $t_s/\symup{\mu s}$ & $V_s/\symup{cm^3}$ \\
