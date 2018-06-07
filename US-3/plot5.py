@@ -1,3 +1,8 @@
+import matplotlib.pyplot as plt
+import numpy as np
+from scipy.optimize import curve_fit
+from uncertainties import ufloat
+
 a, f = np.genfromtxt('rip.txt', unpack=True)
 
 #def f(x, c, b):

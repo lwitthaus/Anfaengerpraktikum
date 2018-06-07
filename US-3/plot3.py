@@ -28,7 +28,3 @@ plt.xlabel(r'Tiefe$/\mu s$')
 plt.ylabel(r'|v|$/ \mathrm{\frac{m}{s}}$')
 
 plt.savefig('build/plot3.pdf')
-import matplotlib.pyplot as plt
-import numpy as np
-from scipy.optimize import curve_fit
-from uncertainties import ufloat
