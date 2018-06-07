@@ -4,48 +4,80 @@
 \subsection{Bestimmung der Strömungsgeschwindigkeit}
 
 In Tabelle 1 sind die gemessenen Frequenzen in Abhängigkeit von der Strömungsgeschwindigkeit $v$ und des Winkels $\alpha$ der einzelnen Rohre.
+Zusätzlich werden die mit diesen Werten aus Gleichung 3 berechneten Geschwindigkeiten der Dopplerflüssigkeit aufgeführt.
 
 \begin{table}
 \centering
-\caption{Frequenzen in Abhängigkeit von der Dicke des Rohres, des Winkels und der Strömungsgeschwindigkeit.}
+\caption{Frequenzen und Geschwindigkeiten in Abhängigkeit von der Dicke des Rohres, des Winkels und der Strömungsgeschwindigkeit.}
 \sisetup{table-format=2.1}
-\begin{tabular}{S [table-format=3.1] S S S S S S}
+\begin{tabular}{S [table-format=3.1] | S S S | S S S | S S S}
 \toprule
-& \multicolumn{2}{c}{$7$mm Rohr} & \multicolumn{2}{c}{$10$mm Rohr} & \multicolumn{2}{c}{$16$mm Rohr} \\
-\cmidrule(lr){2-3}\cmidrule(lr){4-5}\cmidrule(lr){6-7}
+& \multicolumn{3}{c}{$7$mm Rohr} & \multicolumn{3}{c}{$10$mm Rohr} & \multicolumn{3}{c}{$16$mm Rohr} \\
+\cmidrule(lr){2-4}\cmidrule(lr){5-7}\cmidrule(lr){8-10}
 {$v/$rpm}
-& {$\alpha$/°}& {$\nu/Hz$} & {$\alpha$/°} & {$\nu/$Hz} & {$\alpha$/°} & {$\nu/$Hz} \\
+& {$\alpha$/°}& {$\nu/Hz$} & {$v/$ m/s} & {$\alpha$/°} & {$\nu/$Hz} & {$v/$ m/s} & {$\alpha$/°} & {$\nu/$Hz} & {$v/$ m/s} \\
 \midrule
-2000 & 15 & -73  & 15 & -49  & 15 & -61  \\
-2000 & 30 & 122  & 30 &  73  & 30 &  49  \\
-2000 & 60 & -159 & 60 & -98  & 60 & -61 \\
+2000 & 15 & -73 & -0,191 & 15 & -49  & -0,128 & 15 & -61 & -0,160 \\
+2000 & 30 & 122  & 0,164 & 30 &  73  & 0,098 & 30 &  49 & 0,066  \\
+2000 & 60 & -159 & -0,124 & 60 & -98  & -0,076 & 60 & -61 & -0,048 \\
 \midrule
-3000 & 15 & -146 & 15 & -85  & 15 & -49  \\
-3000 & 30 &  232 & 30 & 110  & 30 &  73  \\
-3000 & 60 & -415 & 60 &-159  & 60 &-122  \\
+3000 & 15 & -146 & -0,382 & 15 & -85  & -0,222 & 15 & -49 & -0,128  \\
+3000 & 30 & 232 & 0,313 & 30 & 110  & 0,148 & 30 & 73 & 0,098 \\
+3000 & 60 & -415 & -0,323 & 60 &-159  & -0,124 & 60 &-122 & -0,095  \\
 \midrule
-4000 & 15 & -244 & 15 & -146 & 15 & -73 \\
-4000 & 30 &  439 & 30 &  232 & 30 & 110 \\
-4000 & 60 & -842 & 60 & -415 & 60 &-183 \\
+4000 & 15 & -244 & -0,639 & 15 & -146 & -0,382 & 15 & -73 & -0,191 \\
+4000 & 30 &  439 & 0,592 & 30 &  232 & 0,313 & 30 & 110 & 0,148 \\
+4000 & 60 & -842 & -0,656 & 60 & -415 & 0,323 & 60 &-183 & -0,143 \\
 \midrule
-5000 & 15 & -415  & 15 & -183 & 15 & -98 \\
-5000 & 30 &  732  & 30 &  354 & 30 & 171 \\
-5000 & 60 & -1440 & 60 & -696 & 60 &-281 \\
+5000 & 15 & -415  & -1,086 & 15 & -183 & -0,479 & 15 & -98 & -0,257 \\
+5000 & 30 &  732  & 0,987 & 30 &  354 & 0,477 & 30 & 171 & 0,231 \\
+5000 & 60 & -1440 & -1,121 & 60 & -696 & -0,542 & 60 &-281 & -0,219 \\
 \midrule
-6000 & 15 & -610 & 15 & -269 & 15 & -134 \\
-6000 & 30 & 1160 & 30 &  549 & 30 &  232 \\
-6000 & 60 &-2222 & 60 &-1062 & 60 & -391 \\
+6000 & 15 & -610 & -1,597 & 15 & -269 & -0,704 & 15 & -134 & -0,351 \\
+6000 & 30 & 1160 & 1,564 & 30 &  549 & 0,740 & 30 &  232 & 0,313 \\
+6000 & 60 &-2222 & -1,730 & 60 &-1062 & -0,827 & 60 & -391 & -0,304 \\
 \bottomrule
 \end{tabular}
 \end{table}
 
+Daraus ergeben sich die in Tabelle \ref{tab:mittel} dargestellten Mittelwerte $v_m$ für die einzelnen Geschwindigkeiten.
 
+\begin{table}
+\label{tab:mittel}
+\centering
+\caption{Mittelwerte der errechneten Geschwindigkeiten.}
+\sisetup{table-format=2.1}
+\begin{tabular}{S [table-format=3.1] S S S}
+\toprule
+& \multicolumn{1}{c}{$7$mm Rohr} & \multicolumn{1}{c}{$10$mm Rohr} & \multicolumn{1}{c}{$16$mm Rohr} \\
+\cmidrule(lr){2-2}\cmidrule(lr){3-3}\cmidrule(lr){4-4}
+{$v/$rpm}
+& {$v_{mk}$/ m/s}& {$v_{mm}$/ m/s} & {$v_{mg}$/ m/s} \\
+\midrule
+2000 & 0,160 \pm 0,028  & 0,101 \pm 0,021 & 0,091 \pm 0,049  \\
+\midrule
+3000 & 0,339 \pm 0,030 & 0,165 \pm 0,042 & 0,107 \pm 0,015  \\
+\midrule
+4000 & 0,629 \pm 0,027 & 0,339 \pm 0,030 & 0,161 \pm 0,022  \\
+\midrule
+5000 & 1,065 \pm 0,057 & 0,499 \pm 0,030  & 0,236 \pm 0,016  \\
+\midrule
+6000 & 1,630 \pm 0,072 & 0,757 \pm 0,052 & 0,323 \pm 0,020  \\
+\bottomrule
+\end{tabular}
+\end{table}
 
+Trägt man $\frac{\nu}{cos(\alpha)}$ gegen die jeweils errechnete Strömungsgeschwindigkeit auf, so ergibt sich
+das folgende Diagramm (hier exemplarisch für das dünne Rohr).
 
+\begin{figure}
+  \centering
+  \includegraphics{plot3.pdf}
+  \caption{Streuintensität bei einer Strömungsgeschwindigkeit von 3000rpm}
+  \label{fig:plot}
+\end{figure}
 
-
-
-
+Es ergibt sich eine Gerade. Bei den anderen Rohrdicken verhalten sich die Diagramme analog.
 
 \subsection{Bestimmung des Strömungsprofils}
 
