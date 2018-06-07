@@ -3,7 +3,7 @@ import numpy as np
 from scipy.optimize import curve_fit
 from uncertainties import ufloat
 
-T, f, S, v = np.genfromtxt('profil3000rpm.txt', unpack=True)
+T, f, S, v = np.genfromtxt('profil5000rpm.txt', unpack=True)
 
 #def f(x, c, b):
 #   return c * x + b
@@ -18,18 +18,13 @@ T, f, S, v = np.genfromtxt('profil3000rpm.txt', unpack=True)
 #print('c = ', c)
 #print(-1/c)
 #plt.gcf().subplots_adjust(bottom=0.18)
-plt.plot(T , S, 'r.', label='Messwerte', Markersize=4)
+plt.plot(T , -v, 'r.', label='Messwerte', Markersize=4)
 #plt.title('Streuintensität aufgetragen gegen die Tiefe.')
 plt.legend()
 plt.xlim((9, 20))
 #plt.ylim((-1, 14))
 plt.grid()
 plt.xlabel(r'Tiefe$/\mu s$')
-plt.ylabel(r'Steuintensität$/ \%$')
+plt.ylabel(r'|v|$/ \mathrm{\frac{m}{s}}$')
 
-
-
-
-
-
-plt.savefig('build/plot.pdf')
+plt.savefig('build/plot4.pdf')

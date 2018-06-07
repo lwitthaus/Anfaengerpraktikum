@@ -3,7 +3,7 @@ import numpy as np
 from scipy.optimize import curve_fit
 from uncertainties import ufloat
 
-T, f, S = np.genfromtxt('profil5000rpm.txt', unpack=True)
+T, f, S, v = np.genfromtxt('profil5000rpm.txt', unpack=True)
 
 #def f(x, c, b):
 #   return c * x + b
@@ -20,7 +20,7 @@ T, f, S = np.genfromtxt('profil5000rpm.txt', unpack=True)
 #plt.gcf().subplots_adjust(bottom=0.18)
 plt.plot(T , S, 'r.', label='Messwerte', Markersize=4)
 #plt.title('Streuintensität aufgetragen gegen die Tiefe.')
-plt.legend()
+plt.legend(loc='upper center')
 plt.xlim((9, 20))
 plt.ylim((2, 14))
 plt.grid()
