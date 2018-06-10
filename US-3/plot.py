@@ -25,7 +25,7 @@ plt.xlim((9, 20))
 #plt.ylim((-1, 14))
 plt.grid()
 plt.xlabel(r'Tiefe$/\mu s$')
-plt.ylabel(r'Steuintensität$/ \%$')
+plt.ylabel(r'Streuintensität$/ \%$')
 
 
 
