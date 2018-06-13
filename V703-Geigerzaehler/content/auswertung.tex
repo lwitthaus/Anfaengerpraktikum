@@ -3,7 +3,8 @@
 
 \subsection{Charakteristik}
 In Tabelle 1 ist die Anzahl an gemessenen Teilchen $N$ in Abhängigkeit von der Spannung  $U$ dargestellt. Zusätzlich
-ist dort auch die gemessene Stromstärke $I$ angegeben.
+ist dort auch die gemessene Stromstärke $I$ angegeben. Die Fehler von $N$ betragen dabei $\sqrt{N}$, da diese nach der
+Poissonverteilung verteilt sind.
 
 \begin{table}[H]
   \centering
@@ -67,7 +68,7 @@ Aus diesen Messwerten ergibt sich das folgende Diagramm
   \label{fig:plot}
 \end{figure}
 
-Dabei wurde die lineare Regression nur für den Bereich des Plateaus durchgeführt. Die ersten beiden
+Dabei wird die lineare Regression nur für den Bereich des Plateaus durchgeführt. Die ersten beiden
 Messwerte werden nicht berücksichtigt.
 Es ergibt sich eine Steigung von:
 \begin{equation*}
@@ -84,7 +85,7 @@ Es ergibt sich eine Steigung von:
 \subsection{Bestimmung der Totzeit}
 
 In Tabelle 2 wird Zählrate $N$ für 2 Beta-Strahler, sowie die Zählrate, wenn beide Strahler gleichzeitig
-eingesetzt werden.
+eingesetzt werden. Die Fehler von $N$ betragen hierbei wieder $\sqrt{N}$
 
 \begin{table}[H]
   \centering
@@ -115,6 +116,8 @@ Der Fehler von $T$ wird mit der Gauß'schen Fehlerfortpflanzung bestimmt.
     = \sqrt{\sigma_{a}^{2} \left(\frac{1}{2 a b} - \frac{a + b - c}{2 a^{2} b}\right)^{2}
   + \sigma_{b}^{2} \left(\frac{1}{2 a b} - \frac{a + b - c}{2 a b^{2}}\right)^{2} + \frac{\sigma_{c}^{2}}{4 a^{2} b^{2}}}
 \end{align*}
+
+Hierbei ist $a=N_1$, $b=N_2$ und $c=N_{1+2}$.
 Die mit dem Oszilloskop abgeschätzte Totzeit beträgt $T_2 = 50 \, \symup{\mu} $s.
 Die Abweichung der beiden Totzeiten voneinander beträgt $44,4 \, \%$.
 
@@ -178,8 +181,13 @@ Die Ladung $\Delta Q$ wird mit Gleichung (2) bestimmt. In Tabelle 3 werden die W
   \end{tabular}
 \end{table}
 
-Die Ladung wird in Einheiten der Elementarladung $e$ gegen die Spannung aufgetragen.
+Der Fehler von $\Delta Q/e_0$ wird dabei durch mit der Fehlerfortpflanzung berechnet. Die Größe $Z$ hat einen Fehler von $\sqrt{Z}$.
+Die Fehlerfortpflanzung sieht dabei wie folgt aus:
+\begin{equation*}
+  \sigma_{\Delta Q/e_0} =\sqrt{ \frac{\overline{I}^{2} \sigma_{Z}^{2}}{Z^{4}} \Delta t^{2}}
+\end{equation*}
 
+Die Ladung wird in Einheiten der Elementarladung $e$ gegen die Spannung aufgetragen.
 
 \begin{figure}
   \centering
