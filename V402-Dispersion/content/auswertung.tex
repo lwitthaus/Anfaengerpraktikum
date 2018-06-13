@@ -1,6 +1,107 @@
 \section{Auswertung}
 \label{sec:Auswertung}
 
+\subsection{Fehlerrechnung}
+Der Mittelwert eines Datensatzes mit $N$ Werten ist definiert durch:
+\begin{equation}
+  \bar{x} = \frac{1}{N} \sum_{i=1}^N x_i
+\end{equation}
+Die Standardabweichung eines Datensatzes von seinem Mittelwert durch:
+\begin{equation}
+  \sigma = \sqrt{\frac{1}{N(N-1)} \sum_{i=1}^N (x_i - \bar{x})}
+\end{equation}
+Pflanzen sich Unsicherheiten fort, wird der Fehler mit der gaußschen
+Fehlerfortpflanzung berechnet:
+\begin{equation}
+  \sigma_f = \sqrt{
+      \sum\limits_{i = 1}^N
+       \left( \frac{\partial f}{\partial x_i} \sigma_i \right)^{\!\! 2}
+     }
+\end{equation}
+
+
+\subsection{Bestimmung der Brechungsindices}
+
+In Tabelle 1 werden die gemessenen Winkel $\phi_r$ und $\phi_l$ dargestellt, sowie der reultierende Winkel $\phi=\frac{1}{2}(\phi_l-\phi_r)$.
+
+\begin{table}[H]
+  \centering
+  \caption{Gemessene und berechnete $\phi$-Winkel.}
+  \label{tab:spannung1}
+  \begin{tabular}{c c c}
+    \toprule
+    $\phi_l/$° & $\phi_r/$° & $\phi/$° \\
+    \midrule
+    337,5  &  216,6 & 60,45     \\
+    339,8  &  219,6 & 60,10      \\
+    338,0  &  218,0 & 60,00      \\
+    336,6  &  216,6 & 60,00      \\
+    338,6  &  218,7 & 59,95      \\
+    338,1  &  218,2 & 59,95      \\
+    339,7  &  219,6 & 60,05      \\
+    \bottomrule
+  \end{tabular}
+\end{table}
+
+Der Mittelwert von den Winkeln $\phi$ und dessen Standardabweichung beträgt $\phi = (60,07 \pm 0,17)°$. Die Standardabweichung wird hierbei
+mit Python berechnet.
+
+
+Die Winkel $\Omega_l$ und $\Omega_r$, sowie der daraus resultierende Winkel $\eta = 180° - (\Omega_r-\Omega_l)$ werden in Tabelle 2 in Abhängigkeit von der
+Wellenlänge $\lambda$ dargestellt.
+
+
+
+\begin{table}[H]
+  \centering
+  \caption{Gemessene $\Omega_l$ und $\Omega_l$ und berechnete $\eta$-Winkel.}
+  \label{tab:spannung1}
+  \begin{tabular}{c c c c}
+    \toprule
+  $\lambda/$m &  $\Omega_l/$° & $\Omega_r/$° & $\eta/$° \\
+    \midrule
+    ?  & 104,7  &  214,5 & 70,2     \\
+    ?  & 103,7  &  214,6 & 69,1     \\
+    ?  & 103,0  &  226,6 & 66,4      \\
+    ?  & 102,8  &  216,8 & 66,0      \\
+    ?  & 101,8  &  217,0 & 64,8      \\
+    ?  & 101,7  &  217,8 & 63,9      \\
+    ?  & 101,5  &  218,1 & 63,4      \\
+    ?  & 101,0  &  218,8 & 62,2      \\
+    \bottomrule
+  \end{tabular}
+\end{table}
+
+Mit Gleichung (10) wird aus $\phi$ und $\eta$ die Brechungsindices berechnet. Dabei errechnet sich der Fehler von $n$ über die Gauß'sche Fehlerfortpflanzung:
+\begin{align*}
+  \sigma_n = \sqrt{
+   \sigma_{\phi}^{2} \left(\frac{\cos{\left (\frac{\eta}{2} + \frac{\phi}{2} \right )}}{2 \sin{\left (\frac{\phi}{2} \right )}} - \frac{\sin{\left (\frac{\eta}{2}
+  + \frac{\phi}{2} \right )} \cos{\left (\frac{\phi}{2} \right )}}{2 \sin^{2}{\left (\frac{\phi}{2} \right )}}\right)^{2}}
+\end{align*}
+
+
+\begin{table}[H]
+  \centering
+  \caption{Brechungsindices in Abhängigkeit von der Wellenlänge.}
+  \label{tab:spannung1}
+  \begin{tabular}{c c}
+    \toprule
+  $\lambda/$m &  $n$ \\
+    \midrule
+    ?  & 1,578 \pm 0,002   \\
+    ?  & 1,593 \pm 0,002    \\
+    ?  & 1,631 \pm 0,002     \\
+    ?  & 1,636 \pm 0,002     \\
+    ?  & 1,654 \pm 0,002     \\
+    ?  & 1,668 \pm 0,002     \\
+    ?  & 1,676 \pm 0,002     \\
+    ?  & 1,695 \pm 0,002     \\
+    \bottomrule
+  \end{tabular}
+\end{table}
+
+
+
 \begin{figure}
   \centering
   \includegraphics{plot.pdf}
