@@ -29,7 +29,7 @@ plt.plot(l , n**2, 'r.', label='Messwerte', Markersize=4)
 
 plt.legend()
 plt.grid()
-#plt.xlim((0, 400))
+plt.xlim((400, 700))
 plt.xlabel(r'$\lambda/nm$')
 plt.ylabel(r'$n$')
 plt.savefig('build/plot.pdf')
