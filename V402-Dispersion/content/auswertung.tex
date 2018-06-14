@@ -120,12 +120,12 @@ Gleichungen die folgenden Parameter ermittelt:
 Gleichung (7):
 \begin{align*}
   &A_0 = 2,93 \pm 0,01 \\
-  &A_1 = (5,9 \pm 0,3)\cdot 10^4 \: \symup{m^2}
+  &A_2 = (5,9 \pm 0,3)\cdot 10^4 \: \symup{nm^2}
 \end{align*}
 Gleichung (9):
 \begin{align*}
   &A_0' = 3,40 \pm 0,03 \\
-  &A_1' = (8,1 \pm 0,9)\cdot 10^{-7} \: \symup{\frac{1}{m^2}}
+  &A_2' = (8,1 \pm 0,9)\cdot 10^{-7} \: \symup{\frac{1}{nm^2}}
 \end{align*}
 
 Daraus ergibt sich für die jeweiligen Abweichungsquadrate
@@ -170,3 +170,22 @@ Für die Abbesche-Zahl folgt:
 \end{align*}
 
 Der Fehler von $n$ und $\nu$ wird wieder mit der Gaußschen Fehlerfortpflanzung berechnet.
+
+
+
+
+\subsection{Bestimmung des Auflösungsvermögens}
+Das Auflösungsvermögen A ist gegeben durch
+\begin{equation*}
+  A = \frac{\lambda}{\Delta \lambda} = b\frac{dn}{d\lambda}
+\end{equation*}
+mit
+\begin{equation*}
+  \frac{dn}{d\lambda} = \frac{A_2}{\lambda^3\sqrt{A_0 + \frac{A_2}{\lambda^2}}}
+\end{equation*}
+und $b$ ist die Basislänge mit $b = 3$ cm.
+Daraus ergibt sich für die beiden Wellenlängen $\lambda_C$ und $\lambda_F$:
+\begin{align*}
+  &A_C = 3580 \pm 180 \\
+  &A_F = 8600 \pm 400
+\end{align*}

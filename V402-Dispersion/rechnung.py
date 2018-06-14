@@ -13,7 +13,11 @@ d = 0
 for i in range (0,8):
     d += (n[i]**2 - a0 - a1/l[i]**2)**2
 
-print(1/6*d)
+qc = 656
+qf = 486
+print(0.03*10**(9)*a1/(qc**3*unp.sqrt(a0+a1/qc**2)))
+print(0.03*10**(9)*a1/(qf**3*unp.sqrt(a0+a1/qf**2)))
+#print(1/6*d)
 
 a0 = ufloat(3.4, 0.03)
 a1 = ufloat(8.1*10**(-7), 0.9*10**(-7))
@@ -22,4 +26,4 @@ d = 0
 for i in range (0,8):
     d += (n[i]**2 - a0 + a1*l[i]**2)**2
 
-print(1/6*d)
+#print(1/6*d)
