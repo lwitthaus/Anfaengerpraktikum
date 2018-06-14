@@ -1,21 +1,27 @@
 import matplotlib.pyplot as plt
 import numpy as np
+from scipy.optimize import curve_fit
+from uncertainties import ufloat
 
-x = np.linspace(0, 10, 1000)
-y = x ** np.sin(x)
+l = np.array([404.6 ,439.8 ,480.0 ,502.5 ,546.1 ,577.0 ,615.8 ,656.7])
+n = np.array([1.813, 1.805, 1.784, 1.781, 1.771, 1.764, 1.760, 1.750])
 
-plt.subplot(1, 2, 1)
-plt.plot(x, y, label='Kurve')
-plt.xlabel(r'$\alpha \:/\: \si{\ohm}$')
-plt.ylabel(r'$y \:/\: \si{\micro\joule}$')
-plt.legend(loc='best')
+#def f(A, B, C, l):
+#   return A + B/(l**2) + C/(l**4)
+#
+#x_plot = np.linspace(400, 700)
+#params, covariance_matrix = curve_fit(f, l, n**2)
+#errors = np.sqrt(np.diag(covariance_matrix))
+#plt.plot(x_plot, f(x_plot, *params), 'k-', label='Anpassungsfunktion', linewidth=0.5)
+#print(params)
+#print(np.sqrt(np.diag(covariance_matrix)))
 
-plt.subplot(1, 2, 2)
-plt.plot(x, y, label='Kurve')
-plt.xlabel(r'$\alpha \:/\: \si{\ohm}$')
-plt.ylabel(r'$y \:/\: \si{\micro\joule}$')
-plt.legend(loc='best')
+plt.gcf().subplots_adjust(bottom=0.18)
+plt.plot(l , n**2, 'r.', label='Messwerte', Markersize=4)
 
-# in matplotlibrc leider (noch) nicht möglich
-plt.tight_layout(pad=0, h_pad=1.08, w_pad=1.08)
+plt.legend()
+plt.grid()
+#plt.xlim((0, 400))
+plt.xlabel(r'$\lambda/nm$')
+plt.ylabel(r'$n$')
 plt.savefig('build/plot.pdf')
