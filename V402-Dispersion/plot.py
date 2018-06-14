@@ -6,11 +6,11 @@ from uncertainties import ufloat
 l = np.array([404.6 ,439.8 ,480.0 ,502.5 ,546.1 ,577.0 ,615.8 ,656.7])
 n = np.array([1.813, 1.805, 1.784, 1.781, 1.771, 1.764, 1.760, 1.750])
 
-def f(A, B, l):
-   return A + B/(l**2)
+def f(x, A, B):
+   return A + B/x**2
 
 x_plot = np.linspace(400, 700)
-params, covariance_matrix = curve_fit(f, l, n**2)
+params,covariance_matrix = curve_fit(f, l, n**2)
 errors = np.sqrt(np.diag(covariance_matrix))
 plt.plot(x_plot, f(x_plot, *params), 'k-', label='Anpassungsfunktion', linewidth=0.5)
 print(params)
