@@ -136,3 +136,37 @@ Daraus ergibt sich für die jeweiligen Abweichungsquadrate
 
 Da das Abweichungsquadrat der Funktion aus Gleichung (7) wesentlich kleiner ist,
 wird also eine Ausgleichsrechnung mit dieser Funktion durchgeführt.
+
+
+
+\subsection{Berechnung der Abbe-Zahl}
+
+Für die Abbesche-Zahl wird:
+\begin{align}
+  \nu = \frac{n_D-1}{n_F-n_C}
+\end{align}
+
+Hierbei sind $n_D$, $n_F$ und $n_C$ die Brechungsindices des Glasprismas bei den Fraunhoferschen Linien $\lambda_D =589$nm, $\lambda_F = 486$nm
+und $\lambda_C = 656$nm. Für die Berechnung der Brechungsindices wird Gleichung (7) verwendet.
+
+\begin{table}[H]
+  \centering
+  \caption{Brechungsindices für drei Fraunhofer Linien.}
+  \label{tab:spannung1}
+  \begin{tabular}{c c}
+    \toprule
+  $\lambda/$nm &  $n$ \\
+    \midrule
+    $\lambda_D$ & 1,761  \pm 0,004  \\
+    $\lambda_F$ & 1,783   \pm 0,005  \\
+    $\lambda_C$ & 1,751  \pm 0,004   \\
+    \bottomrule
+  \end{tabular}
+\end{table}
+
+Für die Abbesche-Zahl folgt:
+\begin{align*}
+  \nu = 24 \pm 5
+\end{align*}
+
+Der Fehler von $n$ und $\nu$ wird wieder mit der Gaußschen Fehlerfortpflanzung berechnet.
