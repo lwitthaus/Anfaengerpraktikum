@@ -16,6 +16,14 @@ plt.plot(x_plot, f(x_plot, *params), 'k-', label='Anpassungsfunktion', linewidth
 print(params)
 print(np.sqrt(np.diag(covariance_matrix)))
 
+def f(x, A, B):
+   return A - B*x**2
+
+params,covariance_matrix = curve_fit(f, l, n**2)
+errors = np.sqrt(np.diag(covariance_matrix))
+print(params)
+print(np.sqrt(np.diag(covariance_matrix)))
+
 plt.gcf().subplots_adjust(bottom=0.18)
 plt.plot(l , n**2, 'r.', label='Messwerte', Markersize=4)
 

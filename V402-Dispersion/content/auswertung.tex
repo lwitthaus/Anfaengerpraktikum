@@ -101,7 +101,7 @@ Mit Gleichung (10) wird aus $\phi$ und $\eta$ die Brechungsindices berechnet. Da
   \end{tabular}
 \end{table}
 
-
+Wird $n^2$ gegen die entsprechende Wellenlänge aufgetragen, so ergibt sich das folgende Diagramm.
 
 \begin{figure}
   \centering
@@ -109,3 +109,18 @@ Mit Gleichung (10) wird aus $\phi$ und $\eta$ die Brechungsindices berechnet. Da
   \caption{Brechungsindices aufgetragen gegen die Wellenlänge.}
   \label{fig:plot}
 \end{figure}
+
+Dabei muss für die Ausgleichsrechnung zwischen den Gleichungen (7) und (9) entschieden werden.
+Mithilfe von Python wird die Methode der kleinsten Quadrate angewandt und für die beiden
+Gleichungen die folgenden Parameter ermittelt:
+
+Gleichung (7):
+\begin{align*}
+  &A_0 = 2,93 \pm 0,01 \\
+  &A_1 = (5,9 \pm 0,3)\cdot 10^4 \: \symup{m^2}
+\end{align*}
+Gleichung (9):
+\begin{align*}
+  &A_0' = 3,40 \pm 0,03 \\
+  &A_1' = (8,1 \pm 0,9)\cdot 10^{-7} \: \symup{m^2}
+\end{align*}
