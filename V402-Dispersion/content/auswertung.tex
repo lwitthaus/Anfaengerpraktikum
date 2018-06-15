@@ -171,7 +171,11 @@ Für die Abbesche-Zahl folgt:
 
 Der Fehler von $n$ und $\nu$ wird wieder mit der Gaußschen Fehlerfortpflanzung berechnet.
 
-
+\begin{align*}
+  \sigma_n = \sqrt{\frac{\sigma_{A_0}^{2}}{4 A_0 + \frac{4 A_2}{\lambda^{2}}} + \frac{\sigma_{A_2}^{2}}{4 \lambda^{4} \left(A_0 + \frac{A_2}{\lambda^{2}}\right)}} \\
+  \sigma_{\nu}= \sqrt{\frac{\sigma_{n_C}^{2} \left(n_D - 1\right)^{2}}{\left(- n_C + n_F\right)^{4}}
+  + \frac{\sigma_{n_D}^{2}}{\left(- n_C + n_F\right)^{2}} + \frac{\sigma_{n_F}^{2} \left(n_D - 1\right)^{2}}{\left(- n_C + n_F\right)^{4}}}
+\end{align*}
 
 
 \subsection{Bestimmung des Auflösungsvermögens}
@@ -188,4 +192,12 @@ Daraus ergibt sich für die beiden Wellenlängen $\lambda_C$ und $\lambda_F$:
 \begin{align*}
   &A_C = 3580 \pm 180 \\
   &A_F = 8600 \pm 400
+\end{align*}
+
+
+Die Fehler von $A_C$ und $A_F$ werden mit der Gaußschenfehlerfortpflanzung berechnet.
+\begin{align*}
+  \sigma_A = \sqrt{\frac{A_2^{2} \sigma_{A_0}^{2}}{4 \lambda^{6} \left(A_0 + \frac{A_2}{\lambda^{2}}\right)^{3}}
+  + \sigma_{A_2}^{2} \left(- \frac{A_2}{2 \lambda^{5} \left(A_0 + \frac{A_2}{\lambda^{2}}\right)^{\frac{3}{2}}}
+  + \frac{1}{\lambda^{3} \sqrt{A_0 + \frac{A_2}{\lambda^{2}}}}\right)^{2}}
 \end{align*}
