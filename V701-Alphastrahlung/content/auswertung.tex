@@ -1,7 +1,7 @@
 \section{Auswertung}
 \label{sec:Auswertung}
 \subsection{Bestimmung der effektiven Weglänge und des Energieverlustes}
-Die gesamte Anzahl an Ereignissen und der Channel des maximal gemessenen Impulses wird in Tabelle 1 und 2 in Abhängigkeit des Druckes und
+Die gesamte Anzahl an Ereignissen $N$ und der Channel des maximal gemessenen Impulses wird in Tabelle 1 und 2 in Abhängigkeit des Druckes und
 des Abstandes dargestellt. Für einen Druck von $0$mbar entspricht die Postion des maximalen Pulses $4$MeV. Daraus lassen sich die Energiewerte $E$ für die
 anderen Drücke berechenen, da von einer linearen Energieskala ausgegangen wird. Mit Gleichung (3) wird aus den Energien die mittlere Reichweite
 der Teilchen bestimmt und ebenfalls in den Tabellen dargestellt. Die effektive Weglänge $x$ wird mit Gleichung (4) berechnet und in den Tabellen angegeben.
@@ -9,14 +9,14 @@ der Teilchen bestimmt und ebenfalls in den Tabellen dargestellt. Die effektive W
 
 \begin{table}[H]
   \centering
-  \caption{Zählrate, Channel, Energie, effektive Weglänge und mittlere Reichweite der $\alpha$-Teilchen für einen Abstand von $2,3$cm}
+  \caption{Anzahl an Ereignissen, Channel, Energie, effektive Weglänge und mittlere Reichweite der $\alpha$-Teilchen für einen Abstand von $2,3$cm}
   \label{tab:Spannungsamplitude}
   \begin{tabular}{c c c c c c}
     \toprule
     $p/$mbar & $N$ & Channel & $E/$MeV & $x/$cm& $R_m/$mm \\
     \midrule
     0	  & 81389  &1046 &  4,00& 0     & 24.80         \\
-    50	& 81648  & 999 &  3,82& 0.11  & 23.14        \\
+    50	& 81648  & 999 &  3,82&  0.11  & 23.14        \\
     100 & 79218  & 982 &  3,76& 0.23  & 22.60        \\
     150 & 78200  & 953 &  3,64& 0.34  & 21.53        \\
     200 & 78330  & 917 &  3,51& 0.45  & 20.39        \\
@@ -34,7 +34,7 @@ der Teilchen bestimmt und ebenfalls in den Tabellen dargestellt. Die effektive W
     800 & 40228  & 526 &  2,01& 1.82  & 8.83        \\
     850 & 26130  & 511 &  1,95& 1.93  & 8.44        \\
     900 & 17869  &  -  & -    & 2.04  & -        \\
-    950 & 9083	 &  -  & -    & 2.16  & -        \\
+    950 & 9083	 &  -  & -    &  2.16  & -        \\
     1000& 3592   &  -  & -    & 2.27  & -        \\
     \bottomrule
   \end{tabular}
@@ -118,20 +118,35 @@ der Teilchen bestimmt und ebenfalls in den Tabellen dargestellt. Die effektive W
 
 Für die letzten drei Messwerte in Tabelle 1 ist die Kollimatorschwelle zu hoch, wodurch kein Maximum mehr zu messen ist.
 
-Die Zählrate $N$ wird gegen die mittlere Reichweite für beide Abstände aufgetragen.
+Die Zählrate $N/120\symup{s}$ wird gegen die mittlere Reichweite für beide Abstände aufgetragen. Eine lineare Regression wird für den linearen Teil
+des Kurvenverlaufs durchgeführt.
 
 \begin{figure}[H]
   \centering
   \includegraphics{plot2.pdf}
-  \caption{Plot.}
+  \caption{Zählrate aufgetragen gegen die effektive Weglänge für einen Abstand von $2,3$cm.}
   \label{fig:plot}
 \end{figure}
 
 
-\begin{figure}[H]
+Die Parameter der Gerade $y=ax + b$ betragen:
+
+\begin{align*}
+  a = \SI{-9,5(8)e6}{\per\meter} \\
+  b = \SI{2,12(15)e5}
+\end{align*}
+
+In der ersten Messung beträgt die Zählrate $N =81389$. Die Hälfte davon ist $N/2 = 40695$. Dieser Wert wird in die berechnete Geradengleichung eingesetzt und
+daraus die mittlere Reichweite $R_m$ bestimmt, welche dem zugehörigen x-Wert entspricht.
+\begin{align*}
+  R_m = \SI{1.8(3)}{\centi\meter}
+\end{align*}
+
+
+\begin{figure}
   \centering
   \includegraphics{plot3.pdf}
-  \caption{Plot.}
+  \caption{Zählrate aufgetragen gegen die effektive Weglänge für einen Abstand von $1,7$cm.}
   \label{fig:plot}
 \end{figure}
 
