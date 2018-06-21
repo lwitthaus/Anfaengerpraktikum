@@ -120,7 +120,7 @@ Für die letzten drei Messwerte in Tabelle 1 ist die Kollimatorschwelle zu hoch,
 
 Die Zählrate $N$ wird gegen die mittlere Reichweite für beide Abstände aufgetragen.
 
-\begin{figure}
+\begin{figure}[H]
   \centering
   \includegraphics{plot2.pdf}
   \caption{Plot.}
@@ -128,7 +128,7 @@ Die Zählrate $N$ wird gegen die mittlere Reichweite für beide Abstände aufget
 \end{figure}
 
 
-\begin{figure}
+\begin{figure}[H]
   \centering
   \includegraphics{plot3.pdf}
   \caption{Plot.}
@@ -140,3 +140,21 @@ Die Zählrate $N$ wird gegen die mittlere Reichweite für beide Abstände aufget
 
 
 \subsection{Statistik des radioaktiven Zerfalls}
+Aus diesen Werten errechnet sich ein Mittelwert von
+\begin{equation*}
+  \mu = 100,83 \pm 11,95
+\end{equation*}
+und eine Varianz von
+\begin{equation*}
+  Var(N) = 142,76 \pm 11,95
+\end{equation*}
+
+Es ergibt sich das folgende Histogramm:
+\begin{figure}[H]
+  \centering
+  \includegraphics{hist.pdf}
+  \caption{Histogramm.}
+  \label{fig:hist}
+\end{figure}
+
+Daran ist zu erkennen, dass der Verlauf der Messwerte besser zu einer Poissonverteilung passt.
