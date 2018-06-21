@@ -10,7 +10,7 @@ def f(x, a, b):
    return a * x + b
 
 
-x_plot = np.linspace(0,2)
+x_plot = np.linspace(-0.1,2)
 params, covariance_matrix = curve_fit(f, x, E)
 errors = np.sqrt(np.diag(covariance_matrix))
 plt.plot(x_plot, f(x_plot, *params), 'k-', label='Anpassungsfunktion', linewidth=0.5)
@@ -21,7 +21,7 @@ plt.plot(x, E, 'r.', label='Messwerte', Markersize=4)
 plt.gcf().subplots_adjust(bottom=0.18)
 plt.legend()
 plt.grid()
-plt.xlim((0,2))
-plt.ylabel(r'$x/$cm')
-plt.xlabel(r'$E/$MeV')
+plt.xlim((-0.1,2))
+plt.ylabel(r'$E/$MeV')
+plt.xlabel(r'$x/$cm')
 plt.savefig('build/plot4.pdf')
