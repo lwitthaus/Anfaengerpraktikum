@@ -1,41 +1,50 @@
 \section{Auswertung}
 \label{sec:Auswertung}
-\subsection{Bestimmung der effektiven Weglänge und des Energieverlustes}
+\subsection{Bestimmung der effektiven Weglänge und der Energie}
 Die gesamte Anzahl an Ereignissen $N$ und der Channel des maximal gemessenen Impulses wird in Tabelle 1 und 2 in Abhängigkeit des Druckes und
-des Abstandes dargestellt. Für einen Druck von $0$mbar entspricht die Postion des maximalen Pulses $4$MeV. Daraus lassen sich die Energiewerte $E$ für die
-anderen Drücke berechenen, da von einer linearen Energieskala ausgegangen wird. Mit Gleichung (3) wird aus den Energien die mittlere Reichweite
-der Teilchen bestimmt und ebenfalls in den Tabellen dargestellt. Die effektive Weglänge $x$ wird mit Gleichung (4) berechnet und in den Tabellen angegeben.
+des Abstandes dargestellt. Für einen Druck von $0\,$mbar entspricht die Postion des maximalen Pulses $4\,$MeV. Daraus lassen sich die Energiewerte $E$ für die
+anderen Drücke berechnen, da von einer linearen Energieskala ausgegangen wird. Die effektive Weglänge $x$ wird mit Gleichung (4) berechnet und in den Tabellen angegeben.
 
 
 \begin{table}[H]
   \centering
+<<<<<<< HEAD
   \caption{Anzahl an Ereignissen, Channel, Energie, effektive Weglänge und mittlere Reichweite der $\alpha$-Teilchen für einen Abstand von $2,3$cm}
   \label{tab:bla}
   \begin{tabular}{c c c c c c}
+||||||| merged common ancestors
+  \caption{Anzahl an Ereignissen, Channel, Energie, effektive Weglänge und mittlere Reichweite der $\alpha$-Teilchen für einen Abstand von $2,3$cm}
+  \label{tab:Spannungsamplitude}
+  \begin{tabular}{c c c c c c}
+=======
+  \caption{Anzahl an Ereignissen, Channel, Energie und  effektive Weglänge der $\alpha$-Teilchen für einen Abstand von $2,3$cm}
+  \label{tab:Spannungsamplitude}
+  \begin{tabular}{c c c c c}
+>>>>>>> jdfgke
     \toprule
-    $p/$mbar & $N$ & Channel & $E/$MeV & $x/$cm& $R_m/$mm \\
+    $p/$mbar & $N$ & Channel & $E/$MeV & $x/$cm  \\%& $R_m/$mm
     \midrule
-    0	  & 81389  &1046 &  4,00& 0     & 24.80         \\
-    50	& 81648  & 999 &  3,82&  0.11  & 23.14        \\
-    100 & 79218  & 982 &  3,76& 0.23  & 22.60        \\
-    150 & 78200  & 953 &  3,64& 0.34  & 21.53        \\
-    200 & 78330  & 917 &  3,51& 0.45  & 20.39        \\
-    250 & 77252  & 911 &  3,48& 0.57  & 20.12        \\
-    300 & 76070  & 858 &  3,28& 0.68  & 18.42        \\
-    350 & 74155  & 833 &  3,19& 0.79  & 17.66        \\
-    400 & 73737  & 800 &  3,06& 0.91  & 16.59        \\
-    450 & 72061  & 771 &  2,95& 1.02  & 15.71        \\
-    500 & 70654  & 739 &  2,83& 1.14  & 14.76        \\
-    550 & 68438  & 703 &  2,69& 1.25  & 13.68        \\
-    600 & 65735  & 670 &  2,56& 1.36  & 12.70        \\
-    650 & 64206  & 642 &  2,46& 1.48  & 11.96        \\
-    700 & 57280  & 603 &  2,31& 1.59  & 10.88        \\
-    750 & 49102  & 564 &  2,16& 1.70  & 9.84        \\
-    800 & 40228  & 526 &  2,01& 1.82  & 8.83        \\
-    850 & 26130  & 511 &  1,95& 1.93  & 8.44        \\
-    900 & 17869  &  -  & -    & 2.04  & -        \\
-    950 & 9083	 &  -  & -    &  2.16  & -        \\
-    1000& 3592   &  -  & -    & 2.27  & -        \\
+    0	  & 81389  &1046 &  4,00& 0       \\ % & 24.80
+    50	& 81648  & 999 &  3,82&  0.11    \\ % & 23.14
+    100 & 79218  & 982 &  3,76& 0.23    \\ % & 22.60
+    150 & 78200  & 953 &  3,64& 0.34    \\ % & 21.53
+    200 & 78330  & 917 &  3,51& 0.45    \\ % & 20.39
+    250 & 77252  & 911 &  3,48& 0.57    \\ % & 20.12
+    300 & 76070  & 858 &  3,28& 0.68    \\ % & 18.42
+    350 & 74155  & 833 &  3,19& 0.79    \\ % & 17.66
+    400 & 73737  & 800 &  3,06& 0.91    \\ % & 16.59
+    450 & 72061  & 771 &  2,95& 1.02    \\ % & 15.71
+    500 & 70654  & 739 &  2,83& 1.14    \\ % & 14.76
+    550 & 68438  & 703 &  2,69& 1.25    \\ % & 13.68
+    600 & 65735  & 670 &  2,56& 1.36    \\ % & 12.70
+    650 & 64206  & 642 &  2,46& 1.48    \\ % & 11.96
+    700 & 57280  & 603 &  2,31& 1.59    \\ % & 10.88
+    750 & 49102  & 564 &  2,16& 1.70    \\ % & 9.84
+    800 & 40228  & 526 &  2,01& 1.82    \\ % & 8.83
+    850 & 26130  & 511 &  1,95& 1.93    \\ % & 8.44
+    900 & 17869  &  -  & -    & 2.04    \\ % & -
+    950 & 9083	 &  -  & -    &  2.16    \\ % & -
+    1000& 3592   &  -  & -    & 2.27    \\ % & -
     \bottomrule
   \end{tabular}
 \end{table}
@@ -48,31 +57,31 @@ der Teilchen bestimmt und ebenfalls in den Tabellen dargestellt. Die effektive W
   \centering
   \caption{Zählrate, Channel, Energie, effektive Weglänge und mittlere Reichweite der $\alpha$-Teilchen für einen Abstand von $1,7$cm}
   \label{tab:Spannungsamplitude}
-  \begin{tabular}{c c c c c c}
+  \begin{tabular}{c c c c c}
     \toprule
-    $p/$mbar & $N$ & Channel & $E/$MeV & $x/$cm & $R_m/$mm \\
+    $p/$mbar & $N$ & Channel & $E/$MeV & $x/$cm   \\%& $R_m/$mm
     \midrule
-    0	  & 133097  & 932 &   4,00 & 0    & 24.80       \\
-    50	& 132258  & 910 &   3,91 & 0.08 & 23.97      \\
-    100 & 132252  & 894 &   3,84 & 0.17 & 23.33       \\
-    150 & 131151  & 875 &   3,76 & 0.25 & 22.60       \\
-    200 & 129489  & 860 &   3,69 & 0.34 & 21.97       \\
-    250 & 127602  & 823 &   3,53 & 0.42 & 20.56       \\
-    300 & 124606  & 782 &   3,37 & 0.50 & 19.18       \\
-    350 & 119948  & 756 &   3,24 & 0.59 & 18.08       \\
-    400 & 117771  & 729 &   3,13 & 0.67 & 17.17       \\
-    450 & 115922  & 712 &   3,06 & 0.76 & 16.59       \\
-    500 & 115965  & 689 &   2,96 & 0.84 & 15.79       \\
-    550 & 114158  & 674 &   2,89 & 0.92 & 15.23       \\
-    600 & 112766  & 652 &   2,80 & 1.01 & 14.52       \\
-    650 & 110443  & 630 &   2,70 & 1.09 & 13.75       \\
-    700 & 109593  & 625 &   2,68 & 1.17 & 13.60       \\
-    750 & 106939  & 592 &   2,54 & 1.26 & 12.55      \\
-    800 & 102803  & 569 &   2,44 & 1.34 & 11.82      \\
-    850 & 98282	  & 543 &   2,33 & 1.43 & 11.03      \\
-    900 & 94237	  & 525 &   2,25 & 1.51 & 10.46   \\
-    950 & 89703	  & 502 &   2,15 & 1.59 & 9.77     \\
-    1000& 85338   & 491 &   2,11 & 1.68 & 9.50    \\
+    0	  & 133097  & 932 &   4,00 & 0       \\ %& 24.80
+    50	& 132258  & 910 &   3,91 & 0.08     \\%& 23.97
+    100 & 132252  & 894 &   3,84 & 0.17    \\ %& 23.33
+    150 & 131151  & 875 &   3,76 & 0.25    \\ %& 22.60
+    200 & 129489  & 860 &   3,69 & 0.34    \\ %& 21.97
+    250 & 127602  & 823 &   3,53 & 0.42    \\ %& 20.56
+    300 & 124606  & 782 &   3,37 & 0.50    \\ %& 19.18
+    350 & 119948  & 756 &   3,24 & 0.59    \\ %& 18.08
+    400 & 117771  & 729 &   3,13 & 0.67    \\ %& 17.17
+    450 & 115922  & 712 &   3,06 & 0.76    \\ %& 16.59
+    500 & 115965  & 689 &   2,96 & 0.84    \\ %& 15.79
+    550 & 114158  & 674 &   2,89 & 0.92    \\ %& 15.23
+    600 & 112766  & 652 &   2,80 & 1.01    \\ %& 14.52
+    650 & 110443  & 630 &   2,70 & 1.09    \\ %& 13.75
+    700 & 109593  & 625 &   2,68 & 1.17    \\ %& 13.60
+    750 & 106939  & 592 &   2,54 & 1.26    \\ %& 12.55
+    800 & 102803  & 569 &   2,44 & 1.34    \\ %& 11.82
+    850 & 98282	  & 543 &   2,33 & 1.43    \\ %& 11.03
+    900 & 94237	  & 525 &   2,25 & 1.51    \\ %& 10.46
+    950 & 89703	  & 502 &   2,15 & 1.59    \\ %& 9.77
+    1000& 85338   & 491 &   2,11 & 1.68    \\ %& 9.50
     \bottomrule
   \end{tabular}
 \end{table}
@@ -118,7 +127,7 @@ der Teilchen bestimmt und ebenfalls in den Tabellen dargestellt. Die effektive W
 
 Für die letzten drei Messwerte in Tabelle 1 ist die Kollimatorschwelle zu hoch, wodurch kein Maximum mehr zu messen ist.
 
-Die Zählrate $N/120\symup{s}$ wird gegen die mittlere Reichweite für beide Abstände aufgetragen. Eine lineare Regression wird für den linearen Teil
+Die Zählrate $N$ wird gegen die mittlere Reichweite für beide Abstände aufgetragen. Eine lineare Regression wird für den linearen Teil
 des Kurvenverlaufs durchgeführt.
 
 \begin{figure}[H]
@@ -139,9 +148,11 @@ Die Parameter der Gerade $y=ax + b$ betragen:
 In der ersten Messung beträgt die Zählrate $N =81389$. Die Hälfte davon ist $N/2 = 40695$. Dieser Wert wird in die berechnete Geradengleichung eingesetzt und
 daraus die mittlere Reichweite $R_m$ bestimmt, welche dem zugehörigen x-Wert entspricht.
 \begin{align*}
-  R_m = \SI{1.8(3)}{\centi\meter}
+  R_{m_1} = \SI{1.8(3)}{\centi\meter}
 \end{align*}
 
+
+Für den zweiten Abstand wird analog Verfahren.
 
 \begin{figure}[H]
   \centering
@@ -150,6 +161,42 @@ daraus die mittlere Reichweite $R_m$ bestimmt, welche dem zugehörigen x-Wert en
   \label{fig:plot}
 \end{figure}
 
+Die Parameter der Geraden $y = cx+d$ betragen:
+\begin{align*}
+c = \SI{-5.16(5)e4}{\per\meter} \\
+d = \SI{1.720(7)e5}{}
+\end{align*}
+
+In der ersten Messung beträgt die Zählrate $N =133097$. Die Hälfte davon ist $N/2 = 66549$. Dieser Wert wird in die berechnete Geradengleichung eingesetzt und
+daraus die mittlere Reichweite $R_m$ bestimmt, welche dem zugehörigen x-Wert entspricht.
+
+\begin{align*}
+  R_{m_2} = \SI{2.04(2)}{\centi\meter}
+\end{align*}
+
+Die Fehler der mittleren Reichweiten werden mit der Gauß'schen Fehlerfortpflanzung berechnet:
+\begin{equation}
+  \sigma_{R_m} = \sqrt{
+      \sum\limits_{i = 1}^N
+       \left( \frac{\partial R_m}{\partial x_i} \sigma_i \right)^{\!\! 2}
+     } = \sqrt{\sigma_{a}^{2} \left(\frac{b}{a^{2}} - \frac{N}{a^{2}}\right)^{2} + \frac{\sigma_{b}^{2}}{a^{2}} }
+\end{equation}
+
+Dabei sind stellen $a$ und $b$ die Parameter der Geradengleichungen dar und $N$ die Zählrate.
+
+Für die Berechnung der Energie wird Gleichung (3) verwendet.
+\begin{align*}
+  &E_1 = \SI{0.70(8)}{\mega\eV} \\
+  &E_2 = \SI{0.757(5)}{\mega\eV}
+\end{align*}
+
+Die Fehler der berechneten Energien werden erneut mit der Gauß'schen Fehlerfortpflanzung berechnet.
+\begin{align*}
+  \sigma_{E} = \sqrt{
+      \sum\limits_{i = 1}^N
+       \left( \frac{\partial E}{\partial x_i} \sigma_i \right)^{\!\! 2}
+     } = 0.314 \sqrt{\frac{\sigma_{a}^{2}}{a^{0.667}}}
+\end{align*}
 
 
 \subsection{Bestimmung des Energieverlustes}
