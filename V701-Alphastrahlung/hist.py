@@ -16,8 +16,10 @@ print(np.std(N))
 print(r-q**2)
 
 
-g = np.random.normal(np.mean(N), np.std(N), 10000)
-p = np.random.poisson(np.mean(N), 10000)
-plt.hist([g,N,p], 15, label=['Gauß', 'Messwerte', 'Poisson'], alpha=1, normed=1)
+#g = np.random.normal(np.mean(N), np.std(N), 10000)
+#p = np.random.poisson(np.mean(N), 10000)
+plt.hist(N, 15, label='Messwerte', alpha=1, normed=1)
 plt.legend()
+plt.ylabel(r'Zählrate N')
+plt.xlabel(r'Channel')
 plt.savefig('build/hist.pdf')
