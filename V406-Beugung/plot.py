@@ -17,10 +17,6 @@ def theory(zeta, A0, zeta_0, b):
     return (A0 * b * np.sinc(b * np.sin((zeta - zeta_0)/(l)) / l_welle))**2
 
 
-def theorycentered(zeta, A0, b):
-    return (A0 * b * np.sinc(b * np.sin((zeta/l) / l_welle)))**2
-
-
 def theory2(zeta, A0, zeta_0, b, spaltentfernung):
     #return (2 * A_0 * np.cos(np.pi*spaltentfernung*np.sin((zeta - zeta_0)/(l))/l_welle) * np.sinc(b * np.sin((zeta - zeta_0)/(l)) / l_welle))**2
     return (2 * np.cos(np.pi*spaltentfernung*np.sin((zeta - zeta_0)/(l))/l_welle))**2*theory(zeta, A0, zeta_0, b)
@@ -65,7 +61,7 @@ print('b =', b)
 
 plt.plot(slinspace*1e3, theory(slinspace, *params1)*1e6, 'k-', label='Ausgleichsfunktion')
 
-plt.plot(s_1*1e3, I_1*1e6, 'rx', label='Messwerte')
+plt.plot(s_1*1e3, I_1*1e6, 'r.', label='Messwerte')
 
 plt.xlabel(r'$s/$mm')
 plt.ylabel(r'$I/\mu$A')
@@ -97,7 +93,7 @@ print('b =', b)
 #
 #plt.plot(slinspace*1e3, theory(slinspace, *params2)*1e6, 'k-', label='Ausgleichsfunktion')
 
-plt.plot(s_2*1e3, I_2*1e6, 'rx', label='Messwerte')
+plt.plot(s_2*1e3, I_2*1e6, 'r.', label='Messwerte')
 
 plt.plot(slinspace*1e3, theory2(slinspace, *params2)*1e6, 'k-', label='Ausgleichsfunktion')
 
@@ -128,7 +124,7 @@ print('s_0 =', s_0)
 print('b =', b)
 print('spaltentfernung =', spaltentfernung)
 
-plt.plot(s_3*1e3, I_3*1e6, 'rx', label='Messwerte')
+plt.plot(s_3*1e3, I_3*1e6, 'r.', label='Messwerte')
 
 plt.plot(slinspace*1e3, theory2(slinspace, *params3)*1e6, 'k-', label='Ausgleichsfunktion')
 

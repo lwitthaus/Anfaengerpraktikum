@@ -7,7 +7,7 @@ der Index 2 den ersten Doppelspalt und der Index 3 den zweiten Doppelspalt.
         %\begin{center}
                 %\begin{tabular}{cc}
                 \begin{longtable}{S[table-format=3.2] S[table-format=3.2] S[table-format=3.2] S[table-format=3.2] S[table-format=3.2] S[table-format=3.2]}
-                \caption{Gemessene Spannung in Abhängigkeit des Ortes von einem Einelspalt und zwei Doppelspalte.}\\
+                \caption{Gemessene Spannung in Abhängigkeit des Ortes von einem Einzelspalt und zwei Doppelspalte.}\\
                 \label{tab:messwerte}
                 %\toprule
                 {$x_1/$mm} & {$I_1/$nA} & {$x_2/$mm} & {$I_2/$nA} & {$x_3/$mm} & {$I_3/$nA} \\
@@ -77,10 +77,18 @@ der Index 2 den ersten Doppelspalt und der Index 3 den zweiten Doppelspalt.
         %\end{center}
 \end{longtable}
 
+Für den Einzelspalt wird eine Anpassungsfunktion an die Messwerte angepasst. Diese hat die Form wie
+in Gleichung (3) dargestellt.
+
+Hierbei ist $b$ die Spaltbreite, $\lambda$ die Wellenlänge, $L$ der Abstand zwischen Spaltöffnung und Detektor,
+$x_0$ die Stelle des Hauptmaximums, $x$ die Auslenkung und $A$ ein Parameter.
 
 \begin{figure}
   \centering
-  \includegraphics{plot.pdf}
-  \caption{Plot.}
+  \includegraphics{einfachspalt.pdf}
+  \caption{Beugungsbild des Einzelspaltes}
   \label{fig:plot}
 \end{figure}
+
+
+Für den Doppelspalt wird eine Anpassungsfunktion Gleichung (4) verwendet.
