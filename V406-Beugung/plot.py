@@ -84,8 +84,8 @@ s_2 *= 1e-3 #s/m
 I_2 *= 1e-6 #I/A
 I_2 -=I_d  #Bereinigung Dunkelstrom
 
-params2, covariance_matrix2 = optimize.curve_fit(theory2, s_2, I_2, p0=[2700, 23, 0.000085, 0.00021])
-
+#params2, covariance_matrix2 = optimize.curve_fit(theory2, s_2, I_2, p0=[2700, 23, 0.000085, 0.00021])
+params2, covariance_matrix2 = optimize.curve_fit(theory2, s_2, I_2, p0=[2700, 23, 0.000100, 0.00027])
 A_0, s_0, b, spaltentfernung = correlated_values(params2, covariance_matrix2)
 
 print('Jetzt kommt der erste Doppelspalt')
@@ -118,7 +118,7 @@ s_3 *= 1e-3 #s/m
 I_3 *= 1e-6 #I/A
 I_3 -=I_d  #Bereinigung Dunkelstrom
 
-params3, covariance_matrix3 = optimize.curve_fit(theory2, s_3, I_3, p0=[4, 22, 0.00015, 0.0005])
+params3, covariance_matrix3 = optimize.curve_fit(theory2, s_3, I_3, p0=[4.2, 22.7, 0.00025, 0.00015])
 
 A_0, s_0, b, spaltentfernung = correlated_values(params3, covariance_matrix3)
 
