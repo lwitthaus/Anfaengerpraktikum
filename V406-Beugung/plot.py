@@ -75,7 +75,7 @@ x_2, I_2 = np.genfromtxt('doppelspalt1.txt', unpack=True) #s/mm I/nA
 x_2 *= 1e-3 #s/m
 I_2 *= 1e-6 #I/A
 I_2 -=I_d  #Bereinigung Dunkelstrom
-
+#slinspace = np.linspace(0.018, 0.030, 500)
 #params2, covariance_matrix2 = optimize.curve_fit(theory2, x_2, I_2, p0=[2700, 23, 0.000085, 0.00021])
 params2, covariance_matrix2 = optimize.curve_fit(theory2, x_2, I_2, p0=[2700, 23, 0.000100, 0.00027])
 A_0, s_0, b, spaltabstand = correlated_values(params2, covariance_matrix2)
@@ -109,9 +109,9 @@ x_3, I_3 = np.genfromtxt('doppelspalt2.txt', unpack=True) #s/mm I/nA ###########
 x_3 *= 1e-3 #s/m
 I_3 *= 1e-6 #I/A
 I_3 -=I_d  #Bereinigung Dunkelstrom
-slinspace = np.linspace(0, 0.050, 500)
+#slinspace = np.linspace(0.021, 0.027, 500)
 
-params3, covariance_matrix3 = optimize.curve_fit(theory2, x_3, I_3, p0=[4, 24, 1.5*1e-3, 1e-3])
+params3, covariance_matrix3 = optimize.curve_fit(theory2, x_3, I_3, p0=[400, 23, 0.15*1e-3, 0.5*1e-3])
 
 A_0, s_0, b, spaltabstand = correlated_values(params3, covariance_matrix3)
 
@@ -120,7 +120,6 @@ print('A_0 =', A_0)
 print('s_0 =', s_0)
 print('b =', b)
 print('spaltabstand =', spaltabstand)
-
 plt.plot(x_3*1e3, I_3*1e6, 'r.', label='Messwerte')
 
 plt.plot(slinspace*1e3, theory2(slinspace, *params3)*1e6, 'k-', label='Ausgleichsfunktion')
@@ -132,4 +131,17 @@ plt.legend()
 plt.grid()
 plt.autoscale(enable=True, axis='x', tight=True)
 plt.savefig('build/doppelspalt_2.pdf')
+plt.clf()
+
+plt.plot(x_1*1e3, I_1*1e6 *20, 'r.', label='Messwerte')
+#params2, covariance_matrix2 = optimize.curve_fit(theory2, x_2, I_2, p0=[2700, 23, 0.000100, 0.00027])
+plt.plot(x_2*1e3, I_2*1e6, 'b.', label='Messwerte')
+plt.plot(slinspace*1e3, theory2(slinspace, *params2)*1e6, 'k-', label='Ausgleichsfunktion')
+plt.xlabel(r'$x/$mm')
+plt.ylabel(r'$I/\mu$A')
+plt.tight_layout()
+plt.legend()
+plt.grid()
+plt.autoscale(enable=True, axis='x', tight=True)
+plt.savefig('build/vergleich.pdf')
 plt.clf()

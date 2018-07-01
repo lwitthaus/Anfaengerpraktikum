@@ -1,7 +1,7 @@
 \section{Auswertung}
 \label{sec:Auswertung}
 
-Die Messreihen der drei Beugungsbilder werden in Tabelle 1 dargestellt. Dabei bezeichnet der Index 1 den Einzelpalt,
+Die Messreihen der drei Beugungsbilder werden in Tabelle 1 dargestellt. Dabei bezeichnet der Index 1 den Einzelspalt,
 der Index 2 den ersten Doppelspalt und der Index 3 den zweiten Doppelspalt.
 %\begin{table}[htp]
         %\begin{center}
@@ -87,7 +87,7 @@ und $L$ beträgt $L=1,01\,$m.
 \begin{figure}
   \centering
   \includegraphics{einfachspalt.pdf}
-  \caption{Beugungsbild des Einzelspaltes}
+  \caption{Beugungsbild des Einzelspalts}
   \label{fig:plot}
 \end{figure}
 
@@ -103,21 +103,21 @@ Für den Doppelspalt in Abbildung 6 beträgt die Spaltbreite $b=0,15\,$mm und di
 \begin{figure}
   \centering
   \includegraphics{doppelspalt_1.pdf}
-  \caption{Beugungsbild des ersten Doppelspaltes}
+  \caption{Beugungsbild des ersten Doppelspalts}
   \label{fig:plot}
 \end{figure}
 
 \begin{figure}
   \centering
   \includegraphics{doppelspalt_2.pdf}
-  \caption{Beugungsbild des zweiten Doppelspaltes}
+  \caption{Beugungsbild des zweiten Doppelspalts}
   \label{fig:plot}
 \end{figure}
 
-Die Parameter werden mit Python berechnet und in Tabelee 2 dargestellt.
+Die Parameter werden mit Python berechnet und in Tabelle 2 dargestellt.
 \begin{table}[H]
   \centering
-  \caption{Gemessene Kräfte und Auslenkungen}
+  \caption{Ermittelte Werte der Spalte.}
   \label{tab:Parameter}
   \begin{tabular}{c c c c}
     \toprule
@@ -125,11 +125,44 @@ Die Parameter werden mit Python berechnet und in Tabelee 2 dargestellt.
     \midrule
      A & 6,90 \pm 0.05 & $(4,06 \pm 0,04)\cdot 10^{3}$ & $(6,1 \pm 0,4)\cdot 10^{3}$ \\
      $x_0/$mm & $24,31 \pm 0,03$ & $22,937 \pm 0,005$ & $23,993 \pm 0.007$ \\
-     $b/$mm & $(0,0805 \pm 0,0007) $ & $0,1077 \pm 0,0006$ & $0,0015168 \pm 0,0000018$ \\
-     $g/$mm & - & $0,1077 \pm 0,0006$ & $0,0009730 \pm 0,0000012$ \\
+     $b/$mm & $(0,0805 \pm 0,0007) $ & $0,1077 \pm 0,0006$ & $0,151 \pm 0,004$ \\
+     $g/$mm & - & $0,1077 \pm 0,0006$ & $0,495 \pm 0,012$ \\
     \bottomrule
   \end{tabular}
 \end{table}
 
-Der Literaturwert \cite{sample} der Spaltbreite des Einzelspaltes beträgt $b=0,075/,$mm. Die Abweichung des berechneten Wertes davon beträgt $6,8$ \%.
-Die Spaltbreite des ersten Doppelspaltes beträgt $b=0,15/,$mm \cite{sample}. Der berechnete Wert weicht $28,2$ \% davon ab.
+Die Parameter werden mit Python berechnet und in Tabelle 2 dargestellt.
+\begin{table}[H]
+  \centering
+  \caption{Literaturwerte \cite{sample} und Abweichung zu den experimentell bestimmten Werten.}
+  \label{tab:Parameter}
+  \begin{tabular}{c c c c}
+    \toprule
+    Parameter & Einzelspalt & Doppelspalt $1$ & Doppelspalt $2$ \\
+    \midrule
+     $b/$mm & $0,075$ & $0,15$ & $0,15$ \\
+     $g/$mm & - & $0,25$ & $0,5$  \\
+     \midrule
+     Abweichung (b) & $6,8$ \% & $28,2$ \% & $0,006$\% \\
+     Abweichung (g) & - & $56,92 $\% & $1,00\,$\% \\
+    \bottomrule
+  \end{tabular}
+\end{table}
+
+
+Der Plot des Einzelspalts und des ersten Doppespalts werden zusammen in einem Plot dargestellt. Dabei werden die gemessenen Werte des Einzelspalts um einen Faktor
+20 vergrößert, damit die Beugungsfiguren in derselben Größenordnung liegen und die beiden Beugungsfiguren miteinander verglichen werden können.
+
+\begin{figure}
+  \centering
+  \includegraphics{vergleich.pdf}
+  \caption{Beugungsbild des Einzelspalts und des Doppelspalts.}
+  \label{fig:plot}
+\end{figure}
+
+%Die Literaturwerte der Spalte werden aus der Anleitung entnommen \cite{sample}.
+%Der Literaturwert der Spaltbreite des Einzelspalts beträgt $b=0,075\,$mm. Die Abweichung des berechneten Wertes davon beträgt $6,8$ \%.
+%Die Spaltbreite des ersten Doppelspalts beträgt $b=0,15/,$mm. Der berechnete Wert weicht $28,2$ \% davon ab. Der
+%Literaturwert des Spaltabstandes beträgt $g=0.25\,$mm. Die Abweichung zwischen dem errechneten Wert und dem Literaturwert beträgt $56,92 $\%.
+%Für den zweiten Doppelspalt betragen die Literaturwerte für Spaltbreite und Spaltabstand $b=0,15\,$mm und $g=0,5\,$mm. Die zugehörigen Abweichungen
+%zu den berechneten Werte betragen $0,0062$\% und $1,00\,$\%.
