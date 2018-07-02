@@ -84,7 +84,7 @@ print('Jetzt kommt der erste Doppelspalt')
 print('A_0 =', A_0)
 print('s_0 =', s_0)
 print('b =', b)
-
+print('Spaltabstand =', spaltabstand)
 #plt.plot(x_2*1e3, I_2*1e6, 'rx', label='Messwerte')
 #
 #plt.plot(slinspace*1e3, theory(slinspace, *params2)*1e6, 'k-', label='Ausgleichsfunktion')
