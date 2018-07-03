@@ -115,7 +115,7 @@ anderen Drücke berechnen, da von einer linearen Energieskala ausgegangen wird. 
 %\end{tabular}
 %\end{table}
 
-Für die letzten drei Messwerte in Tabelle 1 ist die Kollimatorschwelle zu hoch, wodurch kein Maximum mehr zu messen ist.
+Für die letzten drei Messwerte in Tabelle 1 ist die Diskriminatorschwelle zu hoch, wodurch kein Maximum mehr zu messen ist.
 
 Die Zählrate $N$ wird gegen die mittlere Reichweite für beide Abstände aufgetragen. Eine lineare Regression wird für den linearen Teil
 des Kurvenverlaufs durchgeführt.
@@ -169,7 +169,7 @@ Die Fehler der mittleren Reichweiten werden mit der Gauß'schen Fehlerfortpflanz
   \sigma_{R_m} = \sqrt{
       \sum\limits_{i = 1}^N
        \left( \frac{\partial R_m}{\partial x_i} \sigma_i \right)^{\!\! 2}
-     } = \sqrt{\sigma_{a}^{2} \left(\frac{b}{a^{2}} - \frac{N}{a^{2}}\right)^{2} + \frac{\sigma_{b}^{2}}{a^{2}} }
+     } = \sqrt{\sigma_{a}^{2} \left(\frac{b}{a^{2}} - \frac{N/2}{a^{2}}\right)^{2} + \frac{\sigma_{b}^{2}}{a^{2}} }
 \end{equation}
 
 Dabei sind stellen $a$ und $b$ die Parameter der Geradengleichungen dar und $N$ die Zählrate.
@@ -185,7 +185,7 @@ Die Fehler der berechneten Energien werden erneut mit der Gauß'schen Fehlerfort
   \sigma_{E} = \sqrt{
       \sum\limits_{i = 1}^N
        \left( \frac{\partial E}{\partial x_i} \sigma_i \right)^{\!\! 2}
-     } = 0.314 \sqrt{\frac{\sigma_{a}^{2}}{a^{0.667}}}
+     } = 0.314 \sqrt{\frac{\sigma_{a}^{2}}{R_m^{0.667}}}
 \end{align*}
 
 
