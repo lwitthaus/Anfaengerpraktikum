@@ -42,30 +42,56 @@ Zusätzlich werden die mit diesen Werten aus Gleichung 3 berechneten Geschwindig
 
 Daraus ergeben sich die in Tabelle 2 dargestellten Mittelwerte $v_m$ für die einzelnen Geschwindigkeiten.
 
+
 \begin{table}
 \label{tab:mittel}
 \centering
 \caption{Mittelwerte der errechneten Geschwindigkeiten.}
 \sisetup{table-format=2.1}
-\begin{tabular}{S [table-format=3.1] S S S}
+\begin{tabular}{S [table-format=3.1] S[table-format=0.3, table-figures-uncertainty=3] S[table-format=0.3, table-figures-uncertainty=3] S[table-format=0.3, table-figures-uncertainty=3]}
 \toprule
 & \multicolumn{1}{c}{$7$mm Rohr} & \multicolumn{1}{c}{$10$mm Rohr} & \multicolumn{1}{c}{$16$mm Rohr} \\
 \cmidrule(lr){2-2}\cmidrule(lr){3-3}\cmidrule(lr){4-4}
 {$v/$rpm}
 & {$v_{mk}/ \symup{\frac{m}{s}}$}& {$v_{mm}/ \symup{\frac{m}{s}}$} & {$v_{mg}/ \symup{\frac{m}{s}}$} \\
 \midrule
-2000 & 0,160 \pm 0,028  & 0,101 \pm 0,021 & 0,091 \pm 0,049  \\
+2000 & 0,160 \pm 0.020  & 0,101   \pm 0.015 & 0,091 \pm 0.035  \\
 \midrule
-3000 & 0,339 \pm 0,030 & 0,165 \pm 0,042 & 0,107 \pm 0,015  \\
+3000 & 0,339 \pm 0.022 & 0,165 \pm 0.029 & 0,107 \pm 0.011  \\
 \midrule
-4000 & 0,629 \pm 0,027 & 0,339 \pm 0,030 & 0,161 \pm 0,022  \\
+4000 & 0,629 \pm 0.019 & 0,339 \pm 0.022 & 0,161 \pm 0.015  \\
 \midrule
-5000 & 1,065 \pm 0,057 & 0,499 \pm 0,030  & 0,236 \pm 0,016  \\
+5000 & 1,065 \pm 0.041 & 0,499 \pm 0.022  & 0,236 \pm 0.012  \\
 \midrule
-6000 & 1,630 \pm 0,072 & 0,757 \pm 0,052 & 0,323 \pm 0,020  \\
+6000 & 1,630 \pm 0.051 & 0,757 \pm 0.037 & 0,323 \pm 0.015  \\
 \bottomrule
 \end{tabular}
 \end{table}
+
+%\begin{table}
+%\label{tab:mittel}
+%\centering
+%\caption{Mittelwerte der errechneten Geschwindigkeiten.}
+%\sisetup{table-format=2.1}
+%\begin{tabular}{S [table-format=3.1,table-figures-uncertainty=3] S S S S S S S}
+%\toprule
+%& \multicolumn{1}{c}{$7$mm Rohr} & \multicolumn{1}{c}{$10$mm Rohr} & \multicolumn{1}{c}{$16$mm Rohr} \\
+%\cmidrule(lr){2-3}\cmidrule(lr){4-5}\cmidrule(lr){6-7}
+%{$v/$rpm}
+%& {$v_{mk}/ \symup{\frac{m}{s}}$}& {Fehler} & {$v_{mm}/ \symup{\frac{m}{s}}$} & {Fehler} & {$v_{mg}/ \symup{\frac{m}{s}}$} & {Fehler}  \\
+%\midrule
+%2000 & 0,160 \pm 0,028 & 1& 0,101 \pm 0,021 &1& 0,091 \pm 0,049 &1  \\
+%\midrule
+%3000 & 0,339 \pm 0,030 &1& 0,165 \pm 0,042 &1& 0,107 \pm 0,015   &1 \\
+%\midrule
+%4000 & 0,629 \pm 0,027 &1& 0,339 \pm 0,030 &1& 0,161 \pm 0,022  &1 \\
+%\midrule
+%5000 & 1,065 \pm 0,057 &1& 0,499 \pm 0,030  &1& 0,236 \pm 0,016  &1 \\
+%\midrule
+%6000 & 1,630 \pm 0,072 &1& 0,757 \pm 0,052 &1& 0,323 \pm 0,020  &1\\
+%\bottomrule
+%\end{tabular}
+%\end{table}
 
 Trägt man $\frac{\nu}{cos(\alpha)}$ gegen die jeweils errechnete Strömungsgeschwindigkeit auf, so ergibt sich
 das folgende Diagramm (hier exemplarisch für das dünne Rohr).
