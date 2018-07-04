@@ -11,7 +11,7 @@ from matrix2latex import matrix2latex
 
 
 def theory(x, A0, x_0, b):
-    return (A0 * b * np.sinc(b * np.sin((x - x_0)/(l)) / l_welle))**2
+    return (A0 * b * np.sinc(b *  np.sin((x - x_0)/(l)) / l_welle))**2
 
 
 def theory2(x, A0, x_0, b, spaltabstand):
@@ -75,7 +75,7 @@ x_2, I_2 = np.genfromtxt('doppelspalt1.txt', unpack=True) #s/mm I/nA
 x_2 *= 1e-3 #s/m
 I_2 *= 1e-6 #I/A
 I_2 -=I_d  #Bereinigung Dunkelstrom
-#slinspace = np.linspace(0.018, 0.030, 500)
+slinspace = np.linspace(0.019, 0.0295, 500)
 #params2, covariance_matrix2 = optimize.curve_fit(theory2, x_2, I_2, p0=[2700, 23, 0.000085, 0.00021])
 params2, covariance_matrix2 = optimize.curve_fit(theory2, x_2, I_2, p0=[2700, 23, 0.000100, 0.00027])
 A_0, s_0, b, spaltabstand = correlated_values(params2, covariance_matrix2)
@@ -109,9 +109,9 @@ x_3, I_3 = np.genfromtxt('doppelspalt2.txt', unpack=True) #s/mm I/nA ###########
 x_3 *= 1e-3 #s/m
 I_3 *= 1e-6 #I/A
 I_3 -=I_d  #Bereinigung Dunkelstrom
-#slinspace = np.linspace(0.021, 0.027, 500)
+slinspace = np.linspace(0.02145, 0.02645, 500)
 
-params3, covariance_matrix3 = optimize.curve_fit(theory2, x_3, I_3, p0=[3.3, 23.8, 0.00007, 0.00056])
+params3, covariance_matrix3 = optimize.curve_fit(theory2, x_3, I_3, p0=[3.3, 23.8, 0.000077, 0.00056])
 
 A_0, s_0, b, spaltabstand = correlated_values(params3, covariance_matrix3)
 
@@ -133,6 +133,7 @@ plt.autoscale(enable=True, axis='x', tight=True)
 plt.savefig('build/doppelspalt_2.pdf')
 plt.clf()
 
+slinspace = np.linspace(0.010, 0.040, 500)
 plt.plot(x_1*1e3, I_1*1e6 *20, 'r.', label='Messwerte')
 #params2, covariance_matrix2 = optimize.curve_fit(theory2, x_2, I_2, p0=[2700, 23, 0.000100, 0.00027])
 plt.plot(x_2*1e3, I_2*1e6, 'b.', label='Messwerte')
