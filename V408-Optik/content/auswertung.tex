@@ -1,9 +1,81 @@
 \section{Auswertung}
 \label{sec:Auswertung}
 
+\subsection{Bestimmung der abrennweite mit der Bildweite und der Gegenstandsweite}
+
+Die gemessenen Gegenstandsweiten $g$, Bildweiten $b$ und Bildgrößen $B$ einer Linse, mit einer
+Brennweite von 100, werden in Tablle 1 dargestellt. Zusätzlich werden die daraus ermittelten
+Brennweite angeben die mit der Linsengleichung berechnet werden.
+\begin{table}[H]
+  \centering
+  \caption{Gemessene und berechnete Daten einer Linse}
+  \label{tab:Widerstand}
+  \begin{tabular}{c c c c}
+    \toprule
+    $g/$cm  & $b/$cm & $B / $cm & $f/$cm \\
+    \midrule
+    12,5 &    56,8  & 13,2 &  10,25   \\
+    12,0 &    72,0  & 17,5 &  10,29   \\
+    11,5 &    97,1  & 24,7 &  10,28   \\
+    13,5 &    40,8  & 8,8  &  10,14  \\
+    14,0 &    36,6  & 7,6  &  10,13  \\
+    14,5 &    32,9  & 6,5  &  10,06  \\
+    15,0 &    30,8  & 5,9  &  10,09  \\
+    15,5 &    29,0  & 5,3  &  10,10  \\
+    16,0 &    27,9  & 4,9  &  10,17  \\
+    16,5 &    25,5  & 3,5  &  10,02  \\
+    \bottomrule
+  \end{tabular}
+\end{table}
+
+Für den Mittelwert von der Brennweite ergibt sich \SI{10.15(3)}{\centi\meter}.
+
+Aus den Messwerten lässt sich nun graphisch einen Wert für die Brennweite ermitteln. Die Gegenstandsweiten
+werden auf die x-Achse und die Bildweiten auf die y-Achsen aufgetragen. Der erste Messwert von $g$ wird dann mit
+dem letzten über eine Gerade verbunden, für die anderen Messwerte wird dies auch gemacht. Dies ist in
+Abbildung 5 dargestellt.
+
+
+
+
 \begin{figure}
   \centering
   \includegraphics{plot.pdf}
   \caption{Plot.}
   \label{fig:plot}
 \end{figure}
+
+
+Die x und y Koordinate des Schnittpunktes der einzelnen Geraden stellt nun die Brennweite dar. Für die Brennweite kann
+ein ungefährer von $10,3$cm abgelesen werden. Nach Herstellerangaben beträgt die Brennweite der Linse $10$cm.
+
+
+
+Dieses Verfahren wird mit einer Linse unbekannter Brennweite wiederholt. In Tabelle 2 werden
+die gemessenen Werte zu dieser Linse dargestellt.
+
+\begin{table}[H]
+  \centering
+  \caption{Gemessene und berechnete Daten einer Linse mit unbekannter Brennweite}
+  \label{tab:Widerstand}
+  \begin{tabular}{c c c}
+    \toprule
+    $g/$cm  & $b/$cm & $f/$cm \\
+    \midrule
+    9.5     &     42.0
+    9.0     &     62.6
+    10.0    &     35.8
+    10.5    &     29.4
+    11.0    &     24.9
+    11.5    &     22.2
+    12.0    &     20.1
+    12.5    &     18.1
+    13.0    &     17.8
+    13.5    &     16.8
+    \bottomrule
+  \end{tabular}
+\end{table}
+
+
+[ 7.74757282  7.86871508  7.81659389  7.73684211  7.62952646  7.57566766
+  7.51401869  7.39379085  7.51298701  7.48514851]
