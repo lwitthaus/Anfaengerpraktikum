@@ -44,7 +44,7 @@ Abbildung 5 dargestellt.
 
 
 
-\begin{figure}
+\begin{figure}[H]
   \centering
   \includegraphics{plot.pdf}
   \caption{Aufgetragene Bildweiten und Gegenstandsweiten zur Bestimmung der Brennweite.}
@@ -87,7 +87,7 @@ Der Mittelwert der Brennweiten beträgt $\SI{7.63(5)}{\centi\meter}$.
 Erneut werden $g$ und $b$ in einem Diagramm aufgetragen und Geraden durch die Messwertepaare durchgelegt. Dies ist in Abbilung 6
 dargestellt.
 
-\begin{figure}
+\begin{figure}[H]
   \centering
   \includegraphics{plot2.pdf}
   \caption{Aufgetragene Bildweiten und Gegenstandsweiten zur Bestimmung der Brennweite einer mit Wasser gefüllten Linse.}
@@ -99,6 +99,8 @@ Aus dem Diagramm lässt sich für die Brennweite ein ungefährer Wert von  $f = 
 
 
 \subsection{Bestimmung der Brennweite nach der Methode von Bessel}
+Die Brennweite der verwendeten Linse beträgt $f_s= 10$ cm.
+
 In Tabelle \ref{tab:bessel} werden die gemessenen Abstände $e, g_1, b_1, g_2, b_2$ sowie die daraus nach Gleichung (3)
 errechneten Brennweiten $f_1$ und $f_2$.
 \begin{table}[H]
@@ -129,6 +131,12 @@ Daraus ergeben sich die folgenden Mittelwerte
   &f_2 = (9.91 \pm 0.06) \: \symup{cm}
 \end{align*}
 
+Es ergeben sich relative Abweichungen von
+\begin{align*}
+  &\sigma_1 = 2,5 \% \\
+  &\sigma_2 = -0,9 \%
+\end{align*}
+
 Auf die selbe Weise werden die Brennweiten für die Messung mit einem Rotfilter vor dem Gegenstand errechnet. Die
 entsprechenden Werte sind in Tabelle \ref{tab:besselrot} zu finden.
 \begin{table}[H]
@@ -152,6 +160,12 @@ Daraus ergeben sich diesmal die folgenden Mittelwerte
 \begin{align*}
   &f_{1r} = (10.27 \pm 0.03) \: \symup{cm} \\
   &f_{2r} = (9.90 \pm 0.06) \: \symup{cm}
+\end{align*}
+
+Es ergeben sich relative Abweichungen von
+\begin{align*}
+  &\sigma_{1r} = 2,6 \% \\
+  &\sigma_{2r} = -1,0 \%
 \end{align*}
 
 Und ein weiteres Mal für die Messung mit einem Blaufilter vor dem Gegenstand. Die Werte sind Tabelle
@@ -179,7 +193,16 @@ Daraus ergeben sich die Mittelwerte
   &f_{2b} = (9.88 \pm 0.06) \: \symup{cm}
 \end{align*}
 
+Daraus ergeben sich relative Abweichungen von
+\begin{align*}
+  &\sigma_{1b} = 3,0 \% \\
+  &\sigma_{2b} = -1,2 \%
+\end{align*}
+
 \subsection{Bestimmung der Brennweite nach der Methode von Abbe}
+Es wird ein Linsensystem aus einer Zerstreuungslinse mit $f_z = -10$ cm und einer Sammellinse
+mit einer Brennweite von $f_s = 10$ cm verwendet.
+
 Die bei der Methode von Abbe gemessenen Abstände $g'$ und $b'$ sowie die gemessene Bildgröße $B$
 werden in Tabelle \ref{tab:abbe} aufgeführt.
 
@@ -207,7 +230,7 @@ werden in Tabelle \ref{tab:abbe} aufgeführt.
 
 Trägt man $g'$ gegen $1+1/V$ aus Gleichung (4) auf, so ergibt sich das folgende Diagramm.
 
-\begin{figure}
+\begin{figure}[H]
   \centering
   \includegraphics{plot1.pdf}
   \caption{Diagramm zur Bestimmung der Brennweite aus $g'$.}
@@ -221,11 +244,11 @@ Aus der linearen Regression ergibt sich eine Brennweite von
 
 Trägt man $b'$ gegen $1+V$ aus Gleichung (5) auf, so ergibt sich das folgende Diagramm.
 
-\begin{figure}
+\begin{figure}[H]
   \centering
-  \includegraphics{plot2.pdf}
+  \includegraphics{plot3.pdf}
   \caption{Diagramm zur Bestimmung der Brennweite aus $b'$.}
-  \label{fig:plot2}
+  \label{fig:plot3}
 \end{figure}
 
 Aus der linearen Regression ergibt sich eine Brennweite von
