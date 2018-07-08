@@ -17,8 +17,8 @@ print(r-q**2)
 
 
 g = np.random.normal(np.mean(N/10), np.std(N/10), 10000)
-#p = np.random.poisson(np.mean(N), 10000)
-plt.hist([N/10,g], 15, label=['Messwerte','Gaußverteilung'], alpha=1, normed=1)
+p = np.random.poisson(np.mean(N/10), 10000)
+plt.hist([N/10,g,p], 15, label=['Messwerte','Gaußverteilung','Poissonverteilung'], alpha=1, normed=1)
 plt.legend()
 plt.ylabel(r'Normierte Häufigkeit')
 plt.xlabel(r'Zählrate N / $\frac{1}{s}$')
