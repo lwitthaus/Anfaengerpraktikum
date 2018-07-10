@@ -38,6 +38,10 @@ plt.grid()
 #plt.xlim((10, 11))
 plt.ylabel(r'$b / $cm')
 plt.xlabel(r'$g / $cm')
+plt.axvline(x=10.35, linewidth=0.5)
+plt.axhline(y=10.35, linewidth=0.5)
+plt.axvline(x=10, color='k', linewidth=0.5)
+plt.axhline(y=10, color='k', linewidth=0.5)
 plt.savefig('build/plot.pdf')
 
 

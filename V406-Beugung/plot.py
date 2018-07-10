@@ -133,7 +133,7 @@ plt.autoscale(enable=True, axis='x', tight=True)
 plt.savefig('build/doppelspalt_2.pdf')
 plt.clf()
 
-slinspace = np.linspace(0.012, 0.048, 500)
+slinspace = np.linspace(0.012, 0.037, 500)
 plt.plot(x_1*1e3, I_1*1e6 *20, 'r.', label='Messwerte')
 #params2, covariance_matrix2 = optimize.curve_fit(theory2, x_2, I_2, p0=[2700, 23, 0.000100, 0.00027])
 plt.plot(x_2*1e3, I_2*1e6, 'b.', label='Messwerte')
